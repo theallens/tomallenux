@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { mdiOpenInNew } from '@mdi/js'
-import { usePageMeta } from '@/lib/meta'
+import { mdiOpenInNew } from "@mdi/js";
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'CV',
-  description: 'The CV of Tom Allen, Senior Product Designer.',
-})
+  title: "CV",
+  description: "The CV of Tom Allen, Senior Product Designer.",
+});
 </script>
 
 <template>

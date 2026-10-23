@@ -3,9 +3,9 @@
  * An image at its natural proportions, with an optional caption (slot).
  * Uses the responsive variants from `npm run images` and reserves its space while loading.
  */
-import { computed } from 'vue'
-import { imageInfo } from '@/lib/images'
-import { isInternal } from '@/lib/links'
+import { computed } from "vue";
+import { imageInfo } from "@/lib/images.ts";
+import { isInternal } from "@/lib/links.ts";
 
 const props = withDefaults(
   defineProps<{
@@ -27,14 +27,14 @@ const props = withDefaults(
     eager?: boolean
     sizes?: string
   }>(),
-  { alt: '', sizes: '(max-width: 959px) 100vw, 50vw' },
-)
+  { alt: "", sizes: "(max-width: 959px) 100vw, 50vw" },
+);
 
-const info = computed(() => imageInfo(props.src))
+const info = computed(() => imageInfo(props.src));
 const link = computed(() => {
-  if (!props.to) return { is: 'div', attrs: {} }
-  return isInternal(props.to) ? { is: 'RouterLink', attrs: { to: props.to } } : { is: 'a', attrs: { href: props.to } }
-})
+  if (!props.to) return { is: "div", attrs: {} };
+  return isInternal(props.to) ? { is: "RouterLink", attrs: { to: props.to } } : { is: "a", attrs: { href: props.to } };
+});
 </script>
 
 <template>

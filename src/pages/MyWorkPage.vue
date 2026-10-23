@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
-import { projects } from '@/data/projects'
+import { usePageMeta } from "@/lib/meta.ts";
+import { projects } from "@/data/projects.ts";
 
 usePageMeta({
-  title: 'Product design',
-  description: 'Product design case studies by Tom Allen, a Senior Product Designer from Bristol, UK.',
-})
+  title: "Product design",
+  description: "Product design case studies by Tom Allen, a Senior Product Designer from Bristol, UK.",
+});
 
-const [first, ...rest] = projects
+const [first, ...rest] = projects;
 </script>
 
 <template>

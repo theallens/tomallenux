@@ -3,13 +3,13 @@
  * Expandable list; one item open at a time. `body` is HTML.
  * Closed panels are still rendered (eager) so their text is in the prerendered page.
  */
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const props = withDefaults(defineProps<{ items: { title: string; body: string }[]; firstOpen?: boolean }>(), {
   firstOpen: true,
-})
+});
 
-const open = ref<number | undefined>(props.firstOpen ? 0 : undefined)
+const open = ref<number | undefined>(props.firstOpen ? 0 : undefined);
 </script>
 
 <template>

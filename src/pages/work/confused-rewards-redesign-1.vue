@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Building peace of mind: Designing the \'Reminders\' feature for Confused.com',
-  description: 'Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal—and statistically,…',
-})
+  title: "Building peace of mind: Designing the 'Reminders' feature for Confused.com",
+  description: "Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal—and statistically,…",
+});
 </script>
 
 <template>

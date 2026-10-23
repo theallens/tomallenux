@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Expert, UX Design',
-  description: 'Expert is a web app that allows creatives to chat with an expert in their field. Amateur or professional creatives can speak with experts for…',
-})
+  title: "Expert, UX Design",
+  description: "Expert is a web app that allows creatives to chat with an expert in their field. Amateur or professional creatives can speak with experts for…",
+});
 </script>
 
 <template>

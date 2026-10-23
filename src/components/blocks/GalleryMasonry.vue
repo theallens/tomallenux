@@ -3,8 +3,8 @@
  * Masonry gallery: each image goes into the currently shortest column
  * (3 columns on desktop, 2 on mobile), with an optional caption below.
  */
-import { computed } from 'vue'
-import { imageInfo } from '@/lib/images'
+import { computed } from "vue";
+import { imageInfo } from "@/lib/images.ts";
 
 const props = withDefaults(
   defineProps<{
@@ -13,23 +13,23 @@ const props = withDefaults(
     mobileColumns?: number
   }>(),
   { columns: 3, mobileColumns: 2 },
-)
+);
 
-const withInfo = computed(() => props.items.map((item) => ({ ...item, ...imageInfo(item.src) })))
+const withInfo = computed(() => props.items.map((item) => ({ ...item, ...imageInfo(item.src) })));
 
 function distribute(n: number) {
-  const cols = Array.from({ length: n }, () => ({ height: 0, items: [] as typeof withInfo.value }))
+  const cols = Array.from({ length: n }, () => ({ height: 0, items: [] as typeof withInfo.value }));
   for (const item of withInfo.value) {
-    const ratio = item.width && item.height ? item.height / item.width : 1
-    const col = cols.reduce((a, b) => (b.height < a.height ? b : a))
-    col.items.push(item)
-    col.height += ratio + (item.caption ? 0.1 : 0)
+    const ratio = item.width && item.height ? item.height / item.width : 1;
+    const col = cols.reduce((a, b) => (b.height < a.height ? b : a));
+    col.items.push(item);
+    col.height += ratio + (item.caption ? 0.1 : 0);
   }
-  return cols.map((c) => c.items)
+  return cols.map((c) => c.items);
 }
 
-const desktop = computed(() => distribute(props.columns))
-const mobile = computed(() => distribute(props.mobileColumns))
+const desktop = computed(() => distribute(props.columns));
+const mobile = computed(() => distribute(props.mobileColumns));
 </script>
 
 <template>

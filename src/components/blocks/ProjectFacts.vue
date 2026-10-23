@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /** The "Project type / My role / Tools / Duration" strip under a case study's hero. */
-defineProps<{ items: { label: string; value: string }[] }>()
+defineProps<{ items: { label: string; value: string }[] }>();
 </script>
 
 <template>

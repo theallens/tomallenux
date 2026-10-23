@@ -3,21 +3,21 @@
  * Site header: hides when scrolling down, returns when scrolling up.
  * Below 960px the links move into a drawer opened from the menu button.
  */
-import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
-import { mdiClose, mdiMenu } from '@mdi/js'
-import { navigation } from '@/data/site'
-import { imageInfo } from '@/lib/images'
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+import { mdiClose, mdiMenu } from "@mdi/js";
+import { navigation } from "@/data/site.ts";
+import { imageInfo } from "@/lib/images.ts";
 
-const route = useRoute()
-const drawer = ref(false)
-const logo = imageInfo('/images/shared/logo-second-try.webp')
+const route = useRoute();
+const drawer = ref(false);
+const logo = imageInfo("/images/shared/logo-second-try.webp");
 
 function isActive(to: string) {
-  return route.path === to || route.path.startsWith(`${to}/`)
+  return route.path === to || route.path.startsWith(`${to}/`);
 }
 
-watch(() => route.fullPath, () => (drawer.value = false))
+watch(() => route.fullPath, () => (drawer.value = false));
 </script>
 
 <template>

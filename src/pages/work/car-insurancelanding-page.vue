@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Car insurance landing page',
-  description: 'A complete rewrite and redesign of the most visited SEO page on Confused.com.',
-})
+  title: "Car insurance landing page",
+  description: "A complete rewrite and redesign of the most visited SEO page on Confused.com.",
+});
 </script>
 
 <template>

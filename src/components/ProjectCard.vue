@@ -3,12 +3,12 @@
  * A project on the My work / Home pages. The whole card links to the case study;
  * "coming soon" projects show a chip instead. `featured` lays it out side by side on wide screens.
  */
-import { computed } from 'vue'
-import { mdiArrowRight } from '@mdi/js'
-import type { Project } from '@/data/projects'
+import { computed } from "vue";
+import { mdiArrowRight } from "@mdi/js";
+import type { Project } from "@/data/projects.ts";
 
-const props = defineProps<{ project: Project; featured?: boolean; eager?: boolean; headingLevel?: 2 | 3 }>()
-const linked = computed(() => !!props.project.slug && !props.project.comingSoon)
+const props = defineProps<{ project: Project; featured?: boolean; eager?: boolean; headingLevel?: 2 | 3 }>();
+const linked = computed(() => !!props.project.slug && !props.project.comingSoon);
 </script>
 
 <template>

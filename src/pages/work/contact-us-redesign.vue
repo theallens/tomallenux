@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Contact us redesign',
-  description: 'A UX review and complete redesign of a contact form, help centre and FAQs.',
-})
+  title: "Contact us redesign",
+  description: "A UX review and complete redesign of a contact form, help centre and FAQs.",
+});
 </script>
 
 <template>

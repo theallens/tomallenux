@@ -3,7 +3,7 @@
  * The opening of a case study: eyebrow, title and intro (slot) beside the lead image.
  * Put the intro paragraphs in the default slot as plain HTML.
  */
-import type { SectionTone } from '../layout/Section.vue'
+import type { SectionTone } from "../layout/Section.vue";
 
 withDefaults(
   defineProps<{
@@ -15,8 +15,8 @@ withDefaults(
     imageSquare?: boolean
     tone?: SectionTone
   }>(),
-  { eyebrow: 'Product design project', imageAlt: '', tone: 'default' },
-)
+  { eyebrow: "Product design project", imageAlt: "", tone: "default" },
+);
 </script>
 
 <template>

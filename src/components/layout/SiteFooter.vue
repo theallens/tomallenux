@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { navigation, site } from '@/data/site'
+import { navigation, site } from "@/data/site.ts";
 
-const year = new Date().getFullYear()
+const year = new Date().getFullYear();
 </script>
 
 <template>

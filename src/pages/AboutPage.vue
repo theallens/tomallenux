@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'About',
-  description: 'A product designer from Bristol with a background in content design and UX writing.',
-})
+  title: "About",
+  description: "A product designer from Bristol with a background in content design and UX writing.",
+});
 </script>
 
 <template>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
-import { linkedProjects } from '@/data/projects'
+import { usePageMeta } from "@/lib/meta.ts";
+import { linkedProjects } from "@/data/projects.ts";
 
 usePageMeta({
-  title: 'Tom Allen',
-  description: 'Tom Allen is a Senior Product Designer from Bristol, UK, with experience in UX, UI and content design.',
-})
+  title: "Tom Allen",
+  description: "Tom Allen is a Senior Product Designer from Bristol, UK, with experience in UX, UI and content design.",
+});
 
-const featured = linkedProjects.slice(0, 3)
+const featured = linkedProjects.slice(0, 3);
 </script>
 
 <template>

@@ -3,20 +3,20 @@
  * A call-to-action link styled as a button. Primary is black on light sections
  * and amber on dark ones (the Vuetify theme handles this).
  */
-import { computed } from 'vue'
-import { mdiArrowRight } from '@mdi/js'
-import { isInternal } from '@/lib/links'
+import { computed } from "vue";
+import { mdiArrowRight } from "@mdi/js";
+import { isInternal } from "@/lib/links.ts";
 
 const props = withDefaults(
-  defineProps<{ to: string; newWindow?: boolean; variant?: 'flat' | 'outlined' | 'text'; arrow?: boolean }>(),
-  { variant: 'flat', arrow: true },
-)
+  defineProps<{ to: string; newWindow?: boolean; variant?: "flat" | "outlined" | "text"; arrow?: boolean }>(),
+  { variant: "flat", arrow: true },
+);
 
 const link = computed(() =>
   isInternal(props.to) && !props.newWindow
     ? { to: props.to }
-    : { href: props.to, target: props.newWindow ? '_blank' : undefined, rel: props.newWindow ? 'noopener' : undefined },
-)
+    : { href: props.to, target: props.newWindow ? "_blank" : undefined, rel: props.newWindow ? "noopener" : undefined },
+);
 </script>
 
 <template>

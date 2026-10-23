@@ -4,13 +4,13 @@
  * against the total, and a legend with every value. Use for "x of y said …" results.
  * (A meter rather than a pie: one ratio reads faster as a length than as an angle.)
  */
-import { computed } from 'vue'
+import { computed } from "vue";
 
-const props = defineProps<{ data: { label: string; value: number }[]; caption?: string }>()
+const props = defineProps<{ data: { label: string; value: number }[]; caption?: string }>();
 
-const total = computed(() => props.data.reduce((n, d) => n + d.value, 0))
-const pct = (v: number) => Math.round((v / total.value) * 100)
-const headline = computed(() => props.data[0])
+const total = computed(() => props.data.reduce((n, d) => n + d.value, 0));
+const pct = (v: number) => Math.round((v / total.value) * 100);
+const headline = computed(() => props.data[0]);
 </script>
 
 <template>

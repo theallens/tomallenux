@@ -6,15 +6,15 @@
  * narrow: a ~880px column for text-led sections
  * tight: less vertical padding (for supporting strips such as ProjectFacts)
  */
-import { computed } from 'vue'
+import { computed } from "vue";
 
-export type SectionTone = 'default' | 'muted' | 'inverse' | 'accent'
+export type SectionTone = "default" | "muted" | "inverse" | "accent"
 
 const props = withDefaults(defineProps<{ tone?: SectionTone; narrow?: boolean; tight?: boolean }>(), {
-  tone: 'default',
-})
+  tone: "default",
+});
 
-const dark = computed(() => props.tone === 'inverse' || props.tone === 'accent')
+const dark = computed(() => props.tone === "inverse" || props.tone === "accent");
 </script>
 
 <template>

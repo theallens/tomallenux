@@ -3,7 +3,7 @@
  * A padded card of rich text, e.g. a key finding or a step in a process.
  * It contrasts with the section it sits in; `tone="dark"` makes it graphite.
  */
-withDefaults(defineProps<{ tone?: 'auto' | 'dark' }>(), { tone: 'auto' })
+withDefaults(defineProps<{ tone?: "auto" | "dark" }>(), { tone: "auto" });
 </script>
 
 <template>

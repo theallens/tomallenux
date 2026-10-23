@@ -4,8 +4,8 @@ class NoopObserver {
   unobserve() {}
   disconnect() {}
   takeRecords() {
-    return []
+    return [];
   }
 }
-globalThis.ResizeObserver ??= NoopObserver as unknown as typeof ResizeObserver
-globalThis.IntersectionObserver ??= NoopObserver as unknown as typeof IntersectionObserver
+globalThis.ResizeObserver ??= NoopObserver as unknown as typeof ResizeObserver;
+globalThis.IntersectionObserver ??= NoopObserver as unknown as typeof IntersectionObserver;

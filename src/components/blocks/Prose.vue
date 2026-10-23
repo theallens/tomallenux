@@ -5,18 +5,18 @@
  * Same-site links (<a href="/about">) navigate without a page reload.
  * Text is limited to a comfortable line length unless `wide` is set.
  */
-import { useRouter } from 'vue-router'
-import { isInternal } from '@/lib/links'
+import { useRouter } from "vue-router";
+import { isInternal } from "@/lib/links.ts";
 
-defineProps<{ wide?: boolean }>()
+defineProps<{ wide?: boolean }>();
 
-const router = useRouter()
+const router = useRouter();
 function onClick(e: MouseEvent) {
-  const a = (e.target as HTMLElement).closest('a')
-  const href = a?.getAttribute('href')
-  if (!a || !href || a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || !isInternal(href)) return
-  e.preventDefault()
-  router.push(href)
+  const a = (e.target as HTMLElement).closest("a");
+  const href = a?.getAttribute("href");
+  if (!a || !href || a.target === "_blank" || e.metaKey || e.ctrlKey || e.shiftKey || !isInternal(href)) return;
+  e.preventDefault();
+  router.push(href);
 }
 </script>
 

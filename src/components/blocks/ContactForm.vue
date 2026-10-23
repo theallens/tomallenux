@@ -5,32 +5,32 @@
  * HTML at deploy time; we submit it with fetch so the page doesn't reload.
  * The field `name`s are what Netlify stores, so don't rename them.
  */
-import { reactive, ref } from 'vue'
-import type { SubmitEventPromise } from 'vuetify'
-import { mdiSend } from '@mdi/js'
+import { reactive, ref } from "vue";
+import type { SubmitEventPromise } from "vuetify";
+import { mdiSend } from "@mdi/js";
 
-const FORM_NAME = 'contact'
-const fields = reactive({ firstName: '', lastName: '', email: '', message: '', 'bot-field': '' })
-const status = ref<'idle' | 'sending' | 'sent' | 'error'>('idle')
+const FORM_NAME = "contact";
+const fields = reactive({ firstName: "", lastName: "", email: "", message: "", "bot-field": "" });
+const status = ref<"idle" | "sending" | "sent" | "error">("idle");
 
-const required = (v: string) => !!v.trim() || 'Required'
-const email = (v: string) => /^\S+@\S+\.\S+$/.test(v) || 'Enter a valid email address'
+const required = (v: string) => !!v.trim() || "Required";
+const email = (v: string) => /^\S+@\S+\.\S+$/.test(v) || "Enter a valid email address";
 
 async function submit(event: SubmitEventPromise) {
-  const { valid } = await event
-  if (!valid) return
-  status.value = 'sending'
+  const { valid } = await event;
+  if (!valid) return;
+  status.value = "sending";
   try {
-    const body = new URLSearchParams({ 'form-name': FORM_NAME, ...fields }).toString()
-    const res = await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    const body = new URLSearchParams({ "form-name": FORM_NAME, ...fields }).toString();
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body,
-    })
-    if (!res.ok) throw new Error(String(res.status))
-    status.value = 'sent'
+    });
+    if (!res.ok) throw new Error(String(res.status));
+    status.value = "sent";
   } catch {
-    status.value = 'error'
+    status.value = "error";
   }
 }
 </script>

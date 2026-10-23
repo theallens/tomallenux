@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Umoov, UX & UI Design',
-  description: 'Umoov makes exercise easy, whatever your schedule or fitness level.  Discover manageable home workouts and take on daily challenges to stay motivated…',
-})
+  title: "Umoov, UX & UI Design",
+  description: "Umoov makes exercise easy, whatever your schedule or fitness level.  Discover manageable home workouts and take on daily challenges to stay motivated…",
+});
 </script>
 
 <template>

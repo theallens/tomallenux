@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
-usePageMeta({ title: 'Page not found' })
+usePageMeta({ title: "Page not found" });
 </script>
 
 <template>

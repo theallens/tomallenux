@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Content design, The anatomy of a landing page',
-  description: 'To dissect how I approach content design, I’ve broken down a page I rewrote and redesigned in 2022.  I’ll outline my process, review the impact content…',
-})
+  title: "Content design, The anatomy of a landing page",
+  description: "To dissect how I approach content design, I’ve broken down a page I rewrote and redesigned in 2022.  I’ll outline my process, review the impact content…",
+});
 </script>
 
 <template>

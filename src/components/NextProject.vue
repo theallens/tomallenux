@@ -1,11 +1,11 @@
 <script setup lang="ts">
 /** End of a case study: a link to the next listed project. Works out the current page from the route. */
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import { nextProject } from '@/data/projects'
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+import { nextProject } from "@/data/projects.ts";
 
-const route = useRoute()
-const next = computed(() => nextProject(route.path.replace(/^\/|\/$/g, '')))
+const route = useRoute();
+const next = computed(() => nextProject(route.path.replace(/^\/|\/$/g, "")));
 </script>
 
 <template>

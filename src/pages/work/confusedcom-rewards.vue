@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { usePageMeta } from '@/lib/meta'
+import { usePageMeta } from "@/lib/meta.ts";
 
 usePageMeta({
-  title: 'Rewards+',
-  description: 'As a product designer, few things are as rewarding as seeing a project you\'ve poured your heart into make a real impact. I recently had the incredible…',
-})
+  title: "Rewards+",
+  description: "As a product designer, few things are as rewarding as seeing a project you've poured your heart into make a real impact. I recently had the incredible…",
+});
 </script>
 
 <template>
