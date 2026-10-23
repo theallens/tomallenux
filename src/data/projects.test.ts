@@ -2,9 +2,7 @@ import { describe, expect, it } from "vitest";
 import { projects, unlistedCaseStudies } from "./projects.ts";
 import images from "./images.json";
 
-const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) =>
-  file.split("/").pop()!.replace(".vue", ""),
-);
+const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) => file.split("/").pop()!.replace(".vue", ""));
 const slugs = projects.flatMap((p) => (p.slug ? [p.slug] : []));
 
 describe("projects on the My work page", () => {

@@ -12,11 +12,9 @@ const props = withDefaults(
   { variant: "flat", arrow: true },
 );
 
-const link = computed(() =>
-  isInternal(props.to) && !props.newWindow
-    ? { to: props.to }
-    : { href: props.to, target: props.newWindow ? "_blank" : undefined, rel: props.newWindow ? "noopener" : undefined },
-);
+const link = computed(() => (isInternal(props.to) && !props.newWindow
+  ? { to: props.to }
+  : { href: props.to, target: props.newWindow ? "_blank" : undefined, rel: props.newWindow ? "noopener" : undefined }));
 </script>
 
 <template>

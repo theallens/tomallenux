@@ -1,4 +1,6 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
+import {
+  afterEach, describe, expect, it, vi,
+} from "vitest";
 import { flushPromises } from "@vue/test-utils";
 import { renderWithApp } from "@/test/mount.ts";
 import ContactPage from "./ContactPage.vue";
@@ -9,7 +11,9 @@ import ContactPage from "./ContactPage.vue";
  * the real Vuetify fields so a Vuetify upgrade that changes the markup fails here.
  */
 
-const message = { firstName: "Ada", lastName: "Lovelace", email: "ada@example.com", message: "Hello Tom" };
+const message = {
+  firstName: "Ada", lastName: "Lovelace", email: "ada@example.com", message: "Hello Tom",
+};
 
 async function renderPage() {
   const wrapper = await renderWithApp(ContactPage, { path: "/contact" });
@@ -26,8 +30,7 @@ async function fillAndSend(form: Awaited<ReturnType<typeof renderPage>>["form"])
 }
 
 /** Text of every live alert region (screen readers announce these). */
-const alerts = (wrapper: Awaited<ReturnType<typeof renderPage>>["wrapper"]) =>
-  wrapper.findAll('[role="alert"]').map((a) => a.text());
+const alerts = (wrapper: Awaited<ReturnType<typeof renderPage>>["wrapper"]) => wrapper.findAll("[role=\"alert\"]").map((a) => a.text());
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -38,11 +41,13 @@ describe("Contact page form", () => {
   it("is marked up for Netlify Forms", async () => {
     const { form } = await renderPage();
 
-    expect(form.attributes()).toMatchObject({ name: "contact", method: "POST", "data-netlify": "true", "netlify-honeypot": "bot-field" });
-    expect(form.find('input[type="hidden"][name="form-name"]').element.getAttribute("value")).toBe("contact");
-    expect(form.find('input[name="bot-field"]').exists()).toBe(true);
+    expect(form.attributes()).toMatchObject({
+      name: "contact", method: "POST", "data-netlify": "true", "netlify-honeypot": "bot-field",
+    });
+    expect(form.find("input[type=\"hidden\"][name=\"form-name\"]").element.getAttribute("value")).toBe("contact");
+    expect(form.find("input[name=\"bot-field\"]").exists()).toBe(true);
     for (const name of ["firstName", "lastName", "email"]) expect(form.find(`input[name="${name}"]`).exists(), name).toBe(true);
-    expect(form.find('textarea[name="message"]').exists()).toBe(true);
+    expect(form.find("textarea[name=\"message\"]").exists()).toBe(true);
   });
 
   it("sends the message to Netlify and thanks the visitor", async () => {

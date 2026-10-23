@@ -6,8 +6,7 @@ usePageMeta({
   description: "Pet insurance is needlessly complex. With four cover types, each featuring unique rules, limits, and exclusions; it's difficult to know what your pets…",
 });
 
-const prototype =
-  "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insurance?hide-ui=1&node-id=707-27848&page-id=707%3A27799&scaling=min-zoom&t=kloXX7C0R4X9Fx9W-8&type=design&viewport=446%2C484%2C0.28";
+const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insurance?hide-ui=1&node-id=707-27848&page-id=707%3A27799&scaling=min-zoom&t=kloXX7C0R4X9Fx9W-8&type=design&viewport=446%2C484%2C0.28";
 </script>
 
 <template>

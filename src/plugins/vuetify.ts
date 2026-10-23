@@ -59,7 +59,9 @@ export function createAppVuetify() {
     },
     icons: { defaultSet: "mdi", aliases, sets: { mdi } },
     defaults: {
-      VBtn: { rounded: "pill", variant: "flat", size: "large", class: "text-none font-weight-medium" },
+      VBtn: {
+        rounded: "pill", variant: "flat", size: "large", class: "text-none font-weight-medium",
+      },
       VCard: { rounded: "lg", variant: "flat" },
       VTextField: { variant: "outlined", density: "comfortable" },
       VTextarea: { variant: "outlined", density: "comfortable" },

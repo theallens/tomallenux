@@ -1,8 +1,11 @@
 /** Browser APIs Vuetify uses that happy-dom doesn't provide. */
 class NoopObserver {
   observe() {}
+
   unobserve() {}
+
   disconnect() {}
+
   takeRecords() {
     return [];
   }

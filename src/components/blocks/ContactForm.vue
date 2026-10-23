@@ -10,7 +10,9 @@ import type { SubmitEventPromise } from "vuetify";
 import { mdiSend } from "@mdi/js";
 
 const FORM_NAME = "contact";
-const fields = reactive({ firstName: "", lastName: "", email: "", message: "", "bot-field": "" });
+const fields = reactive({
+  firstName: "", lastName: "", email: "", message: "", "bot-field": "",
+});
 const status = ref<"idle" | "sending" | "sent" | "error">("idle");
 
 const required = (v: string) => !!v.trim() || "Required";
