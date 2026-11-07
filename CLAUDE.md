@@ -49,7 +49,7 @@ Everything deploys through `.github/workflows/ci.yml`; a failed build leaves the
 
 - A push to `main` deploys code and the latest published content.
 - Publishing in Sanity calls a webhook, which runs the same workflow with `target: production`.
-- The Studio's Build preview button sets `previewRequestedAt`, a second webhook runs the workflow with `target: preview`, and all drafts appear at `https://preview--tomallenux.netlify.app`. The repo is public, so that job must never upload an artifact.
+- The Studio's Build preview button sets `previewRequestedAt`, a second webhook runs the workflow with `target: preview`, and all drafts appear at `https://preview--tomallenux.netlify.app`, which Netlify protects with the shared account login. The repo is public, so that job must never upload an artifact.
 - The Studio is separate: after changing `studio/`, run `cd studio && npm run deploy`.
 
 ## Git

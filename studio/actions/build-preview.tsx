@@ -17,7 +17,7 @@ export const BuildPreviewAction: DocumentActionComponent = ({ id, type }) => {
     onHandle: () => setConfirming(true),
     dialog: confirming && {
       type: "confirm",
-      message: `This builds the site with all your drafts. It takes about 2 minutes, then you can see it at ${PREVIEW_URL}. Anyone with that link can see your drafts.`,
+      message: `This builds the site with all your drafts. It takes about 2 minutes, then you can see it at ${PREVIEW_URL}. Log in with the shared Netlify account to open it. The link is private.`,
       onConfirm: () => {
         patch.execute([{ set: { previewRequestedAt: new Date().toISOString() } }]);
         setConfirming(false);
