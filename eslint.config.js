@@ -40,6 +40,7 @@ const projectStyle = {
         "*.config.{js,mjs,ts}",
         "eslint.config.js",
         "scripts/**",
+        "e2e/**",
         "**/*.test.ts",
         "src/test/**",
       ],
@@ -151,8 +152,8 @@ export default [
     },
   },
   {
-    // CLI tooling: console output and sequential loops are the point of these scripts.
-    files: ["scripts/**"],
+    // CLI tooling and browser tests: console output and sequential loops are the point.
+    files: ["scripts/**", "e2e/**"],
     rules: {
       "no-console": "off",
       "no-restricted-syntax": "off",

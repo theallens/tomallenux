@@ -1,27 +1,24 @@
 import { describe, expect, it } from "vitest";
-import { projects, unlistedCaseStudies } from "./projects.ts";
-import images from "./images.json";
+import { linkedProjects, nextProject, projects } from "./projects.ts";
 
-const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) =>
-  file.split("/").pop()!.replace(".vue", "")
-);
-// Case studies moved to Sanity have no page file. Removed once they have all moved.
-workPages.push("confused-pet-insurance");
-const slugs = projects.flatMap((p) => (p.slug ? [p.slug] : []));
+describe("projects", () => {
+  it("links only to projects with a page", () => {
+    const comingSoon = projects.filter((p) => p.comingSoon);
 
-describe("projects on the My work page", () => {
-  it("link only to case studies that exist", () => {
-    const linked = projects.filter((p) => p.slug && !p.comingSoon).map((p) => p.slug);
-    expect(linked.filter((slug) => !workPages.includes(slug!))).toEqual([]);
+    expect(comingSoon.length).toBeGreaterThan(0);
+    expect(linkedProjects).toHaveLength(projects.length - comingSoon.length);
+    expect(linkedProjects.every((p) => p.slug)).toBe(true);
   });
 
-  it("list every case study page unless it is deliberately unlisted", () => {
-    expect(
-      workPages.filter((page) => !slugs.includes(page) && !unlistedCaseStudies.includes(page))
-    ).toEqual([]);
+  it("finds the next project, wrapping round at the end", () => {
+    const [first, second] = linkedProjects;
+    const last = linkedProjects[linkedProjects.length - 1];
+
+    expect(nextProject(first.slug!)).toBe(second);
+    expect(nextProject(last.slug!)).toBe(first);
   });
 
-  it("use thumbnails that have been optimised", () => {
-    expect(projects.map((p) => p.image).filter((src) => !(src in images))).toEqual([]);
+  it("starts from the first project on any other page", () => {
+    expect(nextProject("not-a-case-study")).toBe(linkedProjects[0]);
   });
 });

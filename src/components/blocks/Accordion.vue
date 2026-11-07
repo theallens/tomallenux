@@ -1,12 +1,12 @@
 <script setup lang="ts">
 /**
- * Expandable list; one item open at a time. `body` is HTML.
+ * Expandable list; one item open at a time. `body` is HTML, or use the `body` slot.
  * Closed panels are still rendered (eager) so their text is in the prerendered page.
  */
 import { ref } from "vue";
 
 const props = withDefaults(
-  defineProps<{ items: { title: string; body: string }[]; firstOpen?: boolean }>(),
+  defineProps<{ items: { title: string; body?: string }[]; firstOpen?: boolean }>(),
   {
     firstOpen: true,
   }
@@ -20,8 +20,10 @@ const open = ref<number | undefined>(props.firstOpen ? 0 : undefined);
     <v-expansion-panel v-for="(item, i) in items" :key="i" :value="i" eager>
       <v-expansion-panel-title class="accordion__title">{{ item.title }}</v-expansion-panel-title>
       <v-expansion-panel-text>
-        <!-- A plain element: v-html on a component is dropped when prerendering -->
-        <div class="prose is-wide" v-html="item.body" />
+        <slot name="body" :index="i">
+          <!-- A plain element: v-html on a component is dropped when prerendering -->
+          <div class="prose is-wide" v-html="item.body" />
+        </slot>
       </v-expansion-panel-text>
     </v-expansion-panel>
   </v-expansion-panels>

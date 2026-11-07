@@ -1,5 +1,6 @@
 /**
- * Snapshots published case studies from Sanity into src/content/case-studies/<slug>.json.
+ * Snapshots published case studies from Sanity into src/content/: a JSON file per page in
+ * case-studies/<slug>.json, and the My work list in projects.json.
  * Runs before dev and build, so the site is fully static: pages read these files,
  * routes come from them, and nothing calls Sanity from the browser.
  *
@@ -13,10 +14,10 @@ import { pathToFileURL } from "node:url";
 const PROJECT_ID = "x6ioktil";
 const DATASET = "production";
 const API_VERSION = "v2025-02-19";
-const OUT_DIR = "src/content/case-studies";
+const OUT_DIR = "src/content";
 
 const QUERY = `{
-  "studies": *[_type == "caseStudy" && defined(slug.current)],
+  "studies": *[_type == "caseStudy"],
   "assets": *[_type == "sanity.imageAsset"]{ _id, url, originalFilename }
 }`;
 
@@ -49,7 +50,35 @@ function withoutCmsNotes(study) {
   };
 }
 
-export async function fetchCaseStudies() {
+const escapeHtml = (text) =>
+  text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+/** A card's bold and italic text as HTML. Everything Tom typed is escaped, so it stays text. */
+function inlineHtml(blocks = []) {
+  return blocks
+    .flatMap((block) => block.children ?? [])
+    .map((span) =>
+      (span.marks ?? []).reduce(
+        (html, mark) => (["strong", "em"].includes(mark) ? `<${mark}>${html}</${mark}>` : html),
+        escapeHtml(span.text)
+      )
+    )
+    .join("");
+}
+
+function toProject(study) {
+  return {
+    ...(study.slug?.current && !study.comingSoon && { slug: study.slug.current }),
+    title: inlineHtml(study.cardTitle),
+    summary: inlineHtml(study.cardSummary),
+    image: study.thumbnail?.url,
+    ...(study.thumbnailAlt && { imageAlt: study.thumbnailAlt }),
+    ...(study.buttonLabel && { buttonLabel: study.buttonLabel }),
+    ...(study.comingSoon && { comingSoon: true }),
+  };
+}
+
+export async function fetchContent() {
   const url = new URL(`https://${PROJECT_ID}.api.sanity.io/${API_VERSION}/data/query/${DATASET}`);
   url.searchParams.set("query", QUERY);
   url.searchParams.set("perspective", "published");
@@ -59,24 +88,34 @@ export async function fetchCaseStudies() {
     throw new Error(`[content] Sanity responded ${response.status}: ${await response.text()}`);
   }
   const { result } = await response.json();
-  if (!result.studies.length) throw new Error("[content] Sanity returned no case studies");
 
   const assets = new Map(result.assets.map((asset) => [asset._id, asset]));
-  return result.studies.map(withoutCmsNotes).map((study) => resolveImages(study, assets));
+  const studies = result.studies.map(withoutCmsNotes).map((study) => resolveImages(study, assets));
+  const pages = studies.filter((study) => study.slug?.current && !study.comingSoon);
+  if (!pages.length) throw new Error("[content] Sanity returned no case studies");
+
+  const projects = [...studies]
+    .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity))
+    .map(toProject);
+  return { pages, projects };
 }
 
-export function writeCaseStudies(studies, outDir = OUT_DIR) {
+export function writeContent({ pages, projects }, outDir = OUT_DIR) {
   rmSync(outDir, { recursive: true, force: true });
-  mkdirSync(outDir, { recursive: true });
-  for (const study of studies) {
-    const slug = study.slug.current;
+  mkdirSync(join(outDir, "case-studies"), { recursive: true });
+  for (const page of pages) {
+    const slug = page.slug.current;
     if (!/^[a-z0-9-]+$/.test(slug)) throw new Error(`[content] unsafe slug: ${slug}`);
-    writeFileSync(join(outDir, `${slug}.json`), `${JSON.stringify(study, null, 2)}\n`);
+    writeFileSync(
+      join(outDir, "case-studies", `${slug}.json`),
+      `${JSON.stringify(page, null, 2)}\n`
+    );
   }
+  writeFileSync(join(outDir, "projects.json"), `${JSON.stringify(projects, null, 2)}\n`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const studies = await fetchCaseStudies();
-  writeCaseStudies(studies);
-  console.log(`[content] wrote ${studies.length} case studies to ${OUT_DIR}`);
+  const content = await fetchContent();
+  writeContent(content);
+  console.log(`[content] wrote ${content.pages.length} case studies to ${OUT_DIR}`);
 }

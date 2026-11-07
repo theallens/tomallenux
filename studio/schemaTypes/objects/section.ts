@@ -1,18 +1,11 @@
-import { defineArrayMember, defineField, defineType } from "sanity";
-import { textBlock } from "./rich-text";
+import { defineField, defineType } from "sanity";
+import { contentBlocks } from "../blocks/columns";
 
 export const sectionContent = defineType({
   name: "sectionContent",
   title: "Content",
   type: "array",
-  of: [
-    textBlock,
-    defineArrayMember({ type: "columns" }),
-    defineArrayMember({ type: "figure" }),
-    defineArrayMember({ type: "quote" }),
-    defineArrayMember({ type: "shareMeter" }),
-    defineArrayMember({ type: "cta" }),
-  ],
+  of: contentBlocks,
 });
 
 const TONES: Record<string, string> = {

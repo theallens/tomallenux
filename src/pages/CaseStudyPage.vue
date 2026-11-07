@@ -19,6 +19,7 @@ usePageMeta({
     :image="study.heroImage?.url ?? ''"
     :image-alt="study.heroImageAlt"
     :image-square="study.heroImageSquare"
+    :tone="study.heroTone"
   >
     <RichText v-if="study.heroIntro?.length" :value="study.heroIntro" />
   </CaseHero>

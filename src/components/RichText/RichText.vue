@@ -14,10 +14,19 @@ const components: PortableTextComponents = {
     normal: (_, { slots }) => h("p", { class: "text-large" }, slots.default?.()),
     plain: (_, { slots }) => h("p", slots.default?.()),
     small: (_, { slots }) => h("p", { class: "text-small" }, slots.default?.()),
+    h3center: (_, { slots }) => h("h3", { style: "text-align: center" }, slots.default?.()),
   },
-  listItem: (_, { slots }) => h("li", h("p", { class: "text-large" }, slots.default?.())),
+  // Other styles arrive already wrapped in their own <p> by the block renderers above
+  listItem: ({ value }, { slots }) =>
+    h(
+      "li",
+      value.style === "normal"
+        ? h("p", { class: "text-large" }, slots.default?.())
+        : slots.default?.()
+    ),
   marks: {
     highlight: (_, { slots }) => h("span", { class: "highlight" }, slots.default?.()),
+    textWhite: (_, { slots }) => h("span", { class: "text-white" }, slots.default?.()),
     link: ({ value }, { slots }) =>
       h(
         "a",

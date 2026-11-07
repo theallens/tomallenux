@@ -17,6 +17,7 @@ export interface FigureBlock {
   square?: boolean;
   shadow?: boolean;
   maxWidth?: number;
+  spaceAbove?: number;
 }
 
 export interface QuoteBlock {
@@ -42,15 +43,48 @@ export interface ShareMeterBlock {
   caption?: string;
 }
 
-export type ColumnItem = PortableTextBlock | FigureBlock | QuoteBlock | CtaBlock | ShareMeterBlock;
+export interface PanelBlock {
+  _type: "panel";
+  _key: string;
+  tone?: "auto" | "dark";
+  content?: SectionItem[];
+}
+
+export interface DividerBlock {
+  _type: "divider";
+  _key: string;
+  spaceAbove?: number;
+}
+
+export interface EmbedBlock {
+  _type: "embed";
+  _key: string;
+  url: string;
+  title: string;
+  aspect?: string;
+}
+
+export interface GalleryBlock {
+  _type: "gallery";
+  _key: string;
+  items: { _key: string; image?: CmsImage; alt?: string; caption?: string }[];
+}
+
+export interface AccordionBlock {
+  _type: "accordion";
+  _key: string;
+  items: { _key: string; title: string; content?: PortableTextBlock[] }[];
+}
 
 export interface Column {
   _key: string;
   width: number;
   mobileWidth?: number;
+  tabletWidth?: number;
+  gap?: number;
   center?: boolean;
   sticky?: boolean;
-  content?: ColumnItem[];
+  content?: SectionItem[];
 }
 
 export interface ColumnsBlock {
@@ -59,9 +93,21 @@ export interface ColumnsBlock {
   columns: Column[];
   align?: "start" | "center" | "end";
   flip?: boolean;
+  spaceAbove?: number;
 }
 
-export type SectionItem = ColumnItem | ColumnsBlock;
+export type SectionItem =
+  | PortableTextBlock
+  | FigureBlock
+  | QuoteBlock
+  | CtaBlock
+  | ShareMeterBlock
+  | PanelBlock
+  | DividerBlock
+  | EmbedBlock
+  | GalleryBlock
+  | AccordionBlock
+  | ColumnsBlock;
 
 export interface CaseStudySection {
   _key: string;
@@ -77,6 +123,7 @@ export interface CaseStudy {
   heroImage?: CmsImage;
   heroImageAlt?: string;
   heroImageSquare?: boolean;
+  heroTone?: SectionTone;
   heroIntro?: PortableTextBlock[];
   facts?: { _key: string; label: string; value: string }[];
   sections?: CaseStudySection[];

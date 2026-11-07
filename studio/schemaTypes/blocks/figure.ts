@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import { spaceAbove } from "./columns";
 
 export const figure = defineType({
   name: "figure",
@@ -39,6 +40,7 @@ export const figure = defineType({
       type: "number",
       validation: (rule) => rule.positive(),
     }),
+    spaceAbove,
   ],
   preview: {
     select: { title: "alt", media: "image" },
