@@ -6,7 +6,7 @@ export default mergeConfig(
   defineConfig({
     test: {
       environment: "happy-dom",
-      include: ["src/**/*.test.ts"],
+      include: ["src/**/*.test.ts", "scripts/**/*.test.mjs"],
       setupFiles: ["src/test/setup.ts"],
       server: { deps: { inline: ["vuetify"] } },
     },

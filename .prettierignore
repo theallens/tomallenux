@@ -12,3 +12,5 @@ src/pages/**/*.vue
 # Generated (npm run images) and vendored (eslint/airbnb-rules.js, regenerate instead of editing).
 src/data/images.json
 eslint/airbnb-rules.js
+# Written by npm run content
+src/content

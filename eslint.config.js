@@ -58,7 +58,7 @@ const warnOnly = (value) => (Array.isArray(value) ? ["warn", ...value.slice(1)] 
 
 export default [
   {
-    ignores: ["node_modules", "dist", ".nuxt", "coverage"],
+    ignores: ["node_modules", "dist", ".nuxt", "coverage", "studio", "src/content"],
   },
   {
     files: ["**/*.{js,mjs,cjs,ts,tsx,vue}"],
@@ -133,6 +133,13 @@ export default [
       indent: "off",
       "vue/html-indent": ["error", 2],
       "vue/script-indent": ["error", 2],
+    },
+  },
+  {
+    // Sanity's own field names
+    files: ["**/*.{js,mjs,cjs,ts,tsx,vue}"],
+    rules: {
+      "no-underscore-dangle": ["error", { allow: ["_type", "_key", "_ref", "_id"] }],
     },
   },
   {
