@@ -34,10 +34,10 @@ usePageMeta({
           <h2>Where did we start?</h2>
           <p class="text-large">When the project started, Confused.com Rewards was a simple
             offer:<br /><br /><strong><em>Choose a reward when you buy car, home or van insurance
-              with Confused.com.</em></strong><em><br /><br /></em>The user could return to
-                Confused.com after buying their insurance to select 1 of 4 rewards, worth £20. After
-                  completing a claim form they would be emailed a voucher, which could be redeemed
-                    with their chosen retailer.</p>
+            with Confused.com.</em></strong><em><br /><br /></em>The user could return to
+            Confused.com after buying their insurance to select 1 of 4 rewards, worth £20. After
+            completing a claim form they would be emailed a voucher, which could be redeemed with
+            their chosen retailer.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -131,7 +131,7 @@ usePageMeta({
       <h4>The solution</h4>
       <h3><span class="text-white">Introduce a new app-only monthly reward to keep users engaged for
         their entire insurance term.<br /><br />Overhaul the offer &amp; redemption process to
-          encourage more users to redeem a reward.</span></h3>
+        encourage more users to redeem a reward.</span></h3>
     </Prose>
   </Section>
 
@@ -146,7 +146,7 @@ usePageMeta({
             <li>
               <p class="text-large">Offering four rewards meant four different journeys. Some
                 rewards were more difficult to redeem than others. This caused a disproportionate
-                  amount of customer queries. </p>
+                amount of customer queries. </p>
             </li>
             <li>
               <p class="text-large">The rewards tracker, used to check the status of your rewards,
@@ -177,7 +177,7 @@ usePageMeta({
           <h2>Developing the claim journey</h2>
           <p class="text-large">Our development of the claim journey was key. We needed to introduce
             the new offer, explain how it worked and ensure all users knew how and when they could
-              claim both the main reward and the monthly reward. </p>
+            claim both the main reward and the monthly reward. </p>
           <p class="text-large">What we did to improve the claims process:</p>
           <ul>
             <li>
@@ -224,10 +224,10 @@ usePageMeta({
             they bought car, home or van insurance. </p>
           <p class="text-large">Allowing a user to track all of their rewards in one place was
             particularly important. So we focused on improving the tracker in the user’s web account
-              and within the app itself. </p>
+            and within the app itself. </p>
           <p class="text-large">We tested our mid-fidelity wireframes and found that we needed to
             differentiate the main reward from the regular reward. But would need to group both
-              rewards within each claim to make it clear they were linked. </p>
+            rewards within each claim to make it clear they were linked. </p>
           <p class="text-large">We introduced tracker states that were personalised to each
             individual reward, with over 80 states in total.</p>
         </Prose>
@@ -247,17 +247,17 @@ usePageMeta({
           <h2>Creating the app journey</h2>
           <p class="text-large">Working alongside our app designer, we planned the app flow. We kept
             the flow very simple, with just 3 steps from home screen to the QR code used to get the
-              monthly reward.</p>
+            monthly reward.</p>
           <p class="text-large">We wanted the app to showcase to our users a cumulative view of all
             of the rewards they’ve received from us throughout the year. We opted for a calendar
-              grid to show the redemption of each monthly reward.</p>
+            grid to show the redemption of each monthly reward.</p>
           <p class="text-large">During testing we discovered that the web tracker cards did not
             convert exactly into the app as the focus was to redeem the regular reward. Users also
-              found the app experience to be uninspiring, so we introduced imagery to enhance the
-                app screens.</p>
+            found the app experience to be uninspiring, so we introduced imagery to enhance the app
+            screens.</p>
           <p class="text-large">Through a combination of push notifications and emails, we also
             planned how and when reminders would be sent to the user to tell them their monthly
-              reward was ready to redeem.</p>
+            reward was ready to redeem.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6" order-md="1">

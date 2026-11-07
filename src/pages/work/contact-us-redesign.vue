@@ -57,7 +57,7 @@ usePageMeta({
       <h2>Research</h2>
       <p class="text-large">Research was comprised of 3 sections, <strong>user
         research</strong>, <strong>competitor research</strong> &amp; <strong>feedback from our
-          customer support team</strong>. The research led to some key findings:</p>
+        customer support team</strong>. The research led to some key findings:</p>
     </Prose>
     <v-row>
       <v-col cols="12" md="4">
@@ -111,7 +111,7 @@ usePageMeta({
           <h2>The current design: Usability issues</h2>
           <p class="text-large">I then analysed our current contact form &amp; FAQ pages,
             highlighting any usability issues that we would fix in our redesign: to each set of
-              FAQs.</p>
+            FAQs.</p>
           <ol>
             <li>
               <p class="text-large"><strong>The contact form was hidden</strong> at the bottom of a
@@ -120,7 +120,7 @@ usePageMeta({
             <li>
               <p class="text-large"><strong>The heading</strong> (‘What’s your query
                 about?’) <strong>was small</strong> and didn’t make it obvious that this was a
-                  contact form.</p>
+                contact form.</p>
             </li>
             <li>
               <p class="text-large"><strong>The FAQ accordions are open on load</strong>, making the
@@ -129,12 +129,12 @@ usePageMeta({
             <li>
               <p class="text-large"><strong>Users would see 2 email addresses before they get to the
                 form. </strong>Neither email address was used for customer questions and could cause
-                  the user to contact an incorrect email address.</p>
+                the user to contact an incorrect email address.</p>
             </li>
             <li>
               <p class="text-large"><strong>The FAQs featured are not particularly
                 helpful</strong> and didn’t line up with the most common questions our customer
-                  support team would answer. </p>
+                support team would answer. </p>
             </li>
             <li>
               <p class="text-large"><strong>Our FAQ groups, featured on a different page, were not
@@ -164,17 +164,17 @@ usePageMeta({
             came out of the research and usability assessment. </p>
           <p class="text-large"><strong>During this process we found that we could include helpful
             information within the contact form itself. </strong>This would help users get quick
-              answers to common questions while reducing the amount of questions coming through to
-                our customer support team. </p>
+            answers to common questions while reducing the amount of questions coming through to our
+            customer support team. </p>
           <p class="text-large">Users would select the subject of their query and what they were
             having a problem with and we would show some information to help them with that topic. I
-              used content design to improve hundreds of pieces of information, to make sure we’re
-                providing the information our users need in the right way. </p>
+            used content design to improve hundreds of pieces of information, to make sure we’re
+            providing the information our users need in the right way. </p>
           <p class="text-large">I then developed this idea into increasing levels of fidelity, while
             moving the design into our new design patterns. </p>
           <p class="text-large">It was important that we designed the contact form in such a way
             that the helpful information didn’t slow down users with complex queries. Users can
-              still get in touch if the information didn’t answer their question.</p>
+            still get in touch if the information didn’t answer their question.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="5" order-md="1">
@@ -192,7 +192,7 @@ usePageMeta({
             find FAQs, guides and helpful information. </p>
           <p class="text-large">Navigating between the groups of FAQs was a key issue, using a
             dropdown the choose the topic allowed us to display all of our FAQs on one page, rather
-              than 10 separate pages. </p>
+            than 10 separate pages. </p>
           <p class="text-large">I also rewrote all of our site FAQs and used content design to
             ensure there’s a consistent language throughout each piece of information.</p>
         </Prose>

@@ -16,12 +16,12 @@ usePageMeta({
   >
     <p class="text-large">As a product designer, few things are as rewarding as seeing a project
       you've poured your heart into make a real impact. I recently had the incredible opportunity to
-        lead the design of <strong>Rewards+</strong>, Confused.com's brand-new flagship marketing
-          scheme. </p>
+      lead the design of <strong>Rewards+</strong>, Confused.com's brand-new flagship marketing
+      scheme. </p>
     <p class="text-large">This wasn't just about a fresh coat of paint; I stepped beyond my core
       responsibilities to help rethink how we can use a loyalty scheme to drive significant shifts
-        in <strong>acquisition</strong>, <strong>retention</strong>, and <strong>product
-          density</strong>.</p>
+      in <strong>acquisition</strong>, <strong>retention</strong>, and <strong>product
+      density</strong>.</p>
   </CaseHero>
 
   <ProjectFacts
@@ -43,11 +43,11 @@ usePageMeta({
           <h4>The challenge:</h4>
           <p class="text-large">For the past 5 years, Confused.com has offered incentives to
             customers who purchase car, home, or van insurance. Our previous scheme gave users a
-              choice of one of four rewards. We even introduced a monthly treat – a hot drink from
-                Greggs – which was a hit, significantly boosting retention.</p>
+            choice of one of four rewards. We even introduced a monthly treat – a hot drink from
+            Greggs – which was a hit, significantly boosting retention.</p>
           <p class="text-large">However, there was a catch… only 15% of our customers actually
             redeemed a reward. This meant we weren't fully leveraging the retention power of our
-              monthly treat. We knew we could do better.</p>
+            monthly treat. We knew we could do better.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="5">
@@ -55,8 +55,8 @@ usePageMeta({
           <h4>My mission:</h4>
           <p class="text-large">Within 18 months, create a new marketing proposition that would make
             Confused.com the go-to platform for insurance, driving a meaningful shift
-              in <strong>acquisition</strong>, <strong>retention</strong>, and <strong>product
-                density</strong> (customers buying more products from us).</p>
+            in <strong>acquisition</strong>, <strong>retention</strong>, and <strong>product
+            density</strong> (customers buying more products from us).</p>
         </Panel>
       </v-col>
     </v-row>
@@ -73,15 +73,15 @@ usePageMeta({
             stakeholders and creating a shared understanding of where we stood.</p>
           <p class="text-large">We brought together three cross-functional squads, including
             marketing, product, support, developers and senior leadership. We ran a series of
-              collaborative workshops. Each session started by grounding the group in our current
-                state before opening up discussion around future opportunities.</p>
+            collaborative workshops. Each session started by grounding the group in our current
+            state before opening up discussion around future opportunities.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
         <Prose>
           <p class="text-large">To support this, we consolidated everything we knew. Including
             analysis of our current offer, past user research, customer support feedback, and a
-              large-scale competitor review. This surfaced a few key insights:</p>
+            large-scale competitor review. This surfaced a few key insights:</p>
           <ul>
             <li>
               <p class="text-large">Online redemption was frustrating, leading to user drop-offs</p>
@@ -100,7 +100,7 @@ usePageMeta({
             <li>
               <p class="text-large">Competitor analysis (34 schemes) showed that successful
                 programmes balanced short- and long-term value, often with a sense of
-                  progression</p>
+                progression</p>
             </li>
           </ul>
         </Prose>
@@ -117,7 +117,7 @@ usePageMeta({
             taking what we knew and asking, “what could we do with this?”</p>
           <p class="text-large">We opened it up to the whole group so everyone could contribute
             ideas. It was important that the problem felt clear to everyone, and that different
-              perspectives across the business had a voice in shaping potential solutions.</p>
+            perspectives across the business had a voice in shaping potential solutions.</p>
           <p class="text-large">No idea was off limits. By the end, we’d generated over 50 unique
             ideas.</p>
         </Prose>
@@ -171,7 +171,7 @@ usePageMeta({
             focused discovery aimed at filling the gaps in what we didn’t know.</p>
           <p class="text-large">We were intentional about what we needed to learn, which made sure
             the research was directly feeding into how we’d design both the offer and the
-              journey.</p>
+            journey.</p>
           <p class="text-large">For the concept we progressed with, we focused on four areas:</p>
           <ul>
             <li>
@@ -193,7 +193,7 @@ usePageMeta({
           </ul>
           <p class="text-large">This approach helped us quickly understand what was realistic, what
             resonated, and where to focus. It meant that when we moved into design, we had a much
-              clearer direction.</p>
+            clearer direction.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -209,10 +209,10 @@ usePageMeta({
           <h2>Testing &amp; shaping the offer</h2>
           <p class="text-large">To put our ideas in front of users, we ran three focus groups across
             the four shortlisted concepts. I created two branded mock-ups for each, making them feel
-              like real offers rather than abstract ideas.</p>
+            like real offers rather than abstract ideas.</p>
           <p class="text-large">This was not just about testing appeal. It helped us understand how
             the offer should be presented, what resonated, and how people expected the experience to
-              work.</p>
+            work.</p>
           <p class="text-large">One idea clearly stood out. A tiered, multi-product reward system
             with increasing value for repeat purchases and access to a wide range of brands.</p>
           <p class="text-large">Here’s what users responded to:</p>
@@ -273,7 +273,7 @@ usePageMeta({
       </ul>
       <p class="text-large">This stage also gave me a clearer picture before moving into
         wireframing. We learned how people preferred to redeem rewards, what they expected from the
-          process, and how quick and simple it needed to feel.</p>
+        process, and how quick and simple it needed to feel.</p>
       <p class="text-large">All of this fed directly into the initial wireframes, helping ensure the
         experience was grounded in real user expectations.</p>
     </Prose>
@@ -288,8 +288,8 @@ usePageMeta({
             end-to-end journey and creating wireframes.</p>
           <p class="text-large">As we were working with a new reward provider, it was important to
             align our experience with their technical setup from the start. I worked closely with
-              engineering, our app team, and the rewards team to sense-check flows early and surface
-                any constraints or gaps.</p>
+            engineering, our app team, and the rewards team to sense-check flows early and surface
+            any constraints or gaps.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -305,24 +305,24 @@ usePageMeta({
           <h2>Usability testing &amp; refinement</h2>
           <p class="text-large">Once we had a working prototype, I tested it with 10 users through
             Usertesting.com, focusing specifically on the redemption journey and overall usability.
-              Branding and marketing were intentionally deprioritised at this stage so we could
-                focus on how the experience worked.</p>
+            Branding and marketing were intentionally deprioritised at this stage so we could focus
+            on how the experience worked.</p>
           <p class="text-large">The sessions revealed a few key areas to improve:</p>
           <ul>
             <li>
               <p class="text-large"><strong>Expectation of automation:</strong> Users expected
                 rewards to be automatically applied. This led us to rethink how data was shared,
-                  removing the need for users to manually add rewards</p>
+                removing the need for users to manually add rewards</p>
             </li>
             <li>
               <p class="text-large"><strong>Unclear progression:</strong> Users often missed that
                 their next purchase would unlock a higher reward, prompting changes to better
-                  highlight progression</p>
+                highlight progression</p>
             </li>
           </ul>
           <p class="text-large">After testing, I refined both the designs and the user flow,
             smoothing out friction points and making the journey as intuitive as possible. With the
-              structure in place, I then moved on to defining the brand and messaging.</p>
+            structure in place, I then moved on to defining the brand and messaging.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="5" order-md="1">
@@ -340,16 +340,15 @@ usePageMeta({
           <h2>Branding the offer</h2>
           <p class="text-large">Next, I defined the visual style of the offer. We ran multiple
             UserTesting.com sessions, including five-second tests, to see what was memorable across
-              our core marketing channels. This ensured the design worked in-app and in
-                marketing.</p>
+            our core marketing channels. This ensured the design worked in-app and in marketing.</p>
           <p class="text-large">Research showed “tiered” had negative connotations. Users wanted
             simplicity and immediate value, so we focused on clarity while building
-              on <strong>Confused.com Rewards</strong>’ existing brand. Highlighting the wide range
-                of redemption brands was also key.</p>
+            on <strong>Confused.com Rewards</strong>’ existing brand. Highlighting the wide range of
+            redemption brands was also key.</p>
           <p class="text-large">This led to <strong>Rewards+</strong>, a visual style emphasising
             choice, with the tagline: <em>“Get rewards you’ll actually use, every
-              time.”</em> Working closely with the brand team was critical, as pitching new ideas
-                while staying on-brand required careful collaboration.</p>
+            time.”</em> Working closely with the brand team was critical, as pitching new ideas
+            while staying on-brand required careful collaboration.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -371,7 +370,7 @@ usePageMeta({
             lifting feeling that comes with ticking insurance off your to-do list.</p>
           <p class="text-large">However, our research revealed that these ideas focused too much on
             future progression and not enough on the here and now. Users cared more about the reward
-              they’ll get now, not what they’ll get next year. </p>
+            they’ll get now, not what they’ll get next year. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7" class="d-flex flex-column ga-6">
@@ -432,11 +431,11 @@ usePageMeta({
             from launch. </span></p>
           <p class="text-large"><span class="text-white">Rewards+ customers' retention rate is 28%
             higher than our existing Reward customers, and 42% higher than users who didn't claim
-              any reward.</span></p>
+            any reward.</span></p>
           <p class="text-large"><span class="text-white">Rewards+ led to a <strong>5% increase in
             customers returning from non-paid channels</strong>. Many users are now redeeming
-              rewards in our app and choosing to return to buy other products via this channel,
-                rather than through paid search.</span></p>
+            rewards in our app and choosing to return to buy other products via this channel, rather
+            than through paid search.</span></p>
         </Panel>
       </v-col>
       <v-col cols="12" md="4">
@@ -456,10 +455,10 @@ usePageMeta({
           <h4><span class="text-white">Product Density and Sales Frequency:</span></h4>
           <p class="text-large"><span class="text-white">Rewards+ customers are buying more
             products, more frequently, with a +1.5% increase across both metrics during the test
-              period.</span></p>
+            period.</span></p>
           <p class="text-large"><span class="text-white">The retention trend suggests that the "more
             you buy, more you get" element of Rewards+ is actively encouraging subsequent purchases
-              sooner.<br /></span></p>
+            sooner.<br /></span></p>
           <p />
         </Panel>
       </v-col>

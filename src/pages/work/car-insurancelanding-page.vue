@@ -23,7 +23,7 @@ usePageMeta({
       <h2>My role</h2>
       <p class="text-large">I worked as the sole content designer on the project. Collaborating
         closely with the SEO team and front-end developers to ensure the page hit our conversion
-          goals and accessibility guidelines.</p>
+        goals and accessibility guidelines.</p>
     </Prose>
   </Section>
 

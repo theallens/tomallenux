@@ -18,8 +18,8 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
   >
     <p class="text-large">Pet insurance is needlessly complex. With four cover types, each featuring
       unique rules, limits, and exclusions; it's difficult to know what your pets are truly covered
-        for. This project sought to revamp our comparison journey, simplifying these intricacies and
-          providing the information needed to for anyone to make a confident buying decision.</p>
+      for. This project sought to revamp our comparison journey, simplifying these intricacies and
+      providing the information needed to for anyone to make a confident buying decision.</p>
   </CaseHero>
 
   <ProjectFacts
@@ -42,7 +42,7 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
             <li>
               <p class="text-large"><strong>Lack of clarity between different types of
                 cover</strong>. Users struggled to comprehend distinctions between the three types
-                  of pet insurance cover.</p>
+                of pet insurance cover.</p>
             </li>
             <li>
               <p class="text-large"><strong>Overuse of insurance jargon</strong>. Frequent use of
@@ -51,8 +51,8 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
             <li>
               <p class="text-large"><strong>Limited flexibility.</strong> The platform was designed
                 to accommodate insuring one pet at a time, which contrasted with competitors'
-                  offerings. The list of dog/cat breeds was limited, leading to many users feeling
-                    like they were unable to get accurate cover.</p>
+                offerings. The list of dog/cat breeds was limited, leading to many users feeling
+                like they were unable to get accurate cover.</p>
             </li>
             <li>
               <p class="text-large"><strong>Impersonal process</strong>. The pet insurance journey
@@ -87,28 +87,28 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
             <li>
               <p class="text-large"><strong>Streamlined user flow</strong>: We restructured the
                 question set to prioritise the most-selected option (Lifetime cover was selected by
-                  over 90% of users).</p>
+                over 90% of users).</p>
             </li>
             <li>
               <p class="text-large"><strong>Segmented question set</strong>: We divided the
                 questions into three sections, rather than one long page, to prevent information
-                  overload.</p>
+                overload.</p>
             </li>
             <li>
               <p class="text-large"><strong>Clarity on multi-pet policies</strong>: We created
                 wireframes that communicated the ability to add multiple pets to a single policy,
-                  aligning with user expectations – the number of pets was moved to be the opening
-                    question. </p>
+                aligning with user expectations – the number of pets was moved to be the opening
+                question. </p>
             </li>
             <li>
               <p class="text-large"><strong>Enhanced content</strong>: We overhauled the content to
                 offer clear definitions and user-friendly breakdowns of cover types and other
-                  questions.</p>
+                questions.</p>
             </li>
             <li>
               <p class="text-large"><strong>Design system integration</strong>: The journey was
                 updated into our new design system, enhancing usability and consistency in form
-                  components.</p>
+                components.</p>
             </li>
           </ul>
         </Prose>
@@ -126,14 +126,14 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
           <h2>Testing the design: Survey plan &amp; results</h2>
           <p class="text-large">Following the ideation phase, we proceeded to the testing stage,
             which was centered around refining the user experience in the section of the journey
-              that posed the most challenges—understanding the nuances of three cover types:
-                Lifetime cover, Maximum Benefit &amp; Time Limited. </p>
+            that posed the most challenges—understanding the nuances of three cover types: Lifetime
+            cover, Maximum Benefit &amp; Time Limited. </p>
           <p class="text-large">Our primary goal was to gather quantitative data to test our
             solutions and new content.</p>
           <p class="text-large">To achieve this, we created a comprehensive survey that reached 250
             participants. The survey was designed to gauge user confidence in understanding the
-              questions, statements, and information within the question
-                set. <br /><br /><strong>Survey Highlights</strong>: </p>
+            questions, statements, and information within the question
+            set. <br /><br /><strong>Survey Highlights</strong>: </p>
           <ul>
             <li>
               <p class="text-large">88% of participants said they were confident they understood the
@@ -175,8 +175,8 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
           <h2>Testing the design: Usability testing results</h2>
           <p class="text-large">Following the survey, we ran usability testing sessions with 15
             participants using a prototype of the redesigned flow. This phase aimed to gather
-              qualitative data, assess design usability, and understand user interactions,
-                especially with help text and new content.</p>
+            qualitative data, assess design usability, and understand user interactions, especially
+            with help text and new content.</p>
           <p class="text-large"><strong>Highlights:</strong></p>
           <ul>
             <li>
@@ -238,8 +238,8 @@ const prototype = "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insura
             <li>
               <p class="text-large"> We introduced a comprehensive slide-out panel. This feature
                 presents the advantages and disadvantages of each cover type upfront, offering users
-                  complete clarity before they begin answering questions. This section allowed users
-                    to compare all cover types in one place.</p>
+                complete clarity before they begin answering questions. This section allowed users
+                to compare all cover types in one place.</p>
             </li>
             <li>
               <p class="text-large">We also refined visual aspects of the journey. These changes

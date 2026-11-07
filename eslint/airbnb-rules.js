@@ -1776,11 +1776,11 @@ export default {
       "vuejs-accessibility/alt-text": [
         "error",
         {
-          elements: ["img", "object", "area", 'input[type="image"]'],
+          elements: ["img", "object", "area", "input[type=\"image\"]"],
           img: [],
           object: [],
           area: [],
-          'input[type="image"]': [],
+          "input[type=\"image\"]": [],
         },
       ],
       "vuejs-accessibility/anchor-has-content": [
