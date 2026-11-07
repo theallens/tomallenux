@@ -16,10 +16,10 @@ usePageMeta({
   >
     <p class="text-large">To dissect how I approach content design, I’ve broken down a page I
       rewrote and redesigned in 2022. I’ll outline my process, review the impact content can have on
-        users and summarise the design decisions I made along the way. </p>
+      users and summarise the design decisions I made along the way. </p>
     <p class="text-large">The page I’m reviewing is the Confused.com car insurance landing page, the
       most visited page on the site. As it’s an SEO page, it’s content-heavy and the primary goal is
-        to convince users to compare car insurance quotes.</p>
+      to convince users to compare car insurance quotes.</p>
   </CaseHero>
 
   <Section tone="muted" narrow>
@@ -59,7 +59,7 @@ usePageMeta({
           <h2>Tackling hero sections</h2>
           <p class="text-large">As it has the largest impact, I’ll almost always spend the most time
             crafting the content in the hero section. In this example, 60% of users scrolled less
-              than 10% of the page. 70% of active clicks used the main CTA in the hero. </p>
+            than 10% of the page. 70% of active clicks used the main CTA in the hero. </p>
           <p class="text-large">What I did to improve the content:</p>
           <ul>
             <li>
@@ -73,8 +73,8 @@ usePageMeta({
             <li>
               <p class="text-large"><strong>Made sure there’s additional reasons to
                 buy</strong> with, including social proof, stats to back up our legitimacy,
-                  guarantee of a reward and line outlining the time it will take to reassure the
-                    user.</p>
+                guarantee of a reward and line outlining the time it will take to reassure the
+                user.</p>
             </li>
             <li>
               <p class="text-large"><strong>Descriptive labelling in the primary CTA</strong></p>
@@ -102,7 +102,7 @@ usePageMeta({
           <p class="text-large"><strong>Users don’t read, they scan</strong>. </p>
           <p class="text-large">Headings, links and buttons are particularly noticeable in content
             so it’s important to use this content wisely. We need to make sure there’s a consistent
-              tone running throughout the page, as if we’re having a conversation with the user.</p>
+            tone running throughout the page, as if we’re having a conversation with the user.</p>
           <p class="text-large">What I did to improve the content:</p>
           <ul>
             <li>
@@ -112,13 +112,13 @@ usePageMeta({
             <li>
               <p class="text-large"><strong>Paid attention to reading patterns</strong>, usually
                 following an F-pattern – which focusses on the start of lines toward the top of the
-                  page (left-right languages).</p>
+                page (left-right languages).</p>
             </li>
             <li>
               <p class="text-large"><strong>Used descriptive labels for all button and
                 links.</strong> I avoided content like ‘read more’ ‘click here’ ‘find out more’ as
-                  these are not accessible. Screen readers pick-up links so the link should make
-                    sense if you take everything else away.</p>
+                these are not accessible. Screen readers pick-up links so the link should make sense
+                if you take everything else away.</p>
             </li>
           </ul>
         </Prose>
@@ -143,21 +143,21 @@ usePageMeta({
           <h2>Developing the flow of the page</h2>
           <p class="text-large">Naturally, SEO pages use a lot of content so we need to look at the
             order we display each module. It’s essential we look at the overall context of the page
-              and our users and ask, what information is essential for the user to complete their
-                task? And what’s the business goal?</p>
+            and our users and ask, what information is essential for the user to complete their
+            task? And what’s the business goal?</p>
           <p class="text-large">What I did to improve the content:</p>
           <ul>
             <li>
               <p class="text-large"><strong>Prioritised the most important sections</strong> for a
                 user. In this case, user’s that scroll past the main CTA may need more information
-                  about ‘How to compare insurance’ so this information is available directly after
-                    the hero section.</p>
+                about ‘How to compare insurance’ so this information is available directly after the
+                hero section.</p>
             </li>
             <li>
               <p class="text-large"><strong>Positioned content around key actions</strong> to
                 improve the flow. ‘How to compare’ for example, leads nicely into a CTA as the user
-                  has now got the information they need. I also grouped certain sections as they’re
-                    directly related.</p>
+                has now got the information they need. I also grouped certain sections as they’re
+                directly related.</p>
             </li>
           </ul>
         </Prose>

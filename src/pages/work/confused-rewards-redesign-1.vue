@@ -15,8 +15,8 @@ usePageMeta({
   >
     <p class="text-large">Forget calendar reminders and sticky notes! Reminders are the automated
       way to know when your insurance is coming up for renewal—and statistically, when you'll find
-        the cheapest prices. <br /><br />This 6-month project explores how solving user-needs lead
-          to an increase in retention by capturing key data points.</p>
+      the cheapest prices. <br /><br />This 6-month project explores how solving user-needs lead to
+      an increase in retention by capturing key data points.</p>
   </CaseHero>
 
   <ProjectFacts
@@ -38,11 +38,11 @@ usePageMeta({
           <h4>The challenge:</h4>
           <p class="text-large">At Confused.com, we knew our existing reminder system had a problem.
             We would use a user’s renewal date to send them email reminders before their insurance
-              was due, but it operated behind the scenes, leaving users powerless. Users couldn't
-                edit incorrect dates, stop unwanted reminders, or knowingly create reminders for
-                  other products.<br /><br />But this wasn't just a user frustration; it was a
-                    missed opportunity. Renewal dates are gold for increasing retention &amp;
-                      product density, and we were leaving valuable data on the table.</p>
+            was due, but it operated behind the scenes, leaving users powerless. Users couldn't edit
+            incorrect dates, stop unwanted reminders, or knowingly create reminders for other
+            products.<br /><br />But this wasn't just a user frustration; it was a missed
+            opportunity. Renewal dates are gold for increasing retention &amp; product density, and
+            we were leaving valuable data on the table.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -50,10 +50,9 @@ usePageMeta({
           <h4>My mission:</h4>
           <p class="text-large">Transform this passive system into an empowering tool. Design a new
             feature that would allow users to view, edit, and create reminders effortlessly, while
-              also encouraging them to share more renewal dates for other household
-                products. <br /><br />This meant aligning key channels (eCRM, app, portal),
-                  exploring new reminder methods, boosting retention, and driving product
-                    density.</p>
+            also encouraging them to share more renewal dates for other household
+            products. <br /><br />This meant aligning key channels (eCRM, app, portal), exploring
+            new reminder methods, boosting retention, and driving product density.</p>
         </Prose>
       </v-col>
     </v-row>
@@ -71,18 +70,18 @@ usePageMeta({
           <h4><strong>1. Technical discovery</strong></h4>
           <p class="text-large">The Product Owner and I led several technical discovery sessions.
             Bringing together technical leads from different teams to highlight any potential
-              hurdles. This involved:</p>
+            hurdles. This involved:</p>
           <ul>
             <li>
               <p class="text-large"><strong>Scoping and integration</strong>: We mapped the
                 integration points between our eCRM platform (Braze), customer app, and customer
-                  account. This ensured we could start work to design a solution with key user-touch
-                    points sharing data.</p>
+                account. This ensured we could start work to design a solution with key user-touch
+                points sharing data.</p>
             </li>
             <li>
               <p class="text-large"><strong>Data analysis</strong>: We uncovered inconsistencies in
                 our existing data, particularly with renewal dates captured through marketing
-                  campaigns.</p>
+                campaigns.</p>
             </li>
           </ul>
         </Panel>
@@ -96,14 +95,14 @@ usePageMeta({
             <li>
               <p class="text-large"><strong>Frustration with unstoppable reminders</strong>: Users
                 were deeply frustrated by their inability to stop reminders, particularly when their
-                  circumstances
-                    changed. <span class="highlight"><span class="sqsrte-text-color--darkAccent"><strong>"We have not owned this car for nearly 3 years!!" </strong></span></span></p>
+                circumstances
+                changed. <span class="highlight"><span class="sqsrte-text-color--darkAccent"><strong>"We have not owned this car for nearly 3 years!!" </strong></span></span></p>
             </li>
             <li>
               <p class="text-large"><strong>Confusion with uneditable dates</strong>: Users were
                 confused and frustrated when they couldn't correct inaccurate renewal
-                  dates.<br /><span class="highlight"><strong>"My house insurance is in March,
-                    kindly unsubscribe me from your list." </strong></span></p>
+                dates.<br /><span class="highlight"><strong>"My house insurance is in March, kindly
+                unsubscribe me from your list." </strong></span></p>
             </li>
           </ul>
         </Panel>
@@ -120,14 +119,13 @@ usePageMeta({
                 <li>
                   <p class="text-large"><strong>Current experiences</strong>: I explored users'
                     existing processes for managing insurance renewals to highlight any point of
-                      frustration. This revealed a reliance on reminders as a trigger for
-                        action: <em>"I don’t really remember until the email comes
-                          through".</em></p>
+                    frustration. This revealed a reliance on reminders as a trigger for
+                    action: <em>"I don’t really remember until the email comes through".</em></p>
                 </li>
                 <li>
                   <p class="text-large"><strong>Feature opportunity</strong>: I asked users what
                     features would make a reminder system most valuable, revealing their desire for
-                      control &amp; personalisation.</p>
+                    control &amp; personalisation.</p>
                 </li>
               </ul>
             </v-col>
@@ -137,8 +135,8 @@ usePageMeta({
                 <li>
                   <p class="text-large"><strong>Lack of trust in insurer prices</strong>:
                     Participants did not trust in the renewal prices offered by their existing
-                      insurers, presenting an opportunity for Confused.com to position itself as a
-                        trusted, independent platform.</p>
+                    insurers, presenting an opportunity for Confused.com to position itself as a
+                    trusted, independent platform.</p>
                 </li>
                 <li>
                   <p class="text-large"><strong>Desire to speed up comparison</strong>: Users wanted
@@ -147,14 +145,14 @@ usePageMeta({
                 <li>
                   <p class="text-large"><strong>Misconceptions about insurance prices</strong>:
                     Participants were generally unaware of the statistically cheapest time to shop
-                      for insurance, often guessing it was around 30 days before renewal. This
-                        insight presented a key selling point for our feature as we could notify
-                          them at the ‘cheapest’ time to find insurance.</p>
+                    for insurance, often guessing it was around 30 days before renewal. This insight
+                    presented a key selling point for our feature as we could notify them at the
+                    ‘cheapest’ time to find insurance.</p>
                 </li>
                 <li>
                   <p class="text-large"><strong>Everything in one place</strong>: Users had a desire
                     to manage everything in one place, with a clear view of what tasks they have
-                      coming up. </p>
+                    coming up. </p>
                 </li>
               </ul>
             </v-col>
@@ -172,7 +170,7 @@ usePageMeta({
           <p class="text-large">Armed with these insights, I moved onto design. </p>
           <p class="text-large">I started by transforming key problems into "How Might We..."
             questions, this meant I could focus on the problems rather than jumping to solutions.
-              This highlighted the key area to start designing, the customer account dashboard.</p>
+            This highlighted the key area to start designing, the customer account dashboard.</p>
           <p class="text-large">Then, I explored four initial UI concepts through pencil sketches,
             refining two ideas into mid-fidelity designs.</p>
           <p class="text-large">From here I could flesh out more detailed user flows, focusing on
@@ -195,10 +193,10 @@ usePageMeta({
         <Prose>
           <p class="text-large">Once we had a clearer understanding of the user flow, we aligned
             with product teams to define a robust approach for managing renewal dates in the
-              backend. </p>
+            backend. </p>
           <p class="text-large">This included discussions around how potential design changes
             affected key touchpoints (emails, app, and customer portal) and allowed us to highlight
-              technical constraints.</p>
+            technical constraints.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -237,25 +235,25 @@ usePageMeta({
           <h2>Validation: Putting the design to the test</h2>
           <p class="text-large">I then led ten remote usability tests using UserTesting.com. I set
             four tasks for participants to complete as they navigated through the prototype I’d
-              created. This identified areas for improvement:</p>
+            created. This identified areas for improvement:</p>
           <ul>
             <li>
               <p class="text-large"><strong>Communicating benefits</strong>: Users needed clearer
                 messaging about the feature's value upfront. Participants would only see the value
-                  in creating a reminders after they’d set one up. "The thought of having all of my
-                    insurance quotes, reminders, dates, information in one place is actually quite
-                      appealing," one participant noted, highlighting the need for stronger upfront
-                        communication.</p>
+                in creating a reminders after they’d set one up. "The thought of having all of my
+                insurance quotes, reminders, dates, information in one place is actually quite
+                appealing," one participant noted, highlighting the need for stronger upfront
+                communication.</p>
             </li>
             <li>
               <p class="text-large"><strong>Providing context</strong>: During reminder creation,
                 users wanted more information about why they needed to enter certain pieces of
-                  information – revealing the need to communicate why this benefits them.</p>
+                information – revealing the need to communicate why this benefits them.</p>
             </li>
             <li>
               <p class="text-large"><strong>Expanding reminder channels</strong>: Participants
                 wanted multiple reminders, across different channels. Emails weren’t enough. This
-                  led us to integrate insurance reminders into SMS and push notifications.</p>
+                led us to integrate insurance reminders into SMS and push notifications.</p>
             </li>
           </ul>
           <p class="text-large">These insights allowed me to return to the designs and make a host
@@ -311,7 +309,7 @@ usePageMeta({
           <h4><span class="text-white">Retention: </span></h4>
           <h4><span class="text-white">The new feature now manages over 600,000 individual insurance
             renewal dates, allowing Confused.com to contact each customer during the buying
-              cycle.</span></h4>
+            cycle.</span></h4>
         </Panel>
       </v-col>
       <v-col cols="12" md="4">
@@ -319,7 +317,7 @@ usePageMeta({
           <h4><span class="text-white">Platform Consistency: </span></h4>
           <h4><span class="text-white">The feature was seamlessly integrated into the Confused.com
             app. With systems in place to align renewal dates as we received more accurate
-              data.</span></h4>
+            data.</span></h4>
         </Panel>
       </v-col>
     </v-row>

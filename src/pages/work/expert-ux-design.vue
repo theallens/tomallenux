@@ -86,11 +86,11 @@ usePageMeta({
           <h4>Competitor analysis</h4>
           <p>I completed a <strong>SWOT analysis</strong> of <em>Just
             Answer</em> and <em>Clarity</em>. In highlighting In the strengths, weaknesses,
-              opportunities and threats of competitors I could better understand how to approach the
-                problem. </p>
+            opportunities and threats of competitors I could better understand how to approach the
+            problem. </p>
           <p>Existing websites all hosted experts from a specialism, mostly business or medicine.
             There isn’t a site that specialises in creative or artistic advice. Where these sites
-              were particularly successful was in their <strong>speed of response</strong>.</p>
+            were particularly successful was in their <strong>speed of response</strong>.</p>
           <p>Competitive analysis provided inspiration for my own product but also highlighted
             elements I wanted to avoid and improve upon. </p>
         </Prose>
@@ -174,7 +174,7 @@ usePageMeta({
           <h4>User personas </h4>
           <p>With the data generated during the research phase, I created two user personas that
             encapsulated my target audience. I referred back to the two personas throughout the
-              project to ensure I was solving the right problems.</p>
+            project to ensure I was solving the right problems.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -299,7 +299,7 @@ usePageMeta({
           <h4>High fidelity wireframes</h4>
           <p>I then developed the design further with pixel perfect alignment, images (still in
             greyscale at this point) and copy. This fidelity was also developed into a
-              prototype. </p>
+            prototype. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -320,8 +320,8 @@ usePageMeta({
         multiple remote usability tests.</p>
       <p>I wanted to discover how easy it was for my participants to navigate the prototype and
         complete tasks. I observed 6 participants as they completed the tasks and took note of any
-          errors, points of friction, frustrations or confusion. I then rated the errors using Jacob
-            Nielsen’s error severity chart.</p>
+        errors, points of friction, frustrations or confusion. I then rated the errors using Jacob
+        Nielsen’s error severity chart.</p>
       <p>Here are some of the main errors and what I did to fix the problem.</p>
     </Prose>
     <v-row align="center" class="mt-10">
@@ -380,7 +380,7 @@ usePageMeta({
             <li>
               <p>Add detail into the how-it-works section on the homepage to explain users will book
                 a time with the expert. The usability tests showed that users spend some time
-                  reading the how-it-works section</p>
+                reading the how-it-works section</p>
             </li>
           </ul>
         </Prose>

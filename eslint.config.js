@@ -156,4 +156,11 @@ export default [
     // Airbnb style rules that conflict with it; everything else stays on.
     ...eslintConfigPrettier,
   },
+  {
+    // Prettier turns off the quote rule; keep it on, since Prettier now uses double quotes too.
+    rules: {
+      quotes: ["error", "double"],
+      "vue/html-quotes": ["error", "double"],
+    },
+  },
 ];

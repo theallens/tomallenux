@@ -4,7 +4,8 @@ import { projects } from "@/data/projects.ts";
 
 usePageMeta({
   title: "Product design",
-  description: "Product design case studies by Tom Allen, a Senior Product Designer from Bristol, UK.",
+  description:
+    "Product design case studies by Tom Allen, a Senior Product Designer from Bristol, UK.",
 });
 
 const [first, ...rest] = projects;

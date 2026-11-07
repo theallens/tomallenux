@@ -13,7 +13,7 @@ usePageMeta({
       workouts and take on daily challenges to stay motivated during the working week. </p>
     <p>Exercise is something anyone can pick up, find something they love, and fit it into their
       daily schedule. Our aim is to get
-        people <strong>healthy</strong> and <strong>happy</strong> at home.</p>
+      people <strong>healthy</strong> and <strong>happy</strong> at home.</p>
     <p>This project was completed as part of my UX and UI course study with CareerFoundry.</p>
   </CaseHero>
 
@@ -47,8 +47,8 @@ usePageMeta({
           <h3>The problem</h3>
           <p>People with busy work schedules struggle to find
             the <strong>time</strong> and <strong>motivation</strong> to workout regularly. Finding
-              exercise routines for the right level can be difficult, especially when wanting to try
-                something new.</p>
+            exercise routines for the right level can be difficult, especially when wanting to try
+            something new.</p>
         </Panel>
       </v-col>
       <v-col cols="12" md="6">
@@ -56,7 +56,7 @@ usePageMeta({
           <h3>The solution</h3>
           <p>Create a web-app that <strong>motivates</strong> people into an exercise routine that
             suits their level, schedule, and interests. Users want to <strong>learn</strong> how
-              exercises are done and <strong>track progress </strong>with achievable goals.</p>
+            exercises are done and <strong>track progress </strong>with achievable goals.</p>
         </Panel>
       </v-col>
     </v-row>
@@ -69,7 +69,7 @@ usePageMeta({
           <h3>Information architecture</h3>
           <p>I started by studying the brief along with the user stories and problems. I also mapped
             out a <strong>user flow </strong>for the project. I focused on the two key
-              functionalities, finding the simplest way a user can complete their task.</p>
+            functionalities, finding the simplest way a user can complete their task.</p>
           <p><strong>How do these features solve the users problems?</strong></p>
           <p>Core takeaways from the user stories:</p>
           <ol>
@@ -86,7 +86,7 @@ usePageMeta({
           </ol>
           <p>I decided <strong>gamification</strong> was a smart direction to take the project in.
             The core functionalities, therefore, allow users to discover workout videos, join
-              workout challenges and gain daily achievements for hitting their goals. </p>
+            workout challenges and gain daily achievements for hitting their goals. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -104,8 +104,8 @@ usePageMeta({
             explored <strong>colour</strong>, <strong>shape</strong>, <strong>images</strong> and <strong>typography</strong> in a mood board to establish the tone of the project.</p>
           <p>My aim was to show dynamic movement. It was important not to overwhelm users with busy
             or intimidating colours or imagery so I used negative space around each element to give
-              the design room to breathe. I then chose a vibrant pink to inject energy into the
-                design. </p>
+            the design room to breathe. I then chose a vibrant pink to inject energy into the
+            design. </p>
           <p>The reoccurring curved rectangle shape contributes to a feeling of movement as the
             sweeping angle moves round to the sharp corner. </p>
         </Prose>
@@ -123,10 +123,10 @@ usePageMeta({
           <h3>Development</h3>
           <p>Following a mobile-first approach, I mapped out my ideas in low-fidelity wireframes.
             This process allowed me to explore creative ideas quickly while making on-the-go
-              iterations. I created a low-fidelity prototype to test the basic layout and flow. </p>
+            iterations. I created a low-fidelity prototype to test the basic layout and flow. </p>
           <p>After mapping out the low-fidelity wireframes into the user flow I upgraded each screen
             to mid-fidelity. From here, I could build in typography, colour, images and
-              iconography. </p>
+            iconography. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7" class="d-flex flex-column ga-8">
@@ -150,7 +150,7 @@ usePageMeta({
           <p><strong>Achievement Badges:</strong></p>
           <p>The achievement badges were designed to develop the gamification of the project.
             They’re also effective in keeping the app fun and light-hearted as users take on
-              exercise challenges.</p>
+            exercise challenges.</p>
         </Prose>
         <Figure src="/images/umoov-ux-ui-design/all-badges.webp" square class="mt-6" />
       </v-col>
