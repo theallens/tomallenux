@@ -32,7 +32,19 @@ const projectStyle = {
       vue: "always",
     },
   ],
-  "import-x/no-extraneous-dependencies": ["error", { devDependencies: true }],
+  // devDependencies are allowed only where they are the tool itself: config, scripts and tests.
+  "import-x/no-extraneous-dependencies": [
+    "error",
+    {
+      devDependencies: [
+        "*.config.{js,mjs,ts}",
+        "eslint.config.js",
+        "scripts/**",
+        "**/*.test.ts",
+        "src/test/**",
+      ],
+    },
+  ],
   "@typescript-eslint/no-unused-vars": [
     "error",
     { argsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" },
