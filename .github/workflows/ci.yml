@@ -78,12 +78,20 @@ jobs:
           name: dist
           path: dist
 
-      - uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
+      - id: netlify
+        uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
         with:
           args: deploy --prod --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      # This action reports success even when Netlify refuses the deploy, so check it produced a URL
+      - name: Check Netlify accepted the deploy
+        if: steps.netlify.outputs.NETLIFY_URL == ''
+        run: |
+          echo "::error::Netlify did not deploy. The step above says why."
+          exit 1
 
   deploy-preview:
     name: Deploy drafts to the preview link
@@ -111,9 +119,17 @@ jobs:
           SANITY_PREVIEW: "true"
           SANITY_READ_TOKEN: ${{ secrets.SANITY_READ_TOKEN }}
 
-      - uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
+      - id: netlify
+        uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
         with:
           args: deploy --alias=preview --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      # This action reports success even when Netlify refuses the deploy, so check it produced a URL
+      - name: Check Netlify accepted the deploy
+        if: steps.netlify.outputs.NETLIFY_URL == ''
+        run: |
+          echo "::error::Netlify did not deploy. The step above says why."
+          exit 1
