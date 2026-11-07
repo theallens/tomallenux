@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "content": "node scripts/fetch-content.mjs",
-    "dev": "npm run content && vite",
+    "dev": "(npm run content || echo '[content] offline: using the last snapshot') && vite",
     "build": "npm run content && vite-ssg build",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",

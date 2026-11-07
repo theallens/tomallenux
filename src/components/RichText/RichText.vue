@@ -16,7 +16,7 @@ const components: PortableTextComponents = {
     small: (_, { slots }) => h("p", { class: "text-small" }, slots.default?.()),
     h3center: (_, { slots }) => h("h3", { style: "text-align: center" }, slots.default?.()),
   },
-  // Other styles arrive already wrapped in their own <p> by the block renderers above
+  // Other styles arrive already wrapped in their own element by the block renderers
   listItem: ({ value }, { slots }) =>
     h(
       "li",

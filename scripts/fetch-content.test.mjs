@@ -236,6 +236,12 @@ describe("writeContent", () => {
     expect(JSON.parse(readFileSync(join(dir, "projects.json"), "utf8"))).toEqual([{ title: "A" }]);
   });
 
+  it("refuses two case studies with the same address", () => {
+    const pages = [{ slug: { current: "a" } }, { slug: { current: "a" } }];
+
+    expect(() => writeContent({ pages, projects: [] }, tempDir())).toThrow(/address \/a/);
+  });
+
   it("refuses a slug that could write outside the content folder", () => {
     const pages = [{ slug: { current: "../../evil" } }];
 

@@ -2,12 +2,11 @@ import { describe, expect, it } from "vitest";
 import { linkedProjects, nextProject, projects } from "./projects.ts";
 
 describe("projects", () => {
-  it("links only to projects with a page", () => {
+  it("leaves coming soon projects out of the linked list", () => {
     const comingSoon = projects.filter((p) => p.comingSoon);
 
     expect(comingSoon.length).toBeGreaterThan(0);
-    expect(linkedProjects).toHaveLength(projects.length - comingSoon.length);
-    expect(linkedProjects.every((p) => p.slug)).toBe(true);
+    expect(linkedProjects).toEqual(projects.filter((p) => !p.comingSoon));
   });
 
   it("finds the next project, wrapping round at the end", () => {

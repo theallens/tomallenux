@@ -10,7 +10,15 @@ export const shareMeter = defineType({
       name: "data",
       title: "Results",
       type: "array",
-      validation: (rule) => rule.required().min(2),
+      validation: (rule) =>
+        rule
+          .required()
+          .min(2)
+          .custom((items) => {
+            const results = (items ?? []) as { value?: number }[];
+            const total = results.reduce((sum, item) => sum + (item.value ?? 0), 0);
+            return results.length && total <= 0 ? "At least one result needs a value." : true;
+          }),
       of: [
         defineArrayMember({
           type: "object",

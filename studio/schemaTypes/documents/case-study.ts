@@ -5,7 +5,7 @@ import {
   defineType,
 } from "sanity";
 
-/** Paths the site already uses, so a case study can't hide behind them. */
+/** Paths the site already uses (see src/routes.ts), so a case study can't hide behind them. */
 const RESERVED_SLUGS = ["about", "contact", "mywork", "pagecv", "home", "404"];
 
 const comingSoon: ConditionalPropertyCallback = ({ document }) => !!document?.comingSoon;

@@ -22,6 +22,9 @@ describe("MyWorkPage", () => {
     const card = wrapper.findAll(".project-card")[index];
     expect(card.element.tagName).not.toBe("A");
     expect(card.text()).toContain("Coming soon");
-    expect(wrapper.find('a.project-card[href="/confused-pet-insurance"]').exists()).toBe(true);
+    const links = wrapper.findAll("a.project-card").map((link) => link.attributes("href"));
+    expect(links).toEqual(
+      projects.filter((project) => !project.comingSoon).map((project) => `/${project.slug}`)
+    );
   });
 });

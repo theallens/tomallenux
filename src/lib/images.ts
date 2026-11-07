@@ -8,7 +8,7 @@ interface ImageInfo {
 
 const images = manifest as Record<string, ImageInfo>;
 
-const SANITY_IMAGE = /^https:\/\/cdn\.sanity\.io\/images\/.*-(\d+)x(\d+)\.(\w+)/;
+const SANITY_IMAGE = /^https:\/\/cdn\.sanity\.io\/images\/[^/]+\/[^/]+\/[^/]*-(\d+)x(\d+)\.(\w+)/;
 const SANITY_WIDTHS = [750, 1500];
 
 /** Sanity image URLs carry their size, and its CDN resizes on request. */

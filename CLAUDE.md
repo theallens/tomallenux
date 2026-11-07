@@ -25,7 +25,7 @@ Tom manages case studies and the My work list himself in Sanity, without code ch
 ## Pages
 
 - Case studies and the My work list live in Sanity, edited in the Studio in `studio/` (its own `package.json`; `cd studio && npm install && npm run dev`). Schema: `studio/schemaTypes`.
-- `npm run content` (`scripts/fetch-content.mjs`) snapshots published content to `src/content/`, and runs before `dev` and `build`. It's generated and gitignored, so don't edit it. Routes come from its files, so the site is fully static and never calls the Sanity API from the browser. After publishing, re-run it to see the change locally. Drafts don't appear.
+- `npm run content` (`scripts/fetch-content.mjs`) snapshots published content to `src/content/`, and runs before `dev` and `build`. `src/content/` is generated and gitignored, so don't edit it. Routes come from its files, so the site is fully static and never calls the Sanity API from the browser. After publishing, re-run it to see the change locally. Drafts don't appear.
 - `src/pages/CaseStudyPage.vue` renders every case study; `src/components/RichContent` maps Sanity blocks onto the global blocks. To add a block: define it in `studio/schemaTypes/blocks`, add it to `index.ts` and `contentBlocks`, then add its type to `src/types/cms.ts` and a branch in `RichContent`.
 - Build static pages from the globally registered blocks in `src/components/index.ts` (no imports needed) inside Vuetify's `v-row`/`v-col`.
 - `Section` tones: `muted` alternates with default for rhythm; `inverse`/`accent` switch Vuetify to the dark `brandInverse` theme.

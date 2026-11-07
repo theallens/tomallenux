@@ -62,6 +62,7 @@ function extract(file) {
         .map((img) => `${img.getAttribute("src")} | ${img.getAttribute("alt") ?? ""}`)
     ),
   ];
+  main.querySelectorAll(".project-card").forEach((card) => card.remove());
   const fullText = normalize(main.textContent);
   window.close();
   return { texts, images, fullText };

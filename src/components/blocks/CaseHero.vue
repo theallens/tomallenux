@@ -30,7 +30,7 @@ withDefaults(
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
-        <Figure :src="image" :alt="imageAlt" :square="imageSquare" eager />
+        <Figure v-if="image" :src="image" :alt="imageAlt" :square="imageSquare" eager />
       </v-col>
     </v-row>
   </Section>
