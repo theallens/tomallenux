@@ -15,8 +15,10 @@ const featured = linkedProjects.slice(0, 3);
     <v-row align="center">
       <v-col cols="12" md="7" order="2" order-md="1" class="pe-md-12">
         <p class="eyebrow">Hi, I’m Tom 👋</p>
-        <h1 class="display">I’m a <strong>Senior</strong> <strong>Product Designer</strong> from Bristol, UK.</h1>
-        <p class="lead home-hero__sub">I’m a user focused designer with experience in <strong>UX, UI </strong>and <strong>content design</strong>.</p>
+        <h1 class="display">I’m a <strong>Senior</strong> <strong>Product Designer</strong> from
+          Bristol, UK.</h1>
+        <p class="lead home-hero__sub">I’m a user focused designer with experience in <strong>UX,
+          UI </strong>and <strong>content design</strong>.</p>
         <div class="home-hero__actions">
           <CtaButton to="/mywork">View my work</CtaButton>
           <CtaButton to="/about" variant="outlined" :arrow="false">About me</CtaButton>

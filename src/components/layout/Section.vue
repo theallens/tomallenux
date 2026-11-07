@@ -8,11 +8,14 @@
  */
 import { computed } from "vue";
 
-export type SectionTone = "default" | "muted" | "inverse" | "accent"
+export type SectionTone = "default" | "muted" | "inverse" | "accent";
 
-const props = withDefaults(defineProps<{ tone?: SectionTone; narrow?: boolean; tight?: boolean }>(), {
-  tone: "default",
-});
+const props = withDefaults(
+  defineProps<{ tone?: SectionTone; narrow?: boolean; tight?: boolean }>(),
+  {
+    tone: "default",
+  }
+);
 
 const dark = computed(() => props.tone === "inverse" || props.tone === "accent");
 </script>

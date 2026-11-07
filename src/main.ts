@@ -20,5 +20,5 @@ export const createApp = ViteSSG(
   ({ app }) => {
     app.use(createAppVuetify());
     registerComponents(app);
-  },
+  }
 );

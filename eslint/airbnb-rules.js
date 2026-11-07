@@ -17,10 +17,7 @@ export default {
         },
       ],
       "block-scoped-var": "error",
-      complexity: [
-        "off",
-        20,
-      ],
+      complexity: ["off", 20],
       "class-methods-use-this": [
         "error",
         {
@@ -28,10 +25,7 @@ export default {
         },
       ],
       "consistent-return": "error",
-      curly: [
-        "error",
-        "multi-line",
-      ],
+      curly: ["error", "multi-line"],
       "default-case": [
         "error",
         {
@@ -46,10 +40,7 @@ export default {
           allowKeywords: true,
         },
       ],
-      "dot-location": [
-        "error",
-        "property",
-      ],
+      "dot-location": ["error", "property"],
       eqeqeq: [
         "error",
         "always",
@@ -59,10 +50,7 @@ export default {
       ],
       "grouped-accessor-pairs": "error",
       "guard-for-in": "error",
-      "max-classes-per-file": [
-        "error",
-        1,
-      ],
+      "max-classes-per-file": ["error", 1],
       "no-alert": "warn",
       "no-caller": "error",
       "no-case-declarations": "error",
@@ -77,11 +65,7 @@ export default {
       "no-empty-function": [
         "error",
         {
-          allow: [
-            "arrowFunctions",
-            "functions",
-            "methods",
-          ],
+          allow: ["arrowFunctions", "functions", "methods"],
         },
       ],
       "no-empty-pattern": "error",
@@ -215,10 +199,7 @@ export default {
           message: "Use the exponentiation operator (**) instead.",
         },
       ],
-      "no-return-assign": [
-        "error",
-        "always",
-      ],
+      "no-return-assign": ["error", "always"],
       "no-return-await": "error",
       "no-script-url": "error",
       "no-self-assign": [
@@ -249,11 +230,7 @@ export default {
       "no-warning-comments": [
         "off",
         {
-          terms: [
-            "todo",
-            "fixme",
-            "xxx",
-          ],
+          terms: ["todo", "fixme", "xxx"],
           location: "start",
         },
       ],
@@ -293,10 +270,7 @@ export default {
       "no-async-promise-executor": "error",
       "no-await-in-loop": "error",
       "no-compare-neg-zero": "error",
-      "no-cond-assign": [
-        "error",
-        "always",
-      ],
+      "no-cond-assign": ["error", "always"],
       "no-console": "warn",
       "no-constant-condition": "warn",
       "no-control-regex": "error",
@@ -367,20 +341,14 @@ export default {
       "global-require": "error",
       "handle-callback-err": "off",
       "no-buffer-constructor": "error",
-      "no-mixed-requires": [
-        "off",
-        false,
-      ],
+      "no-mixed-requires": ["off", false],
       "no-new-require": "error",
       "no-path-concat": "error",
       "no-process-env": "off",
       "no-process-exit": "off",
       "no-restricted-modules": "off",
       "no-sync": "off",
-      "array-bracket-newline": [
-        "off",
-        "consistent",
-      ],
+      "array-bracket-newline": ["off", "consistent"],
       "array-element-newline": [
         "off",
         {
@@ -388,14 +356,8 @@ export default {
           minItems: 3,
         },
       ],
-      "array-bracket-spacing": [
-        "error",
-        "never",
-      ],
-      "block-spacing": [
-        "error",
-        "always",
-      ],
+      "array-bracket-spacing": ["error", "never"],
+      "block-spacing": ["error", "always"],
       "brace-style": [
         "error",
         "1tbs",
@@ -462,23 +424,11 @@ export default {
           },
         },
       ],
-      "computed-property-spacing": [
-        "error",
-        "never",
-      ],
+      "computed-property-spacing": ["error", "never"],
       "consistent-this": "off",
-      "eol-last": [
-        "error",
-        "always",
-      ],
-      "function-call-argument-newline": [
-        "error",
-        "consistent",
-      ],
-      "func-call-spacing": [
-        "error",
-        "never",
-      ],
+      "eol-last": ["error", "always"],
+      "function-call-argument-newline": ["error", "consistent"],
+      "func-call-spacing": ["error", "never"],
       "func-name-matching": [
         "off",
         "always",
@@ -488,21 +438,12 @@ export default {
         },
       ],
       "func-names": "warn",
-      "func-style": [
-        "off",
-        "expression",
-      ],
-      "function-paren-newline": [
-        "error",
-        "multiline-arguments",
-      ],
+      "func-style": ["off", "expression"],
+      "function-paren-newline": ["error", "multiline-arguments"],
       "id-denylist": "off",
       "id-length": "off",
       "id-match": "off",
-      "implicit-arrow-linebreak": [
-        "error",
-        "beside",
-      ],
+      "implicit-arrow-linebreak": ["error", "beside"],
       indent: [
         "error",
         2,
@@ -546,10 +487,7 @@ export default {
           ignoreComments: false,
         },
       ],
-      "jsx-quotes": [
-        "off",
-        "prefer-double",
-      ],
+      "jsx-quotes": ["off", "prefer-double"],
       "key-spacing": [
         "error",
         {
@@ -583,10 +521,7 @@ export default {
           applyDefaultPatterns: true,
         },
       ],
-      "linebreak-style": [
-        "error",
-        "unix",
-      ],
+      "linebreak-style": ["error", "unix"],
       "lines-between-class-members": [
         "error",
         "always",
@@ -602,10 +537,7 @@ export default {
           after: "always",
         },
       ],
-      "max-depth": [
-        "off",
-        4,
-      ],
+      "max-depth": ["off", 4],
       "max-len": [
         "error",
         100,
@@ -636,39 +568,23 @@ export default {
         },
       ],
       "max-nested-callbacks": "off",
-      "max-params": [
-        "off",
-        3,
-      ],
-      "max-statements": [
-        "off",
-        10,
-      ],
+      "max-params": ["off", 3],
+      "max-statements": ["off", 10],
       "max-statements-per-line": [
         "off",
         {
           max: 1,
         },
       ],
-      "multiline-comment-style": [
-        "off",
-        "starred-block",
-      ],
-      "multiline-ternary": [
-        "off",
-        "never",
-      ],
+      "multiline-comment-style": ["off", "starred-block"],
+      "multiline-ternary": ["off", "never"],
       "new-cap": [
         "error",
         {
           newIsCap: true,
           newIsCapExceptions: [],
           capIsNew: false,
-          capIsNewExceptions: [
-            "Immutable.Map",
-            "Immutable.Set",
-            "Immutable.List",
-          ],
+          capIsNewExceptions: ["Immutable.Map", "Immutable.Set", "Immutable.List"],
         },
       ],
       "new-parens": "error",
@@ -689,55 +605,21 @@ export default {
         "error",
         {
           groups: [
-            [
-              "%",
-              "**",
-            ],
-            [
-              "%",
-              "+",
-            ],
-            [
-              "%",
-              "-",
-            ],
-            [
-              "%",
-              "*",
-            ],
-            [
-              "%",
-              "/",
-            ],
-            [
-              "/",
-              "*",
-            ],
-            [
-              "&",
-              "|",
-              "<<",
-              ">>",
-              ">>>",
-            ],
-            [
-              "==",
-              "!=",
-              "===",
-              "!==",
-            ],
-            [
-              "&&",
-              "||",
-            ],
+            ["%", "**"],
+            ["%", "+"],
+            ["%", "-"],
+            ["%", "*"],
+            ["%", "/"],
+            ["/", "*"],
+            ["&", "|", "<<", ">>", ">>>"],
+            ["==", "!=", "===", "!=="],
+            ["&&", "||"],
           ],
           allowSamePrecedence: false,
         },
       ],
       "no-mixed-spaces-and-tabs": "error",
-      "no-multi-assign": [
-        "error",
-      ],
+      "no-multi-assign": ["error"],
       "no-multiple-empty-lines": [
         "error",
         {
@@ -754,19 +636,23 @@ export default {
         "error",
         {
           selector: "ForInStatement",
-          message: "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
+          message:
+            "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
         },
         {
           selector: "ForOfStatement",
-          message: "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
+          message:
+            "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
         },
         {
           selector: "LabeledStatement",
-          message: "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
+          message:
+            "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
         },
         {
           selector: "WithStatement",
-          message: "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
+          message:
+            "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
         },
       ],
       "no-spaced-func": "error",
@@ -802,10 +688,7 @@ export default {
           overrides: {},
         },
       ],
-      "object-curly-spacing": [
-        "error",
-        "always",
-      ],
+      "object-curly-spacing": ["error", "always"],
       "object-curly-newline": [
         "error",
         {
@@ -837,18 +720,9 @@ export default {
           allowAllPropertiesOnSameLine: true,
         },
       ],
-      "one-var": [
-        "error",
-        "never",
-      ],
-      "one-var-declaration-per-line": [
-        "error",
-        "always",
-      ],
-      "operator-assignment": [
-        "error",
-        "always",
-      ],
+      "one-var": ["error", "never"],
+      "one-var-declaration-per-line": ["error", "always"],
+      "operator-assignment": ["error", "always"],
       "operator-linebreak": [
         "error",
         "before",
@@ -889,10 +763,7 @@ export default {
         },
       ],
       "require-jsdoc": "off",
-      semi: [
-        "error",
-        "always",
-      ],
+      semi: ["error", "always"],
       "semi-spacing": [
         "error",
         {
@@ -900,10 +771,7 @@ export default {
           after: true,
         },
       ],
-      "semi-style": [
-        "error",
-        "last",
-      ],
+      "semi-style": ["error", "last"],
       "sort-keys": [
         "off",
         "asc",
@@ -922,10 +790,7 @@ export default {
           asyncArrow: "always",
         },
       ],
-      "space-in-parens": [
-        "error",
-        "never",
-      ],
+      "space-in-parens": ["error", "never"],
       "space-infix-ops": "error",
       "space-unary-ops": [
         "error",
@@ -940,27 +805,12 @@ export default {
         "always",
         {
           line: {
-            exceptions: [
-              "-",
-              "+",
-            ],
-            markers: [
-              "=",
-              "!",
-              "/",
-            ],
+            exceptions: ["-", "+"],
+            markers: ["=", "!", "/"],
           },
           block: {
-            exceptions: [
-              "-",
-              "+",
-            ],
-            markers: [
-              "=",
-              "!",
-              ":",
-              "::",
-            ],
+            exceptions: ["-", "+"],
+            markers: ["=", "!", ":", "::"],
             balanced: true,
           },
         },
@@ -972,14 +822,8 @@ export default {
           before: false,
         },
       ],
-      "template-tag-spacing": [
-        "error",
-        "never",
-      ],
-      "unicode-bom": [
-        "error",
-        "never",
-      ],
+      "template-tag-spacing": ["error", "never"],
+      "unicode-bom": ["error", "never"],
       "wrap-regex": "off",
       "init-declarations": "off",
       "no-catch-shadow": "off",
@@ -989,11 +833,13 @@ export default {
         "error",
         {
           name: "isFinite",
-          message: "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+          message:
+            "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
         },
         {
           name: "isNaN",
-          message: "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+          message:
+            "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
         },
         "addEventListener",
         "blur",
@@ -1082,10 +928,7 @@ export default {
           requireReturnForObjectLiteral: false,
         },
       ],
-      "arrow-parens": [
-        "error",
-        "always",
-      ],
+      "arrow-parens": ["error", "always"],
       "arrow-spacing": [
         "error",
         {
@@ -1115,10 +958,7 @@ export default {
       "no-restricted-exports": [
         "error",
         {
-          restrictedNamedExports: [
-            "default",
-            "then",
-          ],
+          restrictedNamedExports: ["default", "then"],
         },
       ],
       "no-restricted-imports": [
@@ -1184,30 +1024,19 @@ export default {
       "prefer-spread": "error",
       "prefer-template": "error",
       "require-yield": "error",
-      "rest-spread-spacing": [
-        "error",
-        "never",
-      ],
+      "rest-spread-spacing": ["error", "never"],
       "sort-imports": [
         "off",
         {
           ignoreCase: false,
           ignoreDeclarationSort: false,
           ignoreMemberSort: false,
-          memberSyntaxSortOrder: [
-            "none",
-            "all",
-            "multiple",
-            "single",
-          ],
+          memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
         },
       ],
       "symbol-description": "error",
       "template-curly-spacing": "error",
-      "yield-star-spacing": [
-        "error",
-        "after",
-      ],
+      "yield-star-spacing": ["error", "after"],
       "import-x/no-unresolved": [
         "error",
         {
@@ -1272,13 +1101,7 @@ export default {
       "import-x/order": [
         "error",
         {
-          groups: [
-            [
-              "builtin",
-              "external",
-              "internal",
-            ],
-          ],
+          groups: [["builtin", "external", "internal"]],
         },
       ],
       "import-x/newline-after-import": "error",
@@ -1353,44 +1176,21 @@ export default {
         },
       ],
       "import-x/no-relative-packages": "error",
-      strict: [
-        "error",
-        "never",
-      ],
+      strict: ["error", "never"],
     },
   },
   typescript: {
     settings: {
       "import-x/parsers": {
-        "@typescript-eslint/parser": [
-          ".ts",
-          ".tsx",
-          ".d.ts",
-        ],
+        "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"],
       },
       "import-x/resolver": {
         node: {
-          extensions: [
-            ".mjs",
-            ".js",
-            ".json",
-            ".ts",
-            ".d.ts",
-          ],
+          extensions: [".mjs", ".js", ".json", ".ts", ".d.ts"],
         },
       },
-      "import-x/extensions": [
-        ".js",
-        ".mjs",
-        ".jsx",
-        ".ts",
-        ".tsx",
-        ".d.ts",
-      ],
-      "import-x/external-module-folders": [
-        "node_modules",
-        "node_modules/@types",
-      ],
+      "import-x/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx", ".d.ts"],
+      "import-x/external-module-folders": ["node_modules", "node_modules/@types"],
     },
     rules: {
       "brace-style": [
@@ -1426,10 +1226,7 @@ export default {
           allowKeywords: true,
         },
       ],
-      "func-call-spacing": [
-        "error",
-        "never",
-      ],
+      "func-call-spacing": ["error", "never"],
       indent: [
         "error",
         2,
@@ -1506,11 +1303,7 @@ export default {
       "@typescript-eslint/no-empty-function": [
         "error",
         {
-          allow: [
-            "arrowFunctions",
-            "functions",
-            "methods",
-          ],
+          allow: ["arrowFunctions", "functions", "methods"],
         },
       ],
       "no-extra-parens": [
@@ -1583,10 +1376,7 @@ export default {
           avoidEscape: true,
         },
       ],
-      semi: [
-        "error",
-        "always",
-      ],
+      semi: ["error", "always"],
       "space-before-function-paren": [
         "error",
         {
@@ -1598,10 +1388,7 @@ export default {
       "require-await": "off",
       "no-return-await": "off",
       "space-infix-ops": "error",
-      "object-curly-spacing": [
-        "error",
-        "always",
-      ],
+      "object-curly-spacing": ["error", "always"],
       "import-x/extensions": [
         "error",
         "ignorePackages",
@@ -1663,10 +1450,7 @@ export default {
     },
     overrides: [
       {
-        files: [
-          "*.ts",
-          "*.tsx",
-        ],
+        files: ["*.ts", "*.tsx"],
         rules: {
           "constructor-super": "off",
           "getter-return": "off",
@@ -1694,14 +1478,8 @@ export default {
   },
   vue: {
     rules: {
-      "vue/array-bracket-newline": [
-        "off",
-        "consistent",
-      ],
-      "vue/array-bracket-spacing": [
-        "error",
-        "never",
-      ],
+      "vue/array-bracket-newline": ["off", "consistent"],
+      "vue/array-bracket-spacing": ["error", "never"],
       "vue/arrow-spacing": [
         "error",
         {
@@ -1709,10 +1487,7 @@ export default {
           after: true,
         },
       ],
-      "vue/block-spacing": [
-        "error",
-        "always",
-      ],
+      "vue/block-spacing": ["error", "always"],
       "vue/brace-style": [
         "error",
         "1tbs",
@@ -1763,10 +1538,7 @@ export default {
           },
         },
       ],
-      "vue/dot-location": [
-        "error",
-        "property",
-      ],
+      "vue/dot-location": ["error", "property"],
       "vue/dot-notation": [
         "error",
         {
@@ -1780,10 +1552,7 @@ export default {
           null: "ignore",
         },
       ],
-      "vue/func-call-spacing": [
-        "error",
-        "never",
-      ],
+      "vue/func-call-spacing": ["error", "never"],
       "vue/key-spacing": [
         "error",
         {
@@ -1827,19 +1596,23 @@ export default {
         "error",
         {
           selector: "ForInStatement",
-          message: "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
+          message:
+            "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
         },
         {
           selector: "ForOfStatement",
-          message: "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
+          message:
+            "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
         },
         {
           selector: "LabeledStatement",
-          message: "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
+          message:
+            "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
         },
         {
           selector: "WithStatement",
-          message: "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
+          message:
+            "`with` is disallowed in strict mode because it makes code impossible to predict and optimize.",
         },
       ],
       "vue/no-sparse-arrays": "error",
@@ -1869,10 +1642,7 @@ export default {
           },
         },
       ],
-      "vue/object-curly-spacing": [
-        "error",
-        "always",
-      ],
+      "vue/object-curly-spacing": ["error", "always"],
       "vue/object-property-newline": [
         "error",
         {
@@ -1906,10 +1676,7 @@ export default {
           numbers: false,
         },
       ],
-      "vue/space-in-parens": [
-        "error",
-        "never",
-      ],
+      "vue/space-in-parens": ["error", "never"],
       "vue/space-infix-ops": "error",
       "vue/space-unary-ops": [
         "error",
@@ -2009,16 +1776,11 @@ export default {
       "vuejs-accessibility/alt-text": [
         "error",
         {
-          elements: [
-            "img",
-            "object",
-            "area",
-            "input[type=\"image\"]",
-          ],
+          elements: ["img", "object", "area", 'input[type="image"]'],
           img: [],
           object: [],
           area: [],
-          "input[type=\"image\"]": [],
+          'input[type="image"]': [],
         },
       ],
       "vuejs-accessibility/anchor-has-content": [
@@ -2046,10 +1808,7 @@ export default {
         "error",
         {
           required: {
-            some: [
-              "nesting",
-              "id",
-            ],
+            some: ["nesting", "id"],
           },
         },
       ],
@@ -2065,10 +1824,7 @@ export default {
       "vuejs-accessibility/no-distracting-elements": [
         "error",
         {
-          elements: [
-            "marquee",
-            "blink",
-          ],
+          elements: ["marquee", "blink"],
         },
       ],
       "vuejs-accessibility/no-onchange": "off",

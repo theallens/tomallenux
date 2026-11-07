@@ -9,8 +9,10 @@ usePageMeta({
 
 <template>
   <CaseHero title="Expert." image="/images/expert-ux-design/expert-thumbnail-for-portfolio.webp">
-    <p>Expert is a web app that allows creatives to chat with an expert in their field. Amateur or professional creatives can speak with experts for mentorship and advice. </p>
-    <p>Expert’s goal is to give artists, designers, illustrators and videographers a simple way to connect with an expert in their creative field.</p>
+    <p>Expert is a web app that allows creatives to chat with an expert in their field. Amateur or
+      professional creatives can speak with experts for mentorship and advice. </p>
+    <p>Expert’s goal is to give artists, designers, illustrators and videographers a simple way to
+      connect with an expert in their creative field.</p>
   </CaseHero>
 
   <ProjectFacts
@@ -45,15 +47,19 @@ usePageMeta({
       <v-col cols="12" md="6">
         <Panel>
           <h3>The problem</h3>
-          <p>Users need a way to communicate with experts in a wide range of professional fields because they want specific questions answered. </p>
-          <p>I’ll know this to be true when I see users using Expert to communicate with professional creatives to help them solve specific problems.</p>
+          <p>Users need a way to communicate with experts in a wide range of professional fields
+            because they want specific questions answered. </p>
+          <p>I’ll know this to be true when I see users using Expert to communicate with
+            professional creatives to help them solve specific problems.</p>
         </Panel>
       </v-col>
       <v-col cols="12" md="6">
         <Panel>
           <h3>The solution</h3>
-          <p>I believe that creating Expert will allow users to discover and communicate with experts to help solve their creative problems. </p>
-          <p>Users can contact experts via message or video calls. Expert will encourage collaboration amongst a community of like-minded individuals.</p>
+          <p>I believe that creating Expert will allow users to discover and communicate with
+            experts to help solve their creative problems. </p>
+          <p>Users can contact experts via message or video calls. Expert will encourage
+            collaboration amongst a community of like-minded individuals.</p>
         </Panel>
       </v-col>
     </v-row>
@@ -78,9 +84,15 @@ usePageMeta({
       <v-col cols="12" md="6" class="pe-md-10">
         <Prose>
           <h4>Competitor analysis</h4>
-          <p>I completed a <strong>SWOT analysis</strong> of <em>Just Answer</em> and <em>Clarity</em>. In highlighting In the strengths, weaknesses, opportunities and threats of competitors I could better understand how to approach the problem. </p>
-          <p>Existing websites all hosted experts from a specialism, mostly business or medicine. There isn’t a site that specialises in creative or artistic advice. Where these sites were particularly successful was in their <strong>speed of response</strong>.</p>
-          <p>Competitive analysis provided inspiration for my own product but also highlighted elements I wanted to avoid and improve upon. </p>
+          <p>I completed a <strong>SWOT analysis</strong> of <em>Just
+            Answer</em> and <em>Clarity</em>. In highlighting In the strengths, weaknesses,
+              opportunities and threats of competitors I could better understand how to approach the
+                problem. </p>
+          <p>Existing websites all hosted experts from a specialism, mostly business or medicine.
+            There isn’t a site that specialises in creative or artistic advice. Where these sites
+              were particularly successful was in their <strong>speed of response</strong>.</p>
+          <p>Competitive analysis provided inspiration for my own product but also highlighted
+            elements I wanted to avoid and improve upon. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">
@@ -115,13 +127,16 @@ usePageMeta({
           <p><strong>Conclusions:</strong></p>
           <ul>
             <li>
-              <p><strong>The participants need professional advice</strong> and it isn’t always readily available</p>
+              <p><strong>The participants need professional advice</strong> and it isn’t always
+                readily available</p>
             </li>
             <li>
-              <p><strong>All participants would look within their workplace</strong> (or university) for advice</p>
+              <p><strong>All participants would look within their workplace</strong> (or university)
+                for advice</p>
             </li>
             <li>
-              <p><strong>YouTube and Instagram are close competitors</strong> - we can&nbsp;take inspiration from these platforms</p>
+              <p><strong>YouTube and Instagram are close competitors</strong> - we can&nbsp;take
+                inspiration from these platforms</p>
             </li>
             <li>
               <p><strong>Video calling is preferred</strong> but offering a variety is key</p>
@@ -157,7 +172,9 @@ usePageMeta({
       <v-col cols="12" md="5" class="pe-md-10">
         <Prose>
           <h4>User personas </h4>
-          <p>With the data generated during the research phase, I created two user personas that encapsulated my target audience. I referred back to the two personas throughout the project to ensure I was solving the right problems.</p>
+          <p>With the data generated during the research phase, I created two user personas that
+            encapsulated my target audience. I referred back to the two personas throughout the
+              project to ensure I was solving the right problems.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -170,7 +187,8 @@ usePageMeta({
       <v-col cols="12" md="5" order-md="2" class="ps-md-10">
         <Prose>
           <h4>User journeys</h4>
-          <p>Once I had a solid idea of who my user was, I investigated their path to and throughout the app. </p>
+          <p>Once I had a solid idea of who my user was, I investigated their path to and throughout
+            the app. </p>
           <ul>
             <li>
               <p><strong>Why would they be using the app? </strong></p>
@@ -211,7 +229,8 @@ usePageMeta({
       <v-col cols="12" md="5" class="pe-md-10">
         <Prose>
           <h4>User task flow</h4>
-          <p>I created user flows that showed how a user would move from an entry point to success criteria. </p>
+          <p>I created user flows that showed how a user would move from an entry point to success
+            criteria. </p>
           <p>I wanted to iron out the easiest route for a user to complete a task.</p>
         </Prose>
       </v-col>
@@ -225,8 +244,10 @@ usePageMeta({
       <v-col cols="12" md="6" order-md="2" class="ps-md-10">
         <Prose>
           <h4>Information architecture &amp; sitemap</h4>
-          <p>I then created a comprehensive sitemap, covering all of the features that were highlighted during competitor research and user interviews. </p>
-          <p>I created an initial version, set up and ran a short online survey, then adapted the sitemaps based on the results. The second iteration is included below.</p>
+          <p>I then created a comprehensive sitemap, covering all of the features that were
+            highlighted during competitor research and user interviews. </p>
+          <p>I created an initial version, set up and ran a short online survey, then adapted the
+            sitemaps based on the results. The second iteration is included below.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6" order-md="1">
@@ -246,7 +267,8 @@ usePageMeta({
       <v-col cols="12" md="5" class="pe-md-10">
         <Prose>
           <h4>Low fidelity wireframes</h4>
-          <p>I took all of the information, data and ideas and started sketching some wireframes. I used paper and pencil to make on-the-go alterations.</p>
+          <p>I took all of the information, data and ideas and started sketching some wireframes. I
+            used paper and pencil to make on-the-go alterations.</p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -259,8 +281,10 @@ usePageMeta({
       <v-col cols="12" md="5" order-md="2" class="ps-md-10">
         <Prose>
           <h4>Mid fidelity wireframes</h4>
-          <p>I then started refining my design. At this mid fidelity stage, it was easy to change the design and make iterations. </p>
-          <p>I limited myself to grey scale to focus solely on the layout and design – colour and images would come later. </p>
+          <p>I then started refining my design. At this mid fidelity stage, it was easy to change
+            the design and make iterations. </p>
+          <p>I limited myself to grey scale to focus solely on the layout and design – colour and
+            images would come later. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7" order-md="1">
@@ -273,7 +297,9 @@ usePageMeta({
       <v-col cols="12" md="5" class="pe-md-10">
         <Prose>
           <h4>High fidelity wireframes</h4>
-          <p>I then developed the design further with pixel perfect alignment, images (still in greyscale at this point) and copy. This fidelity was also developed into a prototype. </p>
+          <p>I then developed the design further with pixel perfect alignment, images (still in
+            greyscale at this point) and copy. This fidelity was also developed into a
+              prototype. </p>
         </Prose>
       </v-col>
       <v-col cols="12" md="7">
@@ -290,8 +316,12 @@ usePageMeta({
     </Prose>
     <v-divider class="my-8" />
     <Prose>
-      <p>I prepared for the testing sessions by writing a test plan and script. I then completed multiple remote usability tests.</p>
-      <p>I wanted to discover how easy it was for my participants to navigate the prototype and complete tasks. I observed 6 participants as they completed the tasks and took note of any errors, points of friction, frustrations or confusion. I then rated the errors using Jacob Nielsen’s error severity chart.</p>
+      <p>I prepared for the testing sessions by writing a test plan and script. I then completed
+        multiple remote usability tests.</p>
+      <p>I wanted to discover how easy it was for my participants to navigate the prototype and
+        complete tasks. I observed 6 participants as they completed the tasks and took note of any
+          errors, points of friction, frustrations or confusion. I then rated the errors using Jacob
+            Nielsen’s error severity chart.</p>
       <p>Here are some of the main errors and what I did to fix the problem.</p>
     </Prose>
     <v-row align="center" class="mt-10">
@@ -304,7 +334,8 @@ usePageMeta({
               <p>All 6 participants took a long time to find the Answers section</p>
             </li>
             <li>
-              <p>2 participants said they would expect to see the Answers section on the homepage</p>
+              <p>2 participants said they would expect to see the Answers section on the
+                homepage</p>
             </li>
             <li>
               <p>The name of the section, Answers, was a cause for confusion</p>
@@ -334,7 +365,8 @@ usePageMeta({
           <p><strong>Evidence:</strong></p>
           <ul>
             <li>
-              <p>3 participants mentioned that they thought the phone icon would automatically call the expert</p>
+              <p>3 participants mentioned that they thought the phone icon would automatically call
+                the expert</p>
             </li>
             <li>
               <p>2 participants mentioned that this made them feel uncomfortable</p>
@@ -346,7 +378,9 @@ usePageMeta({
               <p>Added text to the button to show the user will request a call </p>
             </li>
             <li>
-              <p>Add detail into the how-it-works section on the homepage to explain users will book a time with the expert. The usability tests showed that users spend some time reading the how-it-works section</p>
+              <p>Add detail into the how-it-works section on the homepage to explain users will book
+                a time with the expert. The usability tests showed that users spend some time
+                  reading the how-it-works section</p>
             </li>
           </ul>
         </Prose>
@@ -366,13 +400,15 @@ usePageMeta({
       <ul>
         <li>
           <p class="text-large">Design principles</p>
-          <p>I then applied some well known design principles to finalise the design. I also added colour.</p>
+          <p>I then applied some well known design principles to finalise the design. I also added
+            colour.</p>
         </li>
       </ul>
       <ul>
         <li>
           <p class="text-large">Design language system</p>
-          <p>I also developed a language system for hand off of my project which included design elements and rules for tone of voice and accessibility.</p>
+          <p>I also developed a language system for hand off of my project which included design
+            elements and rules for tone of voice and accessibility.</p>
         </li>
       </ul>
       <h4 class="mt-12">Design language system</h4>

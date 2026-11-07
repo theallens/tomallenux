@@ -24,10 +24,18 @@ const headline = computed(() => props.data[0]);
       role="img"
       :aria-label="data.map((d) => `${d.label}: ${d.value} (${pct(d.value)}%)`).join(', ')"
     >
-      <div class="share-meter__fill" :style="{ width: `${pct(headline.value)}%` }" :title="`${headline.label}: ${headline.value} (${pct(headline.value)}%)`" />
+      <div
+        class="share-meter__fill"
+        :style="{ width: `${pct(headline.value)}%` }"
+        :title="`${headline.label}: ${headline.value} (${pct(headline.value)}%)`"
+      />
     </div>
     <ul class="share-meter__legend">
-      <li v-for="(d, i) in data" :key="d.label" :title="`${d.label}: ${d.value} (${pct(d.value)}%)`">
+      <li
+        v-for="(d, i) in data"
+        :key="d.label"
+        :title="`${d.label}: ${d.value} (${pct(d.value)}%)`"
+      >
         <span class="share-meter__key" :class="{ 'is-rest': i > 0 }" aria-hidden="true" />
         {{ d.label }}
         <span class="share-meter__value">{{ d.value }} ({{ pct(d.value) }}%)</span>

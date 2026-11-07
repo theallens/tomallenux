@@ -11,7 +11,11 @@ import { mdiSend } from "@mdi/js";
 
 const FORM_NAME = "contact";
 const fields = reactive({
-  firstName: "", lastName: "", email: "", message: "", "bot-field": "",
+  firstName: "",
+  lastName: "",
+  email: "",
+  message: "",
+  "bot-field": "",
 });
 const status = ref<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -39,7 +43,13 @@ async function submit(event: SubmitEventPromise) {
 
 <template>
   <v-card class="contact-form">
-    <v-alert v-if="status === 'sent'" type="success" variant="tonal" role="status" title="Thank you!">
+    <v-alert
+      v-if="status === 'sent'"
+      type="success"
+      variant="tonal"
+      role="status"
+      title="Thank you!"
+    >
       Your message is on its way. I’ll get back to you soon.
     </v-alert>
     <v-form
@@ -53,21 +63,54 @@ async function submit(event: SubmitEventPromise) {
     >
       <input type="hidden" name="form-name" :value="FORM_NAME" />
       <p class="visually-hidden">
-        <label>Don’t fill this out: <input v-model="fields['bot-field']" name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        <label
+          >Don’t fill this out:
+          <input v-model="fields['bot-field']" name="bot-field" tabindex="-1" autocomplete="off"
+        /></label>
       </p>
 
       <v-row dense>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="fields.firstName" name="firstName" label="First name" autocomplete="given-name" :rules="[required]" required />
+          <v-text-field
+            v-model="fields.firstName"
+            name="firstName"
+            label="First name"
+            autocomplete="given-name"
+            :rules="[required]"
+            required
+          />
         </v-col>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="fields.lastName" name="lastName" label="Last name" autocomplete="family-name" :rules="[required]" required />
+          <v-text-field
+            v-model="fields.lastName"
+            name="lastName"
+            label="Last name"
+            autocomplete="family-name"
+            :rules="[required]"
+            required
+          />
         </v-col>
         <v-col cols="12">
-          <v-text-field v-model="fields.email" name="email" type="email" label="Email" autocomplete="email" :rules="[required, email]" required />
+          <v-text-field
+            v-model="fields.email"
+            name="email"
+            type="email"
+            label="Email"
+            autocomplete="email"
+            :rules="[required, email]"
+            required
+          />
         </v-col>
         <v-col cols="12">
-          <v-textarea v-model="fields.message" name="message" label="Message" rows="5" auto-grow :rules="[required]" required />
+          <v-textarea
+            v-model="fields.message"
+            name="message"
+            label="Message"
+            rows="5"
+            auto-grow
+            :rules="[required]"
+            required
+          />
         </v-col>
       </v-row>
 
@@ -75,7 +118,14 @@ async function submit(event: SubmitEventPromise) {
         Sorry, something went wrong sending your message. Please try again.
       </v-alert>
 
-      <v-btn type="submit" color="primary" :loading="status === 'sending'" :append-icon="mdiSend" block>Send</v-btn>
+      <v-btn
+        type="submit"
+        color="primary"
+        :loading="status === 'sending'"
+        :append-icon="mdiSend"
+        block
+        >Send</v-btn
+      >
       <p class="contact-form__note">All fields are required.</p>
     </v-form>
   </v-card>

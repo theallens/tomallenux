@@ -9,23 +9,23 @@ import { isInternal } from "@/lib/links.ts";
 
 const props = withDefaults(
   defineProps<{
-    src: string
-    alt?: string
+    src: string;
+    alt?: string;
     /** Largest width the image is shown at, in px */
-    maxWidth?: number
+    maxWidth?: number;
     /** Crop to this shape: height as a percentage of width (e.g. 75 for 4:3) */
-    aspect?: number
+    aspect?: number;
     /** Crop to a circle */
-    circle?: boolean
+    circle?: boolean;
     /** Square corners (for images with their own shape, e.g. phone mockups) */
-    square?: boolean
+    square?: boolean;
     /** Soft shadow, for screenshots on a plain background */
-    shadow?: boolean
+    shadow?: boolean;
     /** Optional link */
-    to?: string
+    to?: string;
     /** Load immediately (use for images visible on page load) */
-    eager?: boolean
-    sizes?: string
+    eager?: boolean;
+    sizes?: string;
   }>(),
   {
     alt: "",
@@ -33,24 +33,32 @@ const props = withDefaults(
     aspect: undefined,
     to: undefined,
     sizes: "(max-width: 959px) 100vw, 50vw",
-  },
+  }
 );
 
 const info = computed(() => imageInfo(props.src));
 const link = computed(() => {
   if (!props.to) return { is: "div", attrs: {} };
-  return isInternal(props.to) ? { is: "RouterLink", attrs: { to: props.to } } : { is: "a", attrs: { href: props.to } };
+  return isInternal(props.to)
+    ? { is: "RouterLink", attrs: { to: props.to } }
+    : { is: "a", attrs: { href: props.to } };
 });
 </script>
 
 <template>
-  <figure class="figure" :class="{ 'is-circle': circle, 'is-square': square, 'has-shadow': shadow }">
+  <figure
+    class="figure"
+    :class="{ 'is-circle': circle, 'is-square': square, 'has-shadow': shadow }"
+  >
     <component
       :is="link.is"
       v-bind="link.attrs"
       class="figure__frame"
       :class="{ 'is-cropped': aspect || circle }"
-      :style="{ maxWidth: maxWidth ? `${maxWidth}px` : undefined, aspectRatio: circle ? '1' : aspect ? `100 / ${aspect}` : undefined }"
+      :style="{
+        maxWidth: maxWidth ? `${maxWidth}px` : undefined,
+        aspectRatio: circle ? '1' : aspect ? `100 / ${aspect}` : undefined,
+      }"
     >
       <img
         :src="src"
@@ -88,7 +96,9 @@ const link = computed(() => {
     border-radius: 50%;
   }
   .figure.has-shadow .figure__frame {
-    box-shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 12px 32px -8px rgb(0 0 0 / 0.18);
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 0.06),
+      0 12px 32px -8px rgb(0 0 0 / 0.18);
   }
   .figure__frame img {
     display: block;

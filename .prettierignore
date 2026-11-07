@@ -5,4 +5,7 @@ coverage
 .git
 .husky
 build
-*.lock
+package-lock.json
+skills-lock.json
+# Copy-holding page templates: Prettier re-wraps text, which can change copy whitespace.
+src/pages/

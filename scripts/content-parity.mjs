@@ -9,9 +9,7 @@
  * The check passes when every recorded text appears in the new page's text and
  * every recorded image (same src and alt) is still on the page. New content is allowed.
  */
-import {
-  existsSync, readdirSync, readFileSync, statSync, writeFileSync,
-} from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import { Window } from "happy-dom";
 
@@ -39,8 +37,20 @@ function extract(file) {
   window.document.write(readFileSync(file, "utf8"));
   const main = window.document.querySelector("main");
   if (!main) throw new Error(`${file} has no <main>`);
-  const texts = [...new Set([...main.querySelectorAll(TEXT_SELECTOR)].map((el) => normalize(el.textContent)).filter(Boolean))];
-  const images = [...new Set([...main.querySelectorAll("img")].map((img) => `${img.getAttribute("src")} | ${img.getAttribute("alt") ?? ""}`))];
+  const texts = [
+    ...new Set(
+      [...main.querySelectorAll(TEXT_SELECTOR)]
+        .map((el) => normalize(el.textContent))
+        .filter(Boolean)
+    ),
+  ];
+  const images = [
+    ...new Set(
+      [...main.querySelectorAll("img")].map(
+        (img) => `${img.getAttribute("src")} | ${img.getAttribute("alt") ?? ""}`
+      )
+    ),
+  ];
   const fullText = normalize(main.textContent);
   window.close();
   return { texts, images, fullText };
@@ -76,7 +86,8 @@ function check(only) {
     }
     failures++;
     console.error(`✗ ${route}`);
-    for (const t of missingText) console.error(`    text:  ${t.length > 110 ? `${t.slice(0, 110)}…` : t}`);
+    for (const t of missingText)
+      console.error(`    text:  ${t.length > 110 ? `${t.slice(0, 110)}…` : t}`);
     for (const i of missingImages) console.error(`    image: ${i}`);
   }
   if (failures) {

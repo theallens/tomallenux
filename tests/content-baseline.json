@@ -7,12 +7,14 @@
       "In 2019, I made the decision to swap my career in digital marketing for a role in UX. After completing a year training in UX design I started as a content designer at Confused.com and my role quickly changed to product designer – and I haven’t looked back since.",
       "I’m a process-driven designer that will advocate for the user and make data-led decisions.",
       "But it’s not all work, I am also an amateur artist, photographer and footballer.",
+      "Away from work",
       "A shot from the President's cup final in 2019... don't ask about the result.",
       "Ankor Wat, Cambodia",
       "Painting from 2019.",
       "Phu Quoc, Vietnam"
     ],
     "images": [
+      "/images/pagecv/ta-headshot-2.webp | Tom Allen",
       "/images/about/45e0a690-a20f-4817-906d-3d8584279d24.webp | A shot from the President's cup final in 2019... don't ask about the result.",
       "/images/about/dsc-0279.webp | Ankor Wat, Cambodia",
       "/images/about/8a79d4c0-bd81-4b65-bac3-79f6fc27df74.webp | ",
@@ -42,18 +44,22 @@
       "Impact",
       "Lighthouse score",
       "Moving the page into the new design style has resulted in the lighthouse score improving by 14% on mobile & 25% on desktop.",
-      "SHOUT OUT TO THE OTHER TEAMS?!"
+      "SHOUT OUT TO THE OTHER TEAMS?!",
+      "Next project",
+      "Rewards+: Designing and launching a brand new loyalty scheme",
+      "Taking a collaborative approach to shape a brand-led experience."
     ],
     "images": [
       "/images/car-insurancelanding-page/2roup-13043.webp | ",
-      "/images/car-insurancelanding-page/before-car-insurance-screencapture-confused-car-insurance-2021-06-23-17-44-30.webp | "
+      "/images/car-insurancelanding-page/before-car-insurance-screencapture-confused-car-insurance-2021-06-23-17-44-30.webp | ",
+      "/images/mywork/r-final-image-landscape.webp | "
     ]
   },
   "/confused-pet-insurance": {
     "texts": [
-      "Pet insurance is needlessly complex. With four cover types, each featuring unique rules, limits, and exclusions; it's difficult to know what your pets are truly covered for. This project sought to revamp our comparison journey, simplifying these intricacies and providing the information needed to for anyone to make a confident buying decision.",
-      "Pet Insurance: Simplifying a journey",
       "Product design project",
+      "Pet Insurance: Simplifying a journey",
+      "Pet insurance is needlessly complex. With four cover types, each featuring unique rules, limits, and exclusions; it's difficult to know what your pets are truly covered for. This project sought to revamp our comparison journey, simplifying these intricacies and providing the information needed to for anyone to make a confident buying decision.",
       "Project type",
       "As part of my role as a Product Designer at Confused.com.",
       "My role",
@@ -89,8 +95,9 @@
       "Areas for improvement:",
       "Notably, some participants expressed a desire to read about all three cover types together, rather than separated across two questions.",
       "Two participants highlighted the term \"limit\" as a potential point of confusion.",
-      "Confident",
-      "Not confident",
+      "88%confident",
+      "Confident 220 (88%)",
+      "Not confident 30 (12%)",
       "Based on the questions and information provided. How confident are you that you understand the difference between the three cover types?",
       "Testing the design: Usability testing results",
       "Following the survey, we ran usability testing sessions with 15 participants using a prototype of the redesigned flow. This phase aimed to gather qualitative data, assess design usability, and understand user interactions, especially with help text and new content.",
@@ -113,22 +120,26 @@
       "Usability testing pinpointed areas for subtle content adjustments.",
       "We introduced a comprehensive slide-out panel. This feature presents the advantages and disadvantages of each cover type upfront, offering users complete clarity before they begin answering questions. This section allowed users to compare all cover types in one place.",
       "We also refined visual aspects of the journey. These changes emphasise the personal nature of pet care.",
-      "Final designs"
+      "Final designs",
+      "Next project",
+      "Contact us: Improving a contact form and information suite",
+      "How can we make it easier for our users to get the information they need? A case study looking at how we improved our contact form and help centre."
     ],
     "images": [
       "/images/confused-pet-insurance/top-image.webp | An image of 2 phones with screens from the confused.com pet insurance comparison journey",
       "/images/confused-pet-insurance/new-ieation-min.webp | An image showcasing before and after images of the Confused.com pet insurance journey",
       "/images/confused-pet-insurance/refinement-image-min.webp | An image that shows a new drawer introduced to the design with more detailed explanations.",
       "/images/confused-pet-insurance/glamour-shots-2-min.webp | ",
+      "/images/confused-pet-insurance/gllamour-shots-4.webp | ",
       "/images/confused-pet-insurance/glamour-shots.webp | ",
       "/images/confused-pet-insurance/glamour-shots-5.webp | ",
-      "/images/confused-pet-insurance/gllamour-shots-4.webp | "
+      "/images/contact-us-redesign/2group-13041.webp | "
     ]
   },
   "/confused-rewards-redesign-1": {
     "texts": [
-      "Building Peace of Mind: Designing the 'Reminders' Feature for Confused.com",
       "Product design project",
+      "Building Peace of Mind: Designing the 'Reminders' Feature for Confused.com",
       "Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal—and statistically, when you'll find the cheapest prices. This 6-month project explores how solving user-needs lead to an increase in retention by capturing key data points.",
       "Project type",
       "As part of my role as a Senior Product Designer at Confused.com.",
@@ -139,10 +150,10 @@
       "Duration",
       "Project completed between June 2024- December 2024",
       "Project overview",
-      "At Confused.com, we knew our existing reminder system had a problem. We would use a user’s renewal date to send them email reminders before their insurance was due, but it operated behind the scenes, leaving users powerless. Users couldn't edit incorrect dates, stop unwanted reminders, or knowingly create reminders for other products.But this wasn't just a user frustration; it was a missed opportunity. Renewal dates are gold for increasing retention & product density, and we were leaving valuable data on the table.",
       "The challenge:",
-      "Transform this passive system into an empowering tool. Design a new feature that would allow users to view, edit, and create reminders effortlessly, while also encouraging them to share more renewal dates for other household products. This meant aligning key channels (eCRM, app, portal), exploring new reminder methods, boosting retention, and driving product density.",
+      "At Confused.com, we knew our existing reminder system had a problem. We would use a user’s renewal date to send them email reminders before their insurance was due, but it operated behind the scenes, leaving users powerless. Users couldn't edit incorrect dates, stop unwanted reminders, or knowingly create reminders for other products.But this wasn't just a user frustration; it was a missed opportunity. Renewal dates are gold for increasing retention & product density, and we were leaving valuable data on the table.",
       "My mission:",
+      "Transform this passive system into an empowering tool. Design a new feature that would allow users to view, edit, and create reminders effortlessly, while also encouraging them to share more renewal dates for other household products. This meant aligning key channels (eCRM, app, portal), exploring new reminder methods, boosting retention, and driving product density.",
       "Discovery phase",
       "Before starting any design work, we undertook a thorough discovery phase to define the problem. This comprised of 3 elements:",
       "1. Technical discovery",
@@ -162,11 +173,11 @@
       "Desire to speed up comparison: Users wanted reminders to help them compare new prices, rather than do it all for them.",
       "Misconceptions about insurance prices: Participants were generally unaware of the statistically cheapest time to shop for insurance, often guessing it was around 30 days before renewal. This insight presented a key selling point for our feature as we could notify them at the ‘cheapest’ time to find insurance.",
       "Everything in one place: Users had a desire to manage everything in one place, with a clear view of what tasks they have coming up.",
+      "Exploring solutions",
       "Armed with these insights, I moved onto design.",
       "I started by transforming key problems into \"How Might We...\" questions, this meant I could focus on the problems rather than jumping to solutions. This highlighted the key area to start designing, the customer account dashboard.",
       "Then, I explored four initial UI concepts through pencil sketches, refining two ideas into mid-fidelity designs.",
       "From here I could flesh out more detailed user flows, focusing on key tasks, such as stopping & editing reminders.",
-      "Exploring solutions",
       "Aligning product teams and data",
       "Once we had a clearer understanding of the user flow, we aligned with product teams to define a robust approach for managing renewal dates in the backend.",
       "This included discussions around how potential design changes affected key touchpoints (emails, app, and customer portal) and allowed us to highlight technical constraints.",
@@ -190,7 +201,10 @@
       "Retention:",
       "The new feature now manages over 600,000 individual insurance renewal dates, allowing Confused.com to contact each customer during the buying cycle.",
       "Platform Consistency:",
-      "The feature was seamlessly integrated into the Confused.com app. With systems in place to align renewal dates as we received more accurate data."
+      "The feature was seamlessly integrated into the Confused.com app. With systems in place to align renewal dates as we received more accurate data.",
+      "Next project",
+      "Confused.com Rewards: Expanding a rewards scheme to boost retention",
+      "Showcasing how we researched, designed and launched a new monthly reward scheme to improve app engagement and retain our customers year-on-year."
     ],
     "images": [
       "/images/confused-rewards-redesign-1/group-13120-1.webp | ",
@@ -199,17 +213,18 @@
       "/images/confused-rewards-redesign-1/screenshot-2025-02-26-at-15-24-23-1.webp | ",
       "/images/confused-rewards-redesign-1/screenshot-2025-02-26-at-15-23-48-1.webp | ",
       "/images/confused-rewards-redesign-1/group-13118.webp | ",
-      "/images/confused-rewards-redesign-1/group-13113.webp | ",
       "/images/confused-rewards-redesign-1/group-13112.webp | ",
+      "/images/confused-rewards-redesign-1/group-13113.webp | ",
       "/images/confused-rewards-redesign-1/group-13117.webp | ",
-      "/images/confused-rewards-redesign-1/dashboard-desktop-quotes-reminders-mobile-14.webp | "
+      "/images/confused-rewards-redesign-1/dashboard-desktop-quotes-reminders-mobile-14.webp | ",
+      "/images/mywork/group-17976.webp | "
     ]
   },
   "/confused-rewards-redesign": {
     "texts": [
-      "A 5-month product design project, working in a large team to expand an existing rewards scheme & integrate the offer into a mobile app.",
-      "Confused.com Rewards: Improving retention by optimising a marketing proposition",
       "Product design project",
+      "Confused.com Rewards: Improving retention by optimising a marketing proposition",
+      "A 5-month product design project, working in a large team to expand an existing rewards scheme & integrate the offer into a mobile app.",
       "Project type",
       "As part of my role as a product designer at Confused.com.",
       "My role",
@@ -221,13 +236,13 @@
       "Where did we start?",
       "When the project started, Confused.com Rewards was a simple offer:Choose a reward when you buy car, home or van insurance with Confused.com.The user could return to Confused.com after buying their insurance to select 1 of 4 rewards, worth £20. After completing a claim form they would be emailed a voucher, which could be redeemed with their chosen retailer.",
       "The problem",
+      "The problem:",
       "After buying car or home insurance, only 25% of our users return to buy with Confused.com the following year.",
       "However, 34% of users that redeem a reward return to buy the following year.",
-      "The problem:",
+      "The task:",
       "Improve the offer & the redemption process to encourage more users to claim a reward.",
       "Increase the 34% retention rate by improving Confused.com Rewards.",
       "Integrate rewards into the Confused.com App.",
-      "The task:",
       "Research & discovery",
       "What we did:",
       "Data analysis, to understand what we know about the current offer",
@@ -271,9 +286,9 @@
       "Through a combination of push notifications and emails, we also planned how and when reminders would be sent to the user to tell them their monthly reward was ready to redeem.",
       "First wireframes through to the final designs. Allowing the user to redeem and track their monthly reward.",
       "Final designs",
-      "App screens: Calendar tiles to show monthly redemption & the rewards tracker within the app.",
-      "Emails: An example of the monthly reward reminder email and the main reward redemption email.",
       "Rewards landing page during testing monthly reward testing period.",
+      "Emails: An example of the monthly reward reminder email and the main reward redemption email.",
+      "App screens: Calendar tiles to show monthly redemption & the rewards tracker within the app.",
       "Web tracker: Web tracker & promotion of the new monthly reward.",
       "Tracked results",
       "Renewal rates",
@@ -282,7 +297,10 @@
       "Monthly active users",
       "Trebled monthly active users over the first 6 months",
       "App downloads",
-      "App downloads up around 22% YoY for the first 6 months after launch"
+      "App downloads up around 22% YoY for the first 6 months after launch",
+      "Next project",
+      "Pet insurance: Simplifying complex information",
+      "Utilising testing to simplify complex information into a form people can navigate with confidence."
     ],
     "images": [
       "/images/confused-rewards-redesign/header-image.webp | Two phones displaying a rewards offer on Confused.com",
@@ -291,18 +309,19 @@
       "/images/confused-rewards-redesign/group-17971-min.webp | ",
       "/images/confused-rewards-redesign/tracker-states-development.webp | ",
       "/images/confused-rewards-redesign/group-17965.webp | ",
+      "/images/confused-rewards-redesign/rewards-landing-page-final-colours-desktop.webp | ",
+      "/images/confused-rewards-redesign/iphone-31.webp | ",
+      "/images/confused-rewards-redesign/iphone-29.webp | ",
       "/images/confused-rewards-redesign/5a-ready-to-use.webp | ",
       "/images/confused-rewards-redesign/4a-rewards-verified.webp | ",
-      "/images/confused-rewards-redesign/iphone-29.webp | ",
-      "/images/confused-rewards-redesign/iphone-31.webp | ",
-      "/images/confused-rewards-redesign/rewards-landing-page-final-colours-desktop.webp | ",
-      "/images/confused-rewards-redesign/mlp-claim-form-rewards-tracker.webp | "
+      "/images/confused-rewards-redesign/mlp-claim-form-rewards-tracker.webp | ",
+      "/images/mywork/group-17975.webp | "
     ]
   },
   "/confusedcom-rewards": {
     "texts": [
-      "Creating Rewards+ for Confused.com",
       "Product design project",
+      "Creating Rewards+ for Confused.com",
       "As a product designer, few things are as rewarding as seeing a project you've poured your heart into make a real impact. I recently had the incredible opportunity to lead the design of Rewards+, Confused.com's brand-new flagship marketing scheme.",
       "This wasn't just about a fresh coat of paint; I stepped beyond my core responsibilities to help rethink how we can use a loyalty scheme to drive significant shifts in acquisition, retention, and product density.",
       "Project type",
@@ -314,24 +333,24 @@
       "Duration",
       "Project completed between November 2024- March 2025",
       "Project overview",
+      "The challenge:",
       "For the past 5 years, Confused.com has offered incentives to customers who purchase car, home, or van insurance. Our previous scheme gave users a choice of one of four rewards. We even introduced a monthly treat – a hot drink from Greggs – which was a hit, significantly boosting retention.",
       "However, there was a catch… only 15% of our customers actually redeemed a reward. This meant we weren't fully leveraging the retention power of our monthly treat. We knew we could do better.",
-      "The challenge:",
-      "Within 18 months, create a new marketing proposition that would make Confused.com the go-to platform for insurance, driving a meaningful shift in acquisition, retention, and product density (customers buying more products from us).",
       "My mission:",
+      "Within 18 months, create a new marketing proposition that would make Confused.com the go-to platform for insurance, driving a meaningful shift in acquisition, retention, and product density (customers buying more products from us).",
+      "Aligning with stakeholders & driving collaboration",
       "To build a strong foundation, our first step was aligning stakeholders and creating a shared understanding of where we stood.",
       "We brought together three cross-functional squads, including marketing, product, support, developers and senior leadership. We ran a series of collaborative workshops. Each session started by grounding the group in our current state before opening up discussion around future opportunities.",
-      "Aligning with stakeholders & driving collaboration",
       "To support this, we consolidated everything we knew. Including analysis of our current offer, past user research, customer support feedback, and a large-scale competitor review. This surfaced a few key insights:",
       "Online redemption was frustrating, leading to user drop-offs",
       "Complex redemption journeys were perceived as dishonest and eroded trust",
       "Rewards often went unused, creating low perceived value",
       "Users wanted choice and flexibility, but rarely liked the options available",
       "Competitor analysis (34 schemes) showed that successful programmes balanced short- and long-term value, often with a sense of progression",
+      "Early ideation",
       "The second half of each session was all about blue-sky thinking, taking what we knew and asking, “what could we do with this?”",
       "We opened it up to the whole group so everyone could contribute ideas. It was important that the problem felt clear to everyone, and that different perspectives across the business had a voice in shaping potential solutions.",
       "No idea was off limits. By the end, we’d generated over 50 unique ideas.",
-      "Early ideation",
       "Refining the vision",
       "To narrow down our ideas, the Product Manager and I scored each one out of 10 against four critical categories:",
       "Does this idea deliver customer value?",
@@ -386,17 +405,20 @@
       "However, our research revealed that these ideas focused too much on future progression and not enough on the here and now. Users cared more about the reward they’ll get now, not what they’ll get next year.",
       "Final designs",
       "The results:",
-      "Our post-live survey of purchasers revealed:",
-      "63% of respondents said Rewards+ had a major impact on their decision to buy their insurance.",
-      "78% of respondents would be much more likely to compare insurance with Confused.com in future because of Rewards+.",
-      "We also learned that 40% of respondents noticed the offer while comparing quotes.",
       "The impact on retention and acquisition:",
       "Quote to sale conversion increased by +5% from launch.",
       "Rewards+ customers' retention rate is 28% higher than our existing Reward customers, and 42% higher than users who didn't claim any reward.",
       "Rewards+ led to a 5% increase in customers returning from non-paid channels. Many users are now redeeming rewards in our app and choosing to return to buy other products via this channel, rather than through paid search.",
+      "Our post-live survey of purchasers revealed:",
+      "63% of respondents said Rewards+ had a major impact on their decision to buy their insurance.",
+      "78% of respondents would be much more likely to compare insurance with Confused.com in future because of Rewards+.",
+      "We also learned that 40% of respondents noticed the offer while comparing quotes.",
       "Product Density and Sales Frequency:",
       "Rewards+ customers are buying more products, more frequently, with a +1.5% increase across both metrics during the test period.",
-      "The retention trend suggests that the \"more you buy, more you get\" element of Rewards+ is actively encouraging subsequent purchases sooner."
+      "The retention trend suggests that the \"more you buy, more you get\" element of Rewards+ is actively encouraging subsequent purchases sooner.",
+      "Next project",
+      "Building Peace of Mind: Designing Confused.com’s Reminders Feature",
+      "Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal"
     ],
     "images": [
       "/images/confusedcom-rewards/r-final-image-landscape.webp | ",
@@ -413,19 +435,20 @@
       "/images/confusedcom-rewards/kerching-concept.webp | ",
       "/images/confusedcom-rewards/to-do-to-wohoo-concept.webp | ",
       "/images/confusedcom-rewards/wallet-screen-wallet.webp | ",
-      "/images/confusedcom-rewards/sainsbury-s.webp | ",
       "/images/confusedcom-rewards/wallet-screen-m-s-gift-card.webp | ",
-      "/images/confusedcom-rewards/email-20-reward.webp | ",
       "/images/confusedcom-rewards/wallet-history.webp | ",
-      "/images/confusedcom-rewards/prices-page-banner.webp | ",
       "/images/confusedcom-rewards/wallet-screen-choose-reward.webp | ",
-      "/images/confusedcom-rewards/email-40-reward.webp | "
+      "/images/confusedcom-rewards/sainsbury-s.webp | ",
+      "/images/confusedcom-rewards/email-20-reward.webp | ",
+      "/images/confusedcom-rewards/prices-page-banner.webp | ",
+      "/images/confusedcom-rewards/email-40-reward.webp | ",
+      "/images/mywork/group-13120-1.webp | "
     ]
   },
   "/contact-us-redesign": {
     "texts": [
-      "Contact form and information suite redesign",
       "Product design project",
+      "Contact form and information suite redesign",
       "A UX review and complete redesign of a contact form, help centre and FAQs.",
       "Making it easier for our users to get the answers they need, while reducing the amount of customer queries our customer support team see daily.",
       "Project type",
@@ -437,10 +460,10 @@
       "Duration",
       "Designs completed between July 2021-Sept 2021",
       "The problem",
-      "Confused.com users need answers to their queries quickly so they can continue comparing or buying insurance.",
       "User problem",
-      "The customer support team need a more effective contact process to reduce the number of customer queries coming through to them.",
+      "Confused.com users need answers to their queries quickly so they can continue comparing or buying insurance.",
       "Business problem",
+      "The customer support team need a more effective contact process to reduce the number of customer queries coming through to them.",
       "The solution",
       "Redesign the contact form, help centre and FAQ pages to help users self serve when they’re looking for answers.",
       "Ensure answers to simple questions are easy to find and remove the need for users to get in touch and wait 2-3 days for a response.",
@@ -463,40 +486,46 @@
       "Users would see 2 email addresses before they get to the form. Neither email address was used for customer questions and could cause the user to contact an incorrect email address.",
       "The FAQs featured are not particularly helpful and didn’t line up with the most common questions our customer support team would answer.",
       "Our FAQ groups, featured on a different page, were not clearly grouped and there was no clear navigation to each set of FAQs.",
+      "Contact form redesign",
       "I then started creating basic wireframes to solve the problems that came out of the research and usability assessment.",
       "During this process we found that we could include helpful information within the contact form itself. This would help users get quick answers to common questions while reducing the amount of questions coming through to our customer support team.",
       "Users would select the subject of their query and what they were having a problem with and we would show some information to help them with that topic. I used content design to improve hundreds of pieces of information, to make sure we’re providing the information our users need in the right way.",
       "I then developed this idea into increasing levels of fidelity, while moving the design into our new design patterns.",
       "It was important that we designed the contact form in such a way that the helpful information didn’t slow down users with complex queries. Users can still get in touch if the information didn’t answer their question.",
-      "Contact form redesign",
       "Help centre redesign",
       "I then focused on redesigning the help centre page to help users find FAQs, guides and helpful information.",
       "Navigating between the groups of FAQs was a key issue, using a dropdown the choose the topic allowed us to display all of our FAQs on one page, rather than 10 separate pages.",
       "I also rewrote all of our site FAQs and used content design to ensure there’s a consistent language throughout each piece of information.",
-      "Final designs"
+      "Final designs",
+      "Next project",
+      "Content design: The anatomy of a landing page",
+      "A deep dive into my content design process with first-hand examples from a marketing landing page I designed in 2022. See how I approach problems, organise content and modify copy to improve conversion and help users get the information they need."
     ],
     "images": [
       "/images/contact-us-redesign/2group-13041.webp | ",
       "/images/contact-us-redesign/old-contact-https-www-confused-com-help-contact-us.webp | Confused.com Contact us page - before the redesign",
       "/images/contact-us-redesign/contact-us-subject-help-selected.webp | ",
       "/images/contact-us-redesign/help-centre-1.webp | ",
+      "/images/contact-us-redesign/contact-us-still-need-to-get-in-touch-yes.webp | ",
       "/images/contact-us-redesign/we-ve-got-your-messagedevice-macbook-pro.webp | Laptop mock up that shows the confirmation screen, after a user has got in touch",
-      "/images/contact-us-redesign/contact-us-still-need-to-get-in-touch-yes.webp | "
+      "/images/mywork/group-17977.webp | "
     ]
   },
   "/contact": {
     "texts": [
       "Contact",
       "Get in touch! ✌️",
+      "Whether it’s a role, a project or just a chat about design, I’d love to hear from you.",
       "Bristol, UK",
-      "Don’t fill this out:"
+      "Don’t fill this out:",
+      "All fields are required."
     ],
     "images": []
   },
   "/content-design-the-anatomy-of-a-landing-page": {
     "texts": [
-      "Content design: The anatomy of a landing page",
       "Content design",
+      "Content design: The anatomy of a landing page",
       "To dissect how I approach content design, I’ve broken down a page I rewrote and redesigned in 2022. I’ll outline my process, review the impact content can have on users and summarise the design decisions I made along the way.",
       "The page I’m reviewing is the Confused.com car insurance landing page, the most visited page on the site. As it’s an SEO page, it’s content-heavy and the primary goal is to convince users to compare car insurance quotes.",
       "How I approach content design",
@@ -532,13 +561,16 @@
       "Organising longer content",
       "For longer content, it’s important to provide detailed and helpful information without overwhelming users.",
       "Split long content into a separate module.",
-      "Kept content to less than 350 words. Any longer and it canlook cluttered.",
+      "Kept content to less than 350 words. Any longer and it can look cluttered.",
       "Used two columns for content with a clear break.",
       "Utilised bullets points where possible.",
       "Front loaded paragraphs so users can scan and find the information they need without reading for too long.",
       "Swapped words for more appropriate components, in this case a graph and bullets that use iconography.",
       "Examples of longer content: Broken down into manageable sections.",
-      "The final result"
+      "The final result",
+      "Next project",
+      "Rewards+: Designing and launching a brand new loyalty scheme",
+      "Taking a collaborative approach to shape a brand-led experience."
     ],
     "images": [
       "/images/content-design-the-anatomy-of-a-landing-page/group-17977.webp | ",
@@ -553,7 +585,8 @@
       "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-10-22.webp | ",
       "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-32-03.webp | ",
       "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-32-21.webp | ",
-      "/images/content-design-the-anatomy-of-a-landing-page/desktop-min.webp | "
+      "/images/content-design-the-anatomy-of-a-landing-page/desktop-min.webp | ",
+      "/images/mywork/r-final-image-landscape.webp | "
     ]
   },
   "/expert-ux-design": {
@@ -572,23 +605,11 @@
       "Completed outside of work hours from Feb - Sept 2020",
       "The process",
       "The design process for this project was borken down into 6 sections:",
-      "1. ResearchThe research section included a competitor analysis, user surveys and user interviews. I wanted to understand the problem and learn about the users.",
-      "1. Research",
       "The research section included a competitor analysis, user surveys and user interviews. I wanted to understand the problem and learn about the users.",
-      "2. DefineUsing my research, I defined the problem, create user stories, user personas and user journeys to confirm who the user is and how I can best solve their problem.",
-      "2. Define",
       "Using my research, I defined the problem, create user stories, user personas and user journeys to confirm who the user is and how I can best solve their problem.",
-      "3. IdeateI then created user flows and used information architecture to create sitemaps.",
-      "3. Ideate",
       "I then created user flows and used information architecture to create sitemaps.",
-      "4. Wireframes & prototypesAfter analysing the data, I created pen and paper wireframes before moving on to higher quality designs in Adobe XD. I also created prototypes ready for testing.",
-      "4. Wireframes & prototypes",
       "After analysing the data, I created pen and paper wireframes before moving on to higher quality designs in Adobe XD. I also created prototypes ready for testing.",
-      "5. User testingI ran usability and preference testing sessions with numerous participants. This phase also involved analysing and reporting on the resulting data.",
-      "5. User testing",
       "I ran usability and preference testing sessions with numerous participants. This phase also involved analysing and reporting on the resulting data.",
-      "6. Design iterationWith the data from the user testing, I started iterated on the designs I had created and tested.",
-      "6. Design iteration",
       "With the data from the user testing, I started iterated on the designs I had created and tested.",
       "The problem",
       "Users need a way to communicate with experts in a wide range of professional fields because they want specific questions answered.",
@@ -596,6 +617,7 @@
       "The solution",
       "I believe that creating Expert will allow users to discover and communicate with experts to help solve their creative problems.",
       "Users can contact experts via message or video calls. Expert will encourage collaboration amongst a community of like-minded individuals.",
+      "1. Research",
       "Competitor analysis",
       "User interviews",
       "I completed a SWOT analysis of Just Answer and Clarity. In highlighting In the strengths, weaknesses, opportunities and threats of competitors I could better understand how to approach the problem.",
@@ -613,6 +635,7 @@
       "Video calling is preferred but offering a variety is key",
       "Social engagement enhances enjoyment of creative subjects",
       "Viewing an expert’s work would create trust",
+      "2. Define",
       "User personas",
       "User journeys",
       "With the data generated during the research phase, I created two user personas that encapsulated my target audience. I referred back to the two personas throughout the project to ensure I was solving the right problems.",
@@ -622,6 +645,7 @@
       "How would they be feeling?",
       "What do they want?",
       "A user journey for the primary personas",
+      "3. Ideate",
       "User task flows",
       "Information architecture & sitemap",
       "User task flow",
@@ -631,6 +655,7 @@
       "I then created a comprehensive sitemap, covering all of the features that were highlighted during competitor research and user interviews.",
       "I created an initial version, set up and ran a short online survey, then adapted the sitemaps based on the results. The second iteration is included below.",
       "A sitemap for Expert",
+      "4. Wireframes & prototypes",
       "Low fidelity wireframes",
       "I took all of the information, data and ideas and started sketching some wireframes. I used paper and pencil to make on-the-go alterations.",
       "A selection of low fidelity wireframes",
@@ -667,7 +692,10 @@
       "Design language system",
       "I also developed a language system for hand off of my project which included design elements and rules for tone of voice and accessibility.",
       "Final design & prototype",
-      "Want to try out the prototype?"
+      "Want to try out the prototype?",
+      "Next project",
+      "Rewards+: Designing and launching a brand new loyalty scheme",
+      "Taking a collaborative approach to shape a brand-led experience."
     ],
     "images": [
       "/images/expert-ux-design/expert-thumbnail-for-portfolio.webp | ",
@@ -689,21 +717,34 @@
       "/images/expert-ux-design/3-all-images.webp | ",
       "/images/expert-ux-design/four-mockups.webp | ",
       "/images/expert-ux-design/homescreen-run-through.webp | ",
-      "/images/expert-ux-design/new-mobile-wireframes-video-2.webp | "
+      "/images/expert-ux-design/new-mobile-wireframes-video-2.webp | ",
+      "/images/mywork/r-final-image-landscape.webp | "
     ]
   },
   "/": {
     "texts": [
       "Hi, I’m Tom 👋",
       "I’m a Senior Product Designer from Bristol, UK.",
-      "I’m a user focused designer with experience in UX, UI and content design."
+      "I’m a user focused designer with experience in UX, UI and content design.",
+      "Selected work",
+      "Case studies",
+      "Rewards+: Designing and launching a brand new loyalty scheme",
+      "Taking a collaborative approach to shape a brand-led experience.",
+      "Building Peace of Mind: Designing Confused.com’s Reminders Feature",
+      "Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal",
+      "Confused.com Rewards: Expanding a rewards scheme to boost retention",
+      "Showcasing how we researched, designed and launched a new monthly reward scheme to improve app engagement and retain our customers year-on-year."
     ],
     "images": [
-      "/images/home/ta-headshot-2-copy.webp | Tom Allen"
+      "/images/home/ta-headshot-2-copy.webp | Tom Allen",
+      "/images/mywork/r-final-image-landscape.webp | ",
+      "/images/mywork/group-13120-1.webp | ",
+      "/images/mywork/group-17976.webp | "
     ]
   },
   "/mywork": {
     "texts": [
+      "My work",
       "Product Design Case Studies",
       "Rewards+: Designing and launching a brand new loyalty scheme",
       "Taking a collaborative approach to shape a brand-led experience.",
@@ -731,10 +772,10 @@
     ]
   },
   "/pagecv": {
-    "texts": [],
+    "texts": ["Curriculum vitae", "Tom Allen", "Senior Product Designer, Bristol UK"],
     "images": [
-      "/images/pagecv/tallen-cv-1.webp | Tom Allen’s CV",
-      "/images/pagecv/ta-headshot-2.webp | Tom Allen"
+      "/images/pagecv/ta-headshot-2.webp | Tom Allen",
+      "/images/pagecv/tallen-cv-1.webp | Tom Allen’s CV"
     ]
   },
   "/umoov-ux-ui-design": {
@@ -753,14 +794,8 @@
       "Duration",
       "Completed outside of work hours over 7 weeks. October - December 2020",
       "The process",
-      "1. DefineCreate user flows to define the key paths a user must take to complete tasks. Explore the core functionalities that will solve user problems. Develop the tone of the project using moodboards.",
-      "1. Define",
       "Create user flows to define the key paths a user must take to complete tasks. Explore the core functionalities that will solve user problems. Develop the tone of the project using moodboards.",
-      "2. ExploreCreate low, mid and high fidelity wireframes to create the layout. Utilise low-fidelity wireframes to make quick iterations and explore ideas before refining the design in mid and high fidelity. Develop a brand identity that aligns with the user.",
-      "2. Explore",
       "Create low, mid and high fidelity wireframes to create the layout. Utilise low-fidelity wireframes to make quick iterations and explore ideas before refining the design in mid and high fidelity. Develop a brand identity that aligns with the user.",
-      "3. CreateRefine the direction of the UI by creating a high-fidelity prototype and then communicate all design elements in a style guide.",
-      "3. Create",
       "Refine the direction of the UI by creating a high-fidelity prototype and then communicate all design elements in a style guide.",
       "The problem",
       "People with busy work schedules struggle to find the time and motivation to workout regularly. Finding exercise routines for the right level can be difficult, especially when wanting to try something new.",
@@ -789,7 +824,10 @@
       "The achievement badges were designed to develop the gamification of the project. They’re also effective in keeping the app fun and light-hearted as users take on exercise challenges.",
       "Style guide",
       "I then created a style guide for the project. This includes guidelines for colour, typography, iconography, logo, imagery and UI elements.",
-      "Final screens & mock ups"
+      "Final screens & mock ups",
+      "Next project",
+      "Rewards+: Designing and launching a brand new loyalty scheme",
+      "Taking a collaborative approach to shape a brand-led experience."
     ],
     "images": [
       "/images/umoov-ux-ui-design/image-2-new.webp | ",
@@ -805,7 +843,8 @@
       "/images/umoov-ux-ui-design/image-7.webp | ",
       "/images/umoov-ux-ui-design/all-screens-min.webp | ",
       "/images/umoov-ux-ui-design/challenges-walkthrough.webp | ",
-      "/images/umoov-ux-ui-design/workout-walkthrough-video.webp | "
+      "/images/umoov-ux-ui-design/workout-walkthrough-video.webp | ",
+      "/images/mywork/r-final-image-landscape.webp | "
     ]
   }
 }

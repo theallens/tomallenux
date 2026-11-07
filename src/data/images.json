@@ -2,65 +2,42 @@
   "/images/about/45e0a690-a20f-4817-906d-3d8584279d24.webp": {
     "width": 1600,
     "height": 1001,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/about/8a79d4c0-bd81-4b65-bac3-79f6fc27df74.webp": {
     "width": 1600,
     "height": 1463,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/about/dsc-0279.webp": {
     "width": 2500,
     "height": 3750,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/about/dsc-1106.webp": {
     "width": 2500,
     "height": 3750,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/about/img-2120.webp": {
     "width": 1147,
     "height": 1575,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/car-insurancelanding-page/2roup-13043.webp": {
     "width": 2008,
     "height": 850,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/car-insurancelanding-page/before-car-insurance-screencapture-confused-car-insurance-2021-06-23-17-44-30.webp": {
     "width": 2500,
     "height": 13065,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-pet-insurance/glamour-shots-2-min.webp": {
     "width": 1556,
     "height": 2152,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-pet-insurance/glamour-shots-5.webp": {
     "width": 413,
@@ -75,31 +52,22 @@
   "/images/confused-pet-insurance/gllamour-shots-4.webp": {
     "width": 858,
     "height": 547,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-pet-insurance/new-ieation-min.webp": {
     "width": 1778,
     "height": 2572,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-pet-insurance/refinement-image-min.webp": {
     "width": 1119,
     "height": 1439,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-pet-insurance/top-image.webp": {
     "width": 1271,
     "height": 486,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign-1/dashboard-desktop-quotes-reminders-mobile-14.webp": {
     "width": 375,
@@ -124,45 +92,32 @@
   "/images/confused-rewards-redesign-1/group-13118.webp": {
     "width": 1559,
     "height": 856,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-rewards-redesign-1/group-13120-1.webp": {
     "width": 937,
     "height": 671,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign-1/group-13121.webp": {
     "width": 991,
     "height": 640,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign-1/group-13122.webp": {
     "width": 1135,
     "height": 891,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign-1/screenshot-2025-02-26-at-15-23-48-1.webp": {
     "width": 967,
     "height": 720,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign-1/screenshot-2025-02-26-at-15-24-23-1.webp": {
     "width": 979,
     "height": 729,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign/4a-rewards-verified.webp": {
     "width": 375,
@@ -177,32 +132,22 @@
   "/images/confused-rewards-redesign/confused-2023-04.webp": {
     "width": 1304,
     "height": 1304,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign/group-17965.webp": {
     "width": 2500,
     "height": 1022,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-rewards-redesign/group-17971-min.webp": {
     "width": 2500,
     "height": 4014,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-rewards-redesign/header-image.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign/iphone-29.webp": {
     "width": 415,
@@ -217,56 +162,37 @@
   "/images/confused-rewards-redesign/mlp-claim-form-rewards-tracker.webp": {
     "width": 1920,
     "height": 1870,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-rewards-redesign/rewards-landing-page-final-colours-desktop.webp": {
     "width": 1184,
     "height": 3806,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confused-rewards-redesign/tracker-states-development.webp": {
     "width": 2500,
     "height": 842,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confused-rewards-redesign/user-flow-rewards.webp": {
     "width": 2500,
     "height": 1180,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/1-tiered-rewards-bigger-rewards-introduction.webp": {
     "width": 2500,
     "height": 1157,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/2-tiered-rewards-bigger-rewards-detail.webp": {
     "width": 1518,
     "height": 1939,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/all-ideas-mapped-out.webp": {
     "width": 1220,
     "height": 1158,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/dashboard-concept-1.webp": {
     "width": 563,
@@ -276,9 +202,7 @@
   "/images/confusedcom-rewards/discovery-plan.webp": {
     "width": 1398,
     "height": 1184,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/email-20-reward.webp": {
     "width": 623,
@@ -293,17 +217,12 @@
   "/images/confusedcom-rewards/focus-group-image.webp": {
     "width": 1658,
     "height": 948,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/kerching-concept.webp": {
     "width": 1451,
     "height": 864,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/prices-page-banner.webp": {
     "width": 623,
@@ -313,31 +232,22 @@
   "/images/confusedcom-rewards/prioritising-ideas.webp": {
     "width": 1233,
     "height": 1053,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/r-final-image-landscape.webp": {
     "width": 1406,
     "height": 649,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/r-final-image-phone-included.webp": {
     "width": 816,
     "height": 649,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/confusedcom-rewards/rising-reward-concept.webp": {
     "width": 2049,
     "height": 810,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/sainsbury-s.webp": {
     "width": 623,
@@ -347,18 +257,12 @@
   "/images/confusedcom-rewards/to-do-to-wohoo-concept.webp": {
     "width": 2168,
     "height": 1992,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/user-flow.webp": {
     "width": 2075,
     "height": 1421,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/confusedcom-rewards/wallet-history.webp": {
     "width": 623,
@@ -383,73 +287,47 @@
   "/images/contact-us-redesign/2group-13041.webp": {
     "width": 1895,
     "height": 1025,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/contact-us-redesign/contact-us-still-need-to-get-in-touch-yes.webp": {
     "width": 1920,
     "height": 4925,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/contact-us-redesign/contact-us-subject-help-selected.webp": {
     "width": 1920,
     "height": 2519,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/contact-us-redesign/help-centre-1.webp": {
     "width": 1920,
     "height": 3012,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/contact-us-redesign/old-contact-https-www-confused-com-help-contact-us.webp": {
     "width": 1920,
     "height": 3438,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/contact-us-redesign/we-ve-got-your-messagedevice-macbook-pro.webp": {
     "width": 1511,
     "height": 930,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/desktop-min.webp": {
     "width": 1920,
     "height": 12553,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/frame-13534.webp": {
     "width": 1920,
     "height": 747,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/group-17977.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-14-at-17-31-1.webp": {
     "width": 637,
@@ -459,132 +337,87 @@
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-18-01.webp": {
     "width": 896,
     "height": 220,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-18-27.webp": {
     "width": 1384,
     "height": 550,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-18-39.webp": {
     "width": 1312,
     "height": 422,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-46-59.webp": {
     "width": 1068,
     "height": 106,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-47-16.webp": {
     "width": 902,
     "height": 248,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-09-47-34.webp": {
     "width": 1106,
     "height": 486,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-10-22.webp": {
     "width": 1504,
     "height": 1490,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-32-03.webp": {
     "width": 1750,
     "height": 822,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/content-design-the-anatomy-of-a-landing-page/screenshot-2023-01-15-at-10-32-21.webp": {
     "width": 1754,
     "height": 728,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/1-typography.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/2-1-colours.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/2-2-colour.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/3-all-images.webp": {
     "width": 2500,
     "height": 2500,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/5-1-ui-elements.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/5-2-ui-elements.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/expert-thumbnail-for-portfolio.webp": {
     "width": 1772,
     "height": 1181,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/four-mockups.webp": {
     "width": 2000,
     "height": 1000,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/homescreen-run-through.webp": {
     "width": 183,
@@ -594,25 +427,17 @@
   "/images/expert-ux-design/low-fidelity-wireframes.webp": {
     "width": 1414,
     "height": 878,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/expert-ux-design/new-high-fidelity-wireframes.webp": {
     "width": 2500,
     "height": 1049,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/new-mid-fidelity-wireframes.webp": {
     "width": 2500,
     "height": 990,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/new-mobile-wireframes-video-2.webp": {
     "width": 182,
@@ -622,150 +447,102 @@
   "/images/expert-ux-design/sitemap-1.webp": {
     "width": 802,
     "height": 723,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/expert-ux-design/swot-analysis-clarity.webp": {
     "width": 1300,
     "height": 1308,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/expert-ux-design/usability-test-results-1-community-section.webp": {
     "width": 1850,
     "height": 2997,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/usability-test-results-2-phone-icon.webp": {
     "width": 2500,
     "height": 1812,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/expert-ux-design/user-journey-1.webp": {
     "width": 965,
     "height": 605,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/expert-ux-design/user-persona-1.webp": {
     "width": 956,
     "height": 584,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/expert-ux-design/user-task-flow-1-new.webp": {
     "width": 953,
     "height": 548,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/home/ta-headshot-2-copy.webp": {
     "width": 2500,
     "height": 2399,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/mywork/bikegroup-17975.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/mywork/group-13120-1.webp": {
     "width": 937,
     "height": 671,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/mywork/group-17975.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/mywork/group-17976.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/mywork/group-17977.webp": {
     "width": 1137,
     "height": 539,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/mywork/r-final-image-landscape.webp": {
     "width": 1406,
     "height": 649,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/pagecv/ta-headshot-2.webp": {
     "width": 1890,
     "height": 2403,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/pagecv/tallen-cv-1.webp": {
     "width": 1224,
     "height": 1584,
-    "variants": [
-      750
-    ]
+    "variants": [750]
   },
   "/images/shared/logo-second-try.webp": {
     "width": 1667,
     "height": 2126,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/all-badges.webp": {
     "width": 2500,
     "height": 643,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/all-screens-min.webp": {
     "width": 2500,
     "height": 2500,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/challenges-progression.webp": {
     "width": 2500,
     "height": 1136,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/challenges-walkthrough.webp": {
     "width": 256,
@@ -775,74 +552,47 @@
   "/images/umoov-ux-ui-design/image-2-new.webp": {
     "width": 2500,
     "height": 2143,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/image-7.webp": {
     "width": 2500,
     "height": 1974,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/logos-examples.webp": {
     "width": 2500,
     "height": 3767,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/mood-board.webp": {
     "width": 2500,
     "height": 1591,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/style-guide-colours.webp": {
     "width": 2500,
     "height": 1666,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/style-guide-logo.webp": {
     "width": 2500,
     "height": 1666,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/style-guide-typography.webp": {
     "width": 2500,
     "height": 1666,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/user-flows.webp": {
     "width": 2500,
     "height": 2000,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/workout-list-progression.webp": {
     "width": 2500,
     "height": 1136,
-    "variants": [
-      750,
-      1500
-    ]
+    "variants": [750, 1500]
   },
   "/images/umoov-ux-ui-design/workout-walkthrough-video.webp": {
     "width": 256,

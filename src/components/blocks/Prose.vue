@@ -14,7 +14,16 @@ const router = useRouter();
 function onClick(e: MouseEvent) {
   const a = (e.target as HTMLElement).closest("a");
   const href = a?.getAttribute("href");
-  if (!a || !href || a.target === "_blank" || e.metaKey || e.ctrlKey || e.shiftKey || !isInternal(href)) return;
+  if (
+    !a ||
+    !href ||
+    a.target === "_blank" ||
+    e.metaKey ||
+    e.ctrlKey ||
+    e.shiftKey ||
+    !isInternal(href)
+  )
+    return;
   e.preventDefault();
   router.push(href);
 }

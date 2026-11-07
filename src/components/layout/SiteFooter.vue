@@ -20,7 +20,9 @@ const year = new Date().getFullYear();
       <div class="site-footer__meta">
         <span>© {{ year }} {{ site.name }}</span>
         <nav aria-label="Footer">
-          <RouterLink v-for="item in navigation" :key="item.to" :to="item.to">{{ item.label }}</RouterLink>
+          <RouterLink v-for="item in navigation" :key="item.to" :to="item.to">{{
+            item.label
+          }}</RouterLink>
         </nav>
       </div>
     </Section>

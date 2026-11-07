@@ -17,9 +17,12 @@ function isActive(to: string) {
   return route.path === to || route.path.startsWith(`${to}/`);
 }
 
-watch(() => route.fullPath, () => {
-  drawer.value = false;
-});
+watch(
+  () => route.fullPath,
+  () => {
+    drawer.value = false;
+  }
+);
 </script>
 
 <template>
@@ -62,7 +65,14 @@ watch(() => route.fullPath, () => {
     </div>
   </v-app-bar>
 
-  <v-navigation-drawer id="site-drawer" v-model="drawer" temporary location="right" width="300" class="site-drawer">
+  <v-navigation-drawer
+    id="site-drawer"
+    v-model="drawer"
+    temporary
+    location="right"
+    width="300"
+    class="site-drawer"
+  >
     <nav aria-label="Main">
       <v-list nav class="pt-6">
         <v-list-item
@@ -117,7 +127,7 @@ watch(() => route.fullPath, () => {
     text-decoration: none;
   }
   .site-header__link::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

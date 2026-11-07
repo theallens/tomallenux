@@ -8,11 +8,11 @@ import { imageInfo } from "@/lib/images.ts";
 
 const props = withDefaults(
   defineProps<{
-    items: { src: string; alt?: string; caption?: string }[]
-    columns?: number
-    mobileColumns?: number
+    items: { src: string; alt?: string; caption?: string }[];
+    columns?: number;
+    mobileColumns?: number;
   }>(),
-  { columns: 3, mobileColumns: 2 },
+  { columns: 3, mobileColumns: 2 }
 );
 
 const withInfo = computed(() => props.items.map((item) => ({ ...item, ...imageInfo(item.src) })));
@@ -34,7 +34,12 @@ const mobile = computed(() => distribute(props.mobileColumns));
 
 <template>
   <div class="gallery">
-    <div v-for="(layout, li) in [mobile, desktop]" :key="li" class="gallery__layout" :class="li ? 'is-desktop' : 'is-mobile'">
+    <div
+      v-for="(layout, li) in [mobile, desktop]"
+      :key="li"
+      class="gallery__layout"
+      :class="li ? 'is-desktop' : 'is-mobile'"
+    >
       <div v-for="(col, ci) in layout" :key="ci" class="gallery__col">
         <figure v-for="item in col" :key="item.src" class="gallery__item">
           <img

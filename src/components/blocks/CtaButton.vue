@@ -8,17 +8,35 @@ import { mdiArrowRight } from "@mdi/js";
 import { isInternal } from "@/lib/links.ts";
 
 const props = withDefaults(
-  defineProps<{ to: string; newWindow?: boolean; variant?: "flat" | "outlined" | "text"; arrow?: boolean }>(),
-  { variant: "flat", arrow: true },
+  defineProps<{
+    to: string;
+    newWindow?: boolean;
+    variant?: "flat" | "outlined" | "text";
+    arrow?: boolean;
+  }>(),
+  { variant: "flat", arrow: true }
 );
 
-const link = computed(() => (isInternal(props.to) && !props.newWindow
-  ? { to: props.to }
-  : { href: props.to, target: props.newWindow ? "_blank" : undefined, rel: props.newWindow ? "noopener" : undefined }));
+const link = computed(() =>
+  isInternal(props.to) && !props.newWindow
+    ? { to: props.to }
+    : {
+        href: props.to,
+        target: props.newWindow ? "_blank" : undefined,
+        rel: props.newWindow ? "noopener" : undefined,
+      }
+);
 </script>
 
 <template>
-  <v-btn v-bind="link" :active="false" color="primary" :variant="variant" :append-icon="arrow ? mdiArrowRight : undefined" class="cta">
+  <v-btn
+    v-bind="link"
+    :active="false"
+    color="primary"
+    :variant="variant"
+    :append-icon="arrow ? mdiArrowRight : undefined"
+    class="cta"
+  >
     <slot />
   </v-btn>
 </template>
