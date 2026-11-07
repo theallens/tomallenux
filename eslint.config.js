@@ -159,7 +159,8 @@ export default [
   {
     // Prettier turns off the quote rule; keep it on, since Prettier now uses double quotes too.
     rules: {
-      quotes: ["error", "double"],
+      // avoidEscape: strings containing double quotes may use single quotes, as Prettier does.
+      quotes: ["error", "double", { avoidEscape: true }],
       "vue/html-quotes": ["error", "double"],
     },
   },
