@@ -5,6 +5,8 @@ import images from "./images.json";
 const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) =>
   file.split("/").pop()!.replace(".vue", "")
 );
+// Case studies moved to Sanity have no page file. Removed once they have all moved.
+workPages.push("confused-pet-insurance");
 const slugs = projects.flatMap((p) => (p.slug ? [p.slug] : []));
 
 describe("projects on the My work page", () => {

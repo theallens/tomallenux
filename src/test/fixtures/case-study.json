@@ -1,0 +1,1019 @@
+{
+  "_createdAt": "2026-11-07T18:29:08Z",
+  "_id": "YMRintqqufdLfRaa41lmZp",
+  "_rev": "YMRintqqufdLfRaa41lmUq",
+  "_type": "caseStudy",
+  "_updatedAt": "2026-11-07T18:29:08Z",
+  "facts": [
+    {
+      "_key": "14105ab0c627",
+      "_type": "fact",
+      "label": "Project type",
+      "value": "As part of my role as a Product Designer at Confused.com."
+    },
+    {
+      "_key": "58ca5c996afc",
+      "_type": "fact",
+      "label": "My role",
+      "value": "Product and Content designer, in a team of two designers."
+    },
+    {
+      "_key": "b509609bb829",
+      "_type": "fact",
+      "label": "Tools",
+      "value": "Figma, UserZoom"
+    },
+    {
+      "_key": "58365c057eea",
+      "_type": "fact",
+      "label": "Duration",
+      "value": "Project completed between June 2023- Aug 2023"
+    }
+  ],
+  "heroImage": {
+    "_type": "image",
+    "url": "https://cdn.sanity.io/images/x6ioktil/production/37b990ac50848a9605b68b57b4ea6b0199b79395-1271x486.webp/top-image.webp"
+  },
+  "heroImageAlt": "An image of 2 phones with screens from the confused.com pet insurance comparison journey",
+  "heroImageSquare": true,
+  "heroIntro": [
+    {
+      "_key": "7b658a8779cb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "6c82e5477378",
+          "_type": "span",
+          "marks": [],
+          "text": "Pet insurance is needlessly complex. With four cover types, each featuring unique rules, limits, and exclusions; it's difficult to know what your pets are truly covered for. This project sought to revamp our comparison journey, simplifying these intricacies and providing the information needed to for anyone to make a confident buying decision."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "sections": [
+    {
+      "_key": "78334a350eef",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "e02cde87f9be",
+          "_type": "columns",
+          "columns": [
+            {
+              "_key": "debfb7b37734",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "a384224230de",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "41088937db8e",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Understanding the problem"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h2"
+                },
+                {
+                  "_key": "b33c9cc66233",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "660ac05c0334",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Our analysis of the existing pet insurance journey revealed some key problems:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "ef0414a8e934",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "cbf7e9fb71c5",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Lack of clarity between different types of cover"
+                    },
+                    {
+                      "_key": "2a60a3956874",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ". Users struggled to comprehend distinctions between the three types of pet insurance cover."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "3ede9c6b517a",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "43c3237bf466",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Overuse of insurance jargon"
+                    },
+                    {
+                      "_key": "9df82988f461",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ". Frequent use of complex insurance terminology created a barrier for users."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "299f73d10d2c",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "2dc9d56367d8",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Limited flexibility."
+                    },
+                    {
+                      "_key": "b0411f5b2d25",
+                      "_type": "span",
+                      "marks": [],
+                      "text": " The platform was designed to accommodate insuring one pet at a time, which contrasted with competitors' offerings. The list of dog/cat breeds was limited, leading to many users feeling like they were unable to get accurate cover."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "980b7a324ff7",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "9c331a30ae86",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Impersonal process"
+                    },
+                    {
+                      "_key": "fde4e21cac41",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ". The pet insurance journey lacked personalisation, despite the deeply personal nature of pet care."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 7
+            },
+            {
+              "_key": "e389c93a3514",
+              "_type": "column",
+              "center": true,
+              "content": [
+                {
+                  "_key": "b0aa7f332247",
+                  "_type": "quote",
+                  "attribution": "Confused.com Pet Insurance User",
+                  "text": "A lot of different types of cover… unfortunately it isn’t clear what’s what and how much how much the vet coverage is"
+                },
+                {
+                  "_key": "09294e404b80",
+                  "_type": "quote",
+                  "attribution": "Confused.com Pet Insurance User",
+                  "text": "Sometimes the terminology is hard to understand and you need specific jargon busters"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 5
+            }
+          ]
+        }
+      ],
+      "tone": "default"
+    },
+    {
+      "_key": "d2d9ccc800b8",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "13a78ceffa9d",
+          "_type": "columns",
+          "align": "center",
+          "columns": [
+            {
+              "_key": "3fb356477de5",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "5ef8055308bc",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d2516d74c7f4",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ideation: Designing solutions"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h2"
+                },
+                {
+                  "_key": "91b861c35d06",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "b51094a7e449",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "In the ideation phase, we focused on refining the user flow and design elements to address the identified issues. Here are the key highlights:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "071ac5dae5aa",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "8fa3a077855a",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Streamlined user flow"
+                    },
+                    {
+                      "_key": "83b10ef83fd3",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ": We restructured the question set to prioritise the most-selected option (Lifetime cover was selected by over 90% of users)."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "2c2732b43f84",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "8dd9c0c29c90",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Segmented question set"
+                    },
+                    {
+                      "_key": "4e14ff761e99",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ": We divided the questions into three sections, rather than one long page, to prevent information overload."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "9b159cd27561",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "eaea93437b1e",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Clarity on multi-pet policies"
+                    },
+                    {
+                      "_key": "932948f64a6a",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ": We created wireframes that communicated the ability to add multiple pets to a single policy, aligning with user expectations – the number of pets was moved to be the opening question."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "7c0e424955f5",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "5403bbc52c7e",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Enhanced content"
+                    },
+                    {
+                      "_key": "9dff573ce47a",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ": We overhauled the content to offer clear definitions and user-friendly breakdowns of cover types and other questions."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "14efa5998000",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "771f1a02b4f7",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Design system integration"
+                    },
+                    {
+                      "_key": "0df705273f1d",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ": The journey was updated into our new design system, enhancing usability and consistency in form components."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 6
+            },
+            {
+              "_key": "678104e22d8f",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "493354a950a3",
+                  "_type": "figure",
+                  "alt": "An image showcasing before and after images of the Confused.com pet insurance journey",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/b69c2614a1381da667760e7feeaeb09c790fb9de-1778x2572.webp/new-ieation-min.webp"
+                  },
+                  "square": true
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 6
+            }
+          ],
+          "flip": true
+        }
+      ],
+      "tone": "muted"
+    },
+    {
+      "_key": "a3965a425b16",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "ca6bf76c4c60",
+          "_type": "columns",
+          "columns": [
+            {
+              "_key": "cc0a79ef1f91",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "bb01a10f01de",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "6c264275b791",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Testing the design: Survey plan & results"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h2"
+                },
+                {
+                  "_key": "dd27c265b1cd",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "5eace7c9ad41",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Following the ideation phase, we proceeded to the testing stage, which was centered around refining the user experience in the section of the journey that posed the most challenges—understanding the nuances of three cover types: Lifetime cover, Maximum Benefit & Time Limited."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "4485e83eaa8c",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "a4e3528ab95f",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Our primary goal was to gather quantitative data to test our solutions and new content."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "c298b8d89ebb",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "c296c98a8816",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "To achieve this, we created a comprehensive survey that reached 250 participants. The survey was designed to gauge user confidence in understanding the questions, statements, and information within the question set. \n\n"
+                    },
+                    {
+                      "_key": "e4c339a36f71",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Survey Highlights"
+                    },
+                    {
+                      "_key": "04178696fff2",
+                      "_type": "span",
+                      "marks": [],
+                      "text": ":"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "91e44eca9b93",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "80cdc1a477e8",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "88% of participants said they were confident they understood the difference between the three types of cover."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "c72e0bfb1646",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "081601810e6e",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "89% of participants expressed confidence in understanding the statement regarding cover for pre-existing conditions."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "84d80a6f9418",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "7e3a27b0f2c8",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Areas for improvement:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "e5acbb44d1b0",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "eba2b16aeeee",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Notably, some participants expressed a desire to read about all three cover types together, rather than separated across two questions."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "0879358d1add",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "086bb56e3357",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Two participants highlighted the term \"limit\" as a potential point of confusion."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 7
+            },
+            {
+              "_key": "870365886fef",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "ae91787502a1",
+                  "_type": "shareMeter",
+                  "caption": "Based on the questions and information provided. How confident are you that you understand the difference between the three cover types?",
+                  "data": [
+                    {
+                      "_key": "a8a9f311e6e5",
+                      "label": "Confident",
+                      "value": 220
+                    },
+                    {
+                      "_key": "5fbc6f2cd077",
+                      "label": "Not confident",
+                      "value": 30
+                    }
+                  ]
+                }
+              ],
+              "mobileWidth": 12,
+              "sticky": true,
+              "width": 5
+            }
+          ]
+        }
+      ],
+      "tone": "default"
+    },
+    {
+      "_key": "af6ddbcc1ae2",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "be6ee5a36071",
+          "_type": "columns",
+          "columns": [
+            {
+              "_key": "1deee41ede57",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "f3370a2a090a",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "8d926836867d",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Testing the design: Usability testing results"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h2"
+                },
+                {
+                  "_key": "62423f215710",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "3683b3ef1d45",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Following the survey, we ran usability testing sessions with 15 participants using a prototype of the redesigned flow. This phase aimed to gather qualitative data, assess design usability, and understand user interactions, especially with help text and new content."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "b01405120d63",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "ea44e648b83d",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Highlights:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "932ce44b1847",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "1fd6dda03867",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "All participants successfully chose pet insurance cover."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "1a0591459a72",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "c4d230e067b0",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "All participants expressed confidence in their cover selection."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "5336c4859221",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d9523c919b68",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "12/15 participants used the help text and expressed that it assisted them in understanding the questions."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "0959e3e13034",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "16cba442a684",
+                      "_type": "span",
+                      "marks": ["strong"],
+                      "text": "Areas for improvement:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "dffa01c25ba3",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "4ebc29287fc3",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "A participant suggested incorporating real-life scenarios would be helpful."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "17ecb4f96fd8",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "34dc60e77b12",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Another participant mentioned that they’d like to see the pros and cons of each cover type to help them compare."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "bullet",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "2238933e7149",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "2afc19fc08e9",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "The usability testing phase provided actionable insights that further refined our design."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "921a30acb5d3",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "b1043e17b69a",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Want to try it out? View the cover section of the prototype: (desktop only)"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h4"
+                },
+                {
+                  "_key": "c4c7eb71687b",
+                  "_type": "cta",
+                  "label": "View prototype",
+                  "newWindow": true,
+                  "url": "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insurance?hide-ui=1&node-id=707-27848&page-id=707%3A27799&scaling=min-zoom&t=kloXX7C0R4X9Fx9W-8&type=design&viewport=446%2C484%2C0.28"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 7
+            },
+            {
+              "_key": "4cc11c0fbbf4",
+              "_type": "column",
+              "center": true,
+              "content": [
+                {
+                  "_key": "512e8ac5c12c",
+                  "_type": "quote",
+                  "attribution": "Usability testing participant 11",
+                  "text": "This point here about the average claim is really, really helpful and that actually informed my decision"
+                },
+                {
+                  "_key": "ae26c77d3a86",
+                  "_type": "quote",
+                  "attribution": "Usability testing participant 4",
+                  "text": "Might be nice to have a link to a specific breakdown that details all the good and bad things about each type"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 5
+            }
+          ]
+        }
+      ],
+      "tone": "muted"
+    },
+    {
+      "_key": "329403e9e199",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "84d933e34214",
+          "_type": "columns",
+          "align": "center",
+          "columns": [
+            {
+              "_key": "d678950d3454",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "94ff3ae03631",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "eb23306bc072",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Refinements inspired by user insights"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "h2"
+                },
+                {
+                  "_key": "84082d7cbdb9",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "8585ebec67c7",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Driven by insights from survey and usability testing, we made several changes to the design:"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "c9be8fd874a2",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "6f60b89947da",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Usability testing pinpointed areas for subtle content adjustments."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "number",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "a52cba6fc3d1",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "02951f8203c5",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "We introduced a comprehensive slide-out panel. This feature presents the advantages and disadvantages of each cover type upfront, offering users complete clarity before they begin answering questions. This section allowed users to compare all cover types in one place."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "number",
+                  "markDefs": [],
+                  "style": "normal"
+                },
+                {
+                  "_key": "4a51c90dc9f7",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "ba3d608ce7a6",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "We also refined visual aspects of the journey. These changes emphasise the personal nature of pet care."
+                    }
+                  ],
+                  "level": 1,
+                  "listItem": "number",
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 6
+            },
+            {
+              "_key": "a7f7a3b772c8",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "ae2c825efabc",
+                  "_type": "figure",
+                  "alt": "An image that shows a new drawer introduced to the design with more detailed explanations.",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/148287a79b5f979075c7ed16229b0a614e448836-1119x1439.webp/refinement-image-min.webp"
+                  },
+                  "square": true
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 6
+            }
+          ]
+        }
+      ],
+      "tone": "default"
+    },
+    {
+      "_key": "f4ef6f023a47",
+      "_type": "section",
+      "body": [
+        {
+          "_key": "5d5235aabe4d",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ffac903afb24",
+              "_type": "span",
+              "marks": [],
+              "text": "Final designs"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "e1af98ad5b02",
+          "_type": "columns",
+          "align": "center",
+          "columns": [
+            {
+              "_key": "00fe7ce22e39",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "dd3361a132b8",
+                  "_type": "figure",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/63a0bfbda6476cfff26216674bd5f81b02cb2dcb-1556x2152.webp/glamour-shots-2-min.webp"
+                  },
+                  "square": true
+                },
+                {
+                  "_key": "da7a5d60c995",
+                  "_type": "figure",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/994f611781e6b6a693fe6b7a02d5854a1956c4da-858x547.webp/gllamour-shots-4.webp"
+                  },
+                  "square": true
+                }
+              ],
+              "mobileWidth": 12,
+              "width": 6
+            },
+            {
+              "_key": "6ba8c35365d3",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "cb1a09620bf5",
+                  "_type": "figure",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/89b8adc8189d2dab1ac17a8d601629501928ac8e-376x1924.webp/glamour-shots.webp"
+                  },
+                  "square": true
+                }
+              ],
+              "mobileWidth": 6,
+              "width": 3
+            },
+            {
+              "_key": "392e5178fddd",
+              "_type": "column",
+              "content": [
+                {
+                  "_key": "5d7e6b1cc551",
+                  "_type": "figure",
+                  "image": {
+                    "_type": "image",
+                    "url": "https://cdn.sanity.io/images/x6ioktil/production/f0324884fbd8dfb39c03f34d26798d0f25c01b5f-413x2508.webp/glamour-shots-5.webp"
+                  },
+                  "square": true
+                }
+              ],
+              "mobileWidth": 6,
+              "width": 3
+            }
+          ]
+        },
+        {
+          "_key": "db68239a0b27",
+          "_type": "cta",
+          "intro": "Want to try it out? View the cover section of the prototype: (desktop only)",
+          "label": "View prototype",
+          "newWindow": true,
+          "url": "https://www.figma.com/proto/w6hAG1UtXXG6MtZprP4fMR/Pet-insurance?hide-ui=1&node-id=707-27848&page-id=707%3A27799&scaling=min-zoom&t=kloXX7C0R4X9Fx9W-8&type=design&viewport=446%2C484%2C0.28"
+        }
+      ],
+      "tone": "muted"
+    }
+  ],
+  "seoDescription": "Pet insurance is needlessly complex. With four cover types, each featuring unique rules, limits, and exclusions; it's difficult to know what your pets…",
+  "seoTitle": "Pet insurance comparison journey",
+  "slug": {
+    "_type": "slug",
+    "current": "confused-pet-insurance"
+  },
+  "title": "Pet Insurance: Simplifying a journey"
+}

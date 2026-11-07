@@ -7,7 +7,7 @@
  * For every route it records, from inside <main>, the text of each heading,
  * paragraph, list item, caption and quote, and each image's src + alt.
  * The check passes when every recorded text appears in the new page's text and
- * every recorded image (same src and alt) is still on the page. New content is allowed.
+ * every recorded image (same file name and alt) is still on the page. New content is allowed.
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
@@ -18,6 +18,12 @@ const BASELINE = "tests/content-baseline.json";
 const TEXT_SELECTOR = "h1, h2, h3, h4, h5, h6, p, li, figcaption, blockquote, dt, dd";
 
 const normalize = (s) => s.replace(/\s+/g, " ").trim();
+
+/** An image's file name + alt, so a page moved to the Sanity CDN still matches its original image. */
+const imageKey = (image) => {
+  const [src, ...alt] = image.split(" | ");
+  return `${decodeURIComponent(src.split("?")[0].split("/").pop())} | ${alt.join(" | ")}`;
+};
 
 function pages(dir = DIST) {
   return readdirSync(dir).flatMap((name) => {
@@ -79,7 +85,8 @@ function check(only) {
     }
     const actual = extract(file);
     const missingText = expected.texts.filter((t) => !actual.fullText.includes(t));
-    const missingImages = expected.images.filter((i) => !actual.images.includes(i));
+    const actualImages = actual.images.map(imageKey);
+    const missingImages = expected.images.filter((i) => !actualImages.includes(imageKey(i)));
     if (!missingText.length && !missingImages.length) {
       console.log(`✓ ${route}`);
       continue;

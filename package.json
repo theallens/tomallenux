@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite-ssg build",
+    "content": "node scripts/fetch-content.mjs",
+    "dev": "npm run content && vite",
+    "build": "npm run content && vite-ssg build",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
     "images": "node scripts/optimize-images.mjs",
@@ -21,6 +22,7 @@
   "dependencies": {
     "@fontsource/public-sans": "^5.3.0",
     "@mdi/js": "7.4.47",
+    "@portabletext/vue": "^2.0.0",
     "@unhead/vue": "^3.4.3",
     "vite-ssg": "^28.3.0",
     "vue": "^3.5.43",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@playwright/test": "1.64.1",
+    "@portabletext/types": "^4.0.2",
     "@types/node": "^26.6.4",
     "@typescript-eslint/eslint-plugin": "^8.72.0",
     "@typescript-eslint/parser": "^8.72.0",
