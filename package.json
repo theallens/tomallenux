@@ -27,18 +27,14 @@
     "vuetify": "4.2.6"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "1.64.1",
     "@types/node": "^26.6.4",
     "@typescript-eslint/eslint-plugin": "^8.72.0",
     "@typescript-eslint/parser": "^8.72.0",
     "@vitejs/plugin-vue": "^6.0.9",
-    "@vue/eslint-config-airbnb-with-typescript": "^8.0.0",
     "@vue/test-utils": "2.5.1",
     "eslint": "^10.13.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-vue": "^10.11.1",
     "globals": "^17.13.0",
     "happy-dom": "21.0.3",
