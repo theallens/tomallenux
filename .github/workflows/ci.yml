@@ -67,7 +67,7 @@ jobs:
           name: dist
           path: dist
 
-      - uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump via Dependabot
+      - uses: netlify/actions/cli@master
         with:
           args: deploy --prod --dir=dist
         env:
