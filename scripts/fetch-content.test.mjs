@@ -19,7 +19,10 @@ function respondWith(result, { ok = true, status = 200 } = {}) {
   );
 }
 
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => {
+  vi.unstubAllGlobals();
+  vi.unstubAllEnvs();
+});
 
 describe("fetchContent", () => {
   it("resolves images however deeply they are nested", async () => {
@@ -81,8 +84,15 @@ describe("fetchContent", () => {
           order: 10,
           cardTitle: card("A"),
           buttonLabel: "See A",
+          thumbnail: imageField,
         },
-        { title: "Soon", order: 15, comingSoon: true, cardTitle: card("Soon") },
+        {
+          title: "Soon",
+          order: 15,
+          comingSoon: true,
+          cardTitle: card("Soon"),
+          thumbnail: imageField,
+        },
       ],
     });
 
@@ -101,10 +111,11 @@ describe("fetchContent", () => {
 
   it("keeps bold and italic on cards but escapes everything Tom typed", async () => {
     respondWith({
-      assets: [],
+      assets: [asset],
       studies: [
         {
           slug: { current: "a" },
+          thumbnail: imageField,
           cardTitle: [
             {
               children: [
@@ -129,6 +140,49 @@ describe("fetchContent", () => {
     await fetchContent();
 
     expect(fetch.mock.calls[0][0].searchParams.get("perspective")).toBe("published");
+  });
+
+  it("never sends the token for a live build, even if one is set", async () => {
+    vi.stubEnv("SANITY_READ_TOKEN", "secret");
+    respondWith({ assets: [], studies: [{ slug: { current: "a" } }] });
+
+    await fetchContent();
+
+    expect(fetch.mock.calls[0][1]).toEqual({});
+    expect(fetch.mock.calls[0][0].searchParams.get("perspective")).toBe("published");
+  });
+
+  it("asks for drafts with the token for a preview build", async () => {
+    vi.stubEnv("SANITY_PREVIEW", "true");
+    vi.stubEnv("SANITY_READ_TOKEN", "secret");
+    respondWith({ assets: [], studies: [{ slug: { current: "a" } }] });
+
+    await fetchContent();
+
+    expect(fetch.mock.calls[0][1].headers.Authorization).toBe("Bearer secret");
+    expect(fetch.mock.calls[0][0].searchParams.get("perspective")).toBe("drafts");
+  });
+
+  it("stops a preview build that has no token", async () => {
+    vi.stubEnv("SANITY_PREVIEW", "true");
+    vi.stubEnv("SANITY_READ_TOKEN", "");
+
+    await expect(fetchContent()).rejects.toThrow(/needs SANITY_READ_TOKEN/);
+  });
+
+  it("copes with a draft whose card isn't filled in yet", async () => {
+    respondWith({
+      assets: [asset],
+      studies: [
+        { title: "Draft & new", slug: { current: "a" }, thumbnail: imageField },
+        { title: "No image yet", slug: { current: "b" } },
+      ],
+    });
+
+    const { pages, projects } = await fetchContent();
+
+    expect(pages).toHaveLength(2);
+    expect(projects.map((project) => project.title)).toEqual(["Draft &amp; new"]);
   });
 
   it("keeps an empty image field from a draft rather than failing", async () => {

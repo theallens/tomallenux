@@ -5,6 +5,9 @@
  * routes come from them, and nothing calls Sanity from the browser.
  *
  * A failure stops the build on purpose, so Netlify keeps serving the last good deploy.
+ *
+ * The preview build sets SANITY_PREVIEW=true and SANITY_READ_TOKEN to include drafts. The
+ * token is only ever used here, at build time, and never reaches the browser.
  */
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -69,7 +72,8 @@ function inlineHtml(blocks = []) {
 function toProject(study) {
   return {
     ...(study.slug?.current && !study.comingSoon && { slug: study.slug.current }),
-    title: inlineHtml(study.cardTitle),
+    // Drafts may not have their card filled in yet
+    title: inlineHtml(study.cardTitle) || escapeHtml(study.title ?? "Untitled"),
     summary: inlineHtml(study.cardSummary),
     image: study.thumbnail?.url,
     ...(study.thumbnailAlt && { imageAlt: study.thumbnailAlt }),
@@ -81,9 +85,15 @@ function toProject(study) {
 export async function fetchContent() {
   const url = new URL(`https://${PROJECT_ID}.api.sanity.io/${API_VERSION}/data/query/${DATASET}`);
   url.searchParams.set("query", QUERY);
-  url.searchParams.set("perspective", "published");
+  const preview = process.env.SANITY_PREVIEW === "true";
+  const token = process.env.SANITY_READ_TOKEN;
+  if (preview && !token) throw new Error("[content] SANITY_PREVIEW needs SANITY_READ_TOKEN");
+  url.searchParams.set("perspective", preview ? "drafts" : "published");
 
-  const response = await fetch(url);
+  const response = await fetch(
+    url,
+    preview ? { headers: { Authorization: `Bearer ${token}` } } : {}
+  );
   if (!response.ok) {
     throw new Error(`[content] Sanity responded ${response.status}: ${await response.text()}`);
   }
@@ -96,7 +106,8 @@ export async function fetchContent() {
 
   const projects = [...studies]
     .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity))
-    .map(toProject);
+    .map(toProject)
+    .filter((project) => project.image);
   return { pages, projects };
 }
 

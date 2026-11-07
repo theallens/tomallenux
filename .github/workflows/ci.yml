@@ -6,11 +6,18 @@ on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
     branches: [main]
+  # Also how Sanity starts a deploy when Tom publishes or asks for a preview
   workflow_dispatch:
+    inputs:
+      target:
+        description: Where to deploy
+        type: choice
+        options: [production, preview]
+        default: production
 
-# Cancel superseded runs on the same branch/PR
+# Cancel superseded runs on the same branch/PR. Previews queue separately, so one can't cancel a live deploy.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ inputs.target == 'preview' && 'preview' || 'live' }}
   cancel-in-progress: true
 
 permissions:
@@ -19,6 +26,7 @@ permissions:
 jobs:
   build:
     name: Typecheck, lint, test & build
+    if: inputs.target != 'preview'
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -56,8 +64,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment: production
-    # Production deploys only from pushes to main, never from pull requests
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Production deploys only from main, never from pull requests
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' ||
+      (github.event_name == 'workflow_dispatch' && inputs.target == 'production'))
     permissions:
       contents: read
 
@@ -70,6 +81,39 @@ jobs:
       - uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
         with:
           args: deploy --prod --dir=dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+  deploy-preview:
+    name: Deploy drafts to the preview link
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    if: github.ref == 'refs/heads/main' && inputs.target == 'preview'
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # The repo is public, so this build must not upload an artifact: it would expose drafts
+      - name: Build with drafts
+        run: npm run build
+        env:
+          SANITY_PREVIEW: "true"
+          SANITY_READ_TOKEN: ${{ secrets.SANITY_READ_TOKEN }}
+
+      - uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
+        with:
+          args: deploy --alias=preview --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

@@ -1,10 +1,14 @@
-import { defineArrayMember, defineField, defineType } from "sanity";
+import {
+  type ConditionalPropertyCallback,
+  defineArrayMember,
+  defineField,
+  defineType,
+} from "sanity";
 
 /** Paths the site already uses, so a case study can't hide behind them. */
 const RESERVED_SLUGS = ["about", "contact", "mywork", "pagecv", "home", "404"];
 
-const comingSoon = ({ document }: { document?: { comingSoon?: unknown } }) =>
-  !!document?.comingSoon;
+const comingSoon: ConditionalPropertyCallback = ({ document }) => !!document?.comingSoon;
 
 export const caseStudy = defineType({
   name: "caseStudy",
@@ -183,6 +187,8 @@ export const caseStudy = defineType({
       type: "boolean",
       group: "card",
     }),
+    // Set by the Build preview button; a webhook watches it to start the preview build
+    defineField({ name: "previewRequestedAt", type: "datetime", hidden: true, readOnly: true }),
     defineField({
       name: "seoTitle",
       title: "Browser tab title",
