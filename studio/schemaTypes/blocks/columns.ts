@@ -1,17 +1,41 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { textBlock } from "../objects/rich-text";
 
+/** Everything that can go in a section, a column or a panel. */
+export const contentBlocks = [
+  textBlock,
+  defineArrayMember({ type: "columns" }),
+  defineArrayMember({ type: "figure" }),
+  defineArrayMember({ type: "embed" }),
+  defineArrayMember({ type: "gallery" }),
+  defineArrayMember({ type: "panel" }),
+  defineArrayMember({ type: "quote" }),
+  defineArrayMember({ type: "shareMeter" }),
+  defineArrayMember({ type: "accordion" }),
+  defineArrayMember({ type: "cta" }),
+  defineArrayMember({ type: "divider" }),
+];
+
 export const columnContent = defineType({
   name: "columnContent",
   title: "Content",
   type: "array",
-  of: [
-    textBlock,
-    defineArrayMember({ type: "figure" }),
-    defineArrayMember({ type: "quote" }),
-    defineArrayMember({ type: "shareMeter" }),
-    defineArrayMember({ type: "cta" }),
-  ],
+  of: contentBlocks,
+});
+
+/** Extra space above a block, as a Vuetify spacing step. */
+export const spaceAbove = defineField({
+  name: "spaceAbove",
+  title: "Space above",
+  type: "number",
+  options: {
+    list: [
+      { value: 2, title: "Small" },
+      { value: 4, title: "Medium" },
+      { value: 6, title: "Large" },
+      { value: 8, title: "Extra large" },
+    ],
+  },
 });
 
 const WIDTHS = [
@@ -65,6 +89,27 @@ export const columns = defineType({
               },
             }),
             defineField({
+              name: "tabletWidth",
+              title: "Width on tablets",
+              description: "Only set on a few older pages.",
+              type: "number",
+              hidden: ({ value }) => !value,
+              options: { list: WIDTHS },
+            }),
+            defineField({
+              name: "gap",
+              title: "Space between items",
+              description: "Leave empty for automatic.",
+              type: "number",
+              options: {
+                list: [
+                  { value: 0, title: "None" },
+                  { value: 4, title: "Medium" },
+                  { value: 6, title: "Large" },
+                ],
+              },
+            }),
+            defineField({
               name: "center",
               title: "Centre vertically",
               description: "Centres this column's content against the taller column beside it.",
@@ -105,6 +150,7 @@ export const columns = defineType({
         ],
       },
     }),
+    spaceAbove,
     defineField({
       name: "flip",
       title: "Swap sides on desktop",

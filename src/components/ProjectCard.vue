@@ -26,6 +26,7 @@ const linked = computed(() => !!props.project.slug && !props.project.comingSoon)
     <div class="project-card__media">
       <Figure
         :src="project.image"
+        :alt="project.imageAlt"
         square
         :eager="eager"
         :sizes="featured ? '(max-width: 959px) 100vw, 640px' : '(max-width: 959px) 100vw, 560px'"

@@ -10,11 +10,11 @@ A change is done when all four pass:
 npm run typecheck && npm test && npm run build && npm run test:content
 ```
 
-`test:content` checks the built `dist/` against `tests/content-baseline.json`: every original paragraph, heading, list item, caption and image (src + alt) must still be on its page. Keep copy and alt text verbatim, typos included. When a copy or image change is intended, re-record with `node scripts/content-parity.mjs snapshot` after a build and call it out in the PR.
+`test:content` checks the built `dist/` against `tests/content-baseline.json`: every original paragraph, heading, list item, caption and image (file name + alt) must still be on its page. It only guards the static pages: case studies and project cards are left out because Tom edits them in Sanity. Keep copy and alt text on static pages verbatim, typos included. When a copy or image change is intended, re-record with `node scripts/content-parity.mjs snapshot` after a build and call it out in the PR.
 
 ## Project goal
 
-Integrate TinaCMS so Tom can manage site content through a CMS interface instead of code changes. This is the focus of the next development phase.
+Tom manages case studies and the My work list himself in Sanity, without code changes. The rest of the site stays static and is edited in code.
 
 ## Code style
 
@@ -24,10 +24,12 @@ Integrate TinaCMS so Tom can manage site content through a CMS interface instead
 
 ## Pages
 
-- Case studies live in `src/pages/work/<slug>.vue` and are routed at `/<slug>` automatically. Add each one to `src/data/projects.ts`, or to `unlistedCaseStudies` if it stays off My work; `projects.test.ts` enforces this.
-- Build pages from the globally registered blocks in `src/components/index.ts` (no imports needed) inside Vuetify's `v-row`/`v-col`. A case study runs `CaseHero` → `ProjectFacts` → `Section`s → `NextProject`; `confused-pet-insurance.vue` is the reference.
+- Case studies and the My work list live in Sanity, edited in the Studio in `studio/` (its own `package.json`; `cd studio && npm install && npm run dev`). Schema: `studio/schemaTypes`.
+- `npm run content` (`scripts/fetch-content.mjs`) snapshots published content to `src/content/`, and runs before `dev` and `build`. It's generated and gitignored, so don't edit it. Routes come from its files, so the site is fully static and never calls the Sanity API from the browser. After publishing, re-run it to see the change locally. Drafts don't appear.
+- `src/pages/CaseStudyPage.vue` renders every case study; `src/components/RichContent` maps Sanity blocks onto the global blocks. To add a block: define it in `studio/schemaTypes/blocks`, add it to `index.ts` and `contentBlocks`, then add its type to `src/types/cms.ts` and a branch in `RichContent`.
+- Build static pages from the globally registered blocks in `src/components/index.ts` (no imports needed) inside Vuetify's `v-row`/`v-col`.
 - `Section` tones: `muted` alternates with default for rhythm; `inverse`/`accent` switch Vuetify to the dark `brandInverse` theme.
-- New images go in `public/images/`, then `npm run images` to make the responsive variants and the manifest `imageInfo` reads.
+- Images on static pages go in `images-src/`, then `npm run images` to make the responsive variants and the manifest `imageInfo` reads. Tom's images are uploaded to Sanity and served by its CDN; `imageInfo` handles those URLs too.
 
 ## Styling
 
@@ -37,7 +39,7 @@ Integrate TinaCMS so Tom can manage site content through a CMS interface instead
 
 ## Tests
 
-Unit tests sit next to the code (`*.test.ts`) and mount through `renderWithApp` in `src/test/mount.ts`: real Vuetify, real router. Mock only the network (`fetch`), so a Vuetify upgrade that changes markup fails the tests. Agree new test seams with the user before writing them (see the `tdd` skill). Treat real-library testing on critical paths as the default rather than an absolute rule. E2E tests use Playwright (`npm run test:e2e`).
+Unit tests sit next to the code (`*.test.ts`) and mount through `renderWithApp` in `src/test/mount.ts`: real Vuetify, real router. Mock only the network (`fetch`), so a Vuetify upgrade that changes markup fails the tests. Tests can't rely on `npm run content` having run, so `src/test/setup.ts` supplies the My work list from `src/test/fixtures/`, which are real snapshots from Sanity. Agree new test seams with the user before writing them (see the `tdd` skill). Treat real-library testing on critical paths as the default rather than an absolute rule. E2E tests use Playwright (`npm run test:e2e`) against the real build and live Sanity content, so they check behaviour rather than copy. Use a trailing slash on paths: `vite preview` only serves a prerendered page that way.
 
 The contact form posts to Netlify Forms, which stores fields by their `name`. Keep `name="contact"`, `data-netlify`, the honeypot and the field names as they are; `ContactPage.test.ts` guards them.
 

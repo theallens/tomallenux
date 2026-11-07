@@ -1,9 +1,54 @@
 {
   "_createdAt": "2026-11-07T18:29:08Z",
   "_id": "YMRintqqufdLfRaa41lmZp",
-  "_rev": "YMRintqqufdLfRaa41lmUq",
+  "_rev": "jUeL2JPtZdNpyvaxgi0LNd",
   "_type": "caseStudy",
-  "_updatedAt": "2026-11-07T18:29:08Z",
+  "_updatedAt": "2026-11-07T19:26:49Z",
+  "buttonLabel": "View pet project",
+  "cardSummary": [
+    {
+      "_key": "4b42329b5d9d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "8f8533c1d43e",
+          "_type": "span",
+          "marks": [],
+          "text": "Utilising testing to simplify complex information into a form people can navigate with confidence."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "cardTitle": [
+    {
+      "_key": "88173c909099",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "33eb4c37cc6f",
+          "_type": "span",
+          "marks": [],
+          "text": "Pet insurance:"
+        },
+        {
+          "_key": "9757ceb21cb5",
+          "_type": "span",
+          "marks": ["strong"],
+          "text": " "
+        },
+        {
+          "_key": "d86f2540cbec",
+          "_type": "span",
+          "marks": [],
+          "text": "Simplifying complex information"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
   "facts": [
     {
       "_key": "14105ab0c627",
@@ -52,6 +97,7 @@
       "style": "normal"
     }
   ],
+  "order": 40,
   "sections": [
     {
       "_key": "78334a350eef",
@@ -1014,6 +1060,10 @@
   "slug": {
     "_type": "slug",
     "current": "confused-pet-insurance"
+  },
+  "thumbnail": {
+    "_type": "image",
+    "url": "https://cdn.sanity.io/images/x6ioktil/production/eb658e9550000d6d4786e930dff1751845e6f0df-1137x539.webp/group-17975.webp"
   },
   "title": "Pet Insurance: Simplifying a journey"
 }

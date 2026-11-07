@@ -9,6 +9,7 @@ export const textBlock = defineArrayMember({
     { title: "Small print", value: "small" },
     { title: "Heading", value: "h2" },
     { title: "Subheading", value: "h3" },
+    { title: "Subheading (centred)", value: "h3center" },
     { title: "Minor heading", value: "h4" },
   ],
   lists: [
@@ -20,6 +21,7 @@ export const textBlock = defineArrayMember({
       { title: "Bold", value: "strong" },
       { title: "Italic", value: "em" },
       { title: "Highlight", value: "highlight" },
+      { title: "White text", value: "textWhite" },
     ],
     annotations: [
       {
@@ -47,4 +49,26 @@ export const richText = defineType({
   title: "Text",
   type: "array",
   of: [textBlock],
+});
+
+/** One short line for a My work card: bold and italic only. */
+export const cardText = defineType({
+  name: "cardText",
+  title: "Text",
+  type: "array",
+  of: [
+    defineArrayMember({
+      type: "block",
+      styles: [{ title: "Body", value: "normal" }],
+      lists: [],
+      marks: {
+        decorators: [
+          { title: "Bold", value: "strong" },
+          { title: "Italic", value: "em" },
+        ],
+        annotations: [],
+      },
+    }),
+  ],
+  validation: (rule) => rule.max(1),
 });

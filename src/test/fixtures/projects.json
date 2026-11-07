@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "confusedcom-rewards",
+    "title": "<strong>Rewards+</strong>: Designing and launching a brand new loyalty scheme",
+    "summary": "Taking a collaborative approach to shape a brand-led experience.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/2c1bb8581ea70bd6329c9d3259fa802076e8ddc6-1406x649.webp/r-final-image-landscape.webp"
+  },
+  {
+    "slug": "confused-rewards-redesign-1",
+    "title": "Building Peace of Mind: Designing Confused.com’s Reminders Feature",
+    "summary": "Forget calendar reminders and sticky notes! Reminders are the automated way to know when your insurance is coming up for renewal",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/a41a16e42863e9fe5ccd7d52e8ce99ffc48032e9-937x671.webp/group-13120-1.webp"
+  },
+  {
+    "slug": "confused-rewards-redesign",
+    "title": "Confused.com Rewards:<strong> </strong>Expanding a rewards scheme to boost retention",
+    "summary": "Showcasing how we researched, designed and launched a new monthly reward scheme to improve app engagement and retain our customers year-on-year.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/185c1b96c8954f7b3520b158b04b3d713ec82554-1137x539.webp/group-17976.webp",
+    "buttonLabel": "View rewards project"
+  },
+  {
+    "slug": "confused-pet-insurance",
+    "title": "Pet insurance:<strong> </strong>Simplifying complex information",
+    "summary": "Utilising testing to simplify complex information into a form people can navigate with confidence.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/eb658e9550000d6d4786e930dff1751845e6f0df-1137x539.webp/group-17975.webp",
+    "buttonLabel": "View pet project"
+  },
+  {
+    "title": "Motorbike insurance: Redesigning the question set and quote process",
+    "summary": "<strong>Coming soon.</strong> A case study exploring the redesign of an insurance comparison service. Looking into processes involved in improving the UX of a key product.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/a006c641e0e342146ee57f4e4d28faf255b6e533-1137x539.webp/bikegroup-17975.webp",
+    "comingSoon": true
+  },
+  {
+    "slug": "contact-us-redesign",
+    "title": "Contact us: Improving a contact form and information suite",
+    "summary": "How can we make it easier for our users to get the information they need? A case study looking at how we improved our contact form and help centre.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/9acbd1ebe021fde0aeaf5e40c572e355bbf78724-1895x1025.webp/2group-13041.webp",
+    "buttonLabel": "View contact us project"
+  },
+  {
+    "slug": "content-design-the-anatomy-of-a-landing-page",
+    "title": "Content design: The anatomy of a landing page",
+    "summary": "A deep dive into my content design process with first-hand examples from a marketing landing page I designed in 2022. See how I approach problems, organise content and modify copy to improve conversion and help users get the information they need.",
+    "image": "https://cdn.sanity.io/images/x6ioktil/production/1f094116fcc69fc641064ca82b1e4b94659f5cfd-1137x539.webp/group-17977.webp"
+  }
+]

@@ -143,4 +143,102 @@ describe("RichContent", () => {
       target: "_blank",
     });
   });
+
+  it("gives a panel's text the panel's own Prose, and renders its tone", async () => {
+    const wrapper = await render([
+      { _type: "panel", _key: "p", tone: "dark", content: [text("Inside")] },
+    ]);
+
+    expect(wrapper.find(".panel--dark").text()).toBe("Inside");
+    expect(wrapper.findAll(".panel .prose")).toHaveLength(1);
+  });
+
+  it("renders dividers, white text, centred subheadings and empty spacer paragraphs", async () => {
+    const wrapper = await render([
+      { _type: "divider", _key: "d" },
+      text("Centred", { style: "h3center" }),
+      {
+        _type: "block",
+        _key: "w",
+        style: "normal",
+        markDefs: [],
+        children: [{ _type: "span", _key: "1", text: "White", marks: ["textWhite"] }],
+      },
+      text(""),
+    ]);
+
+    expect(wrapper.find(".v-divider").exists()).toBe(true);
+    expect(wrapper.find("h3").attributes("style")).toContain("text-align: center");
+    expect(wrapper.find(".prose").classes()).toContain("is-wide");
+    expect(wrapper.find(".text-white").text()).toBe("White");
+    expect(wrapper.findAll("p.text-large")).toHaveLength(2);
+  });
+
+  it("keeps a smaller list item's own paragraph style", async () => {
+    const wrapper = await render([text("Item", { listItem: "bullet", level: 1, style: "plain" })]);
+
+    expect(wrapper.find("li > p").text()).toBe("Item");
+    expect(wrapper.find("li > p").classes()).not.toContain("text-large");
+  });
+
+  it("only stacks a column with flex when there is more than one thing in it", async () => {
+    const figure = { _type: "figure" as const, _key: "f", image, alt: "Alt" };
+    const wrapper = await render([
+      {
+        _type: "columns",
+        _key: "c",
+        columns: [
+          { _key: "1", width: 4, content: [text("One"), text("Two")] },
+          { _key: "2", width: 4, content: [figure, { ...figure, _key: "g" }] },
+          { _key: "3", width: 4, gap: 0, content: [figure, text("Three")] },
+        ],
+      },
+    ]);
+
+    const [alone, stacked, noGap] = wrapper.findAll(".v-col");
+    expect(alone.classes()).not.toContain("d-flex");
+    expect(stacked.classes()).toEqual(expect.arrayContaining(["d-flex", "ga-6"]));
+    expect(noGap.classes()).not.toContain("d-flex");
+  });
+
+  it("embeds supported links in an iframe and ignores anything else", async () => {
+    const wrapper = await render([
+      { _type: "embed", _key: "a", url: "https://youtu.be/abc", title: "Demo", aspect: "1 / 1" },
+      { _type: "embed", _key: "b", url: "https://evil.example.com/x", title: "Nope" },
+    ]);
+
+    const frames = wrapper.findAll("iframe");
+    expect(frames).toHaveLength(1);
+    expect(frames[0].attributes()).toMatchObject({
+      src: "https://www.youtube-nocookie.com/embed/abc",
+      title: "Demo",
+    });
+  });
+
+  it("renders galleries and accordions with their rich content in the page", async () => {
+    const wrapper = await render([
+      {
+        _type: "gallery",
+        _key: "g",
+        items: [
+          { _key: "1", image, alt: "In gallery", caption: "Shot" },
+          { _key: "2", image: { _type: "image" }, alt: "Not uploaded yet" },
+        ],
+      },
+      {
+        _type: "accordion",
+        _key: "a",
+        items: [
+          { _key: "1", title: "First", content: [text("Open text") as never] },
+          { _key: "2", title: "Second", content: [text("Closed text") as never] },
+        ],
+      },
+    ]);
+
+    const alts = wrapper.findAll("img").map((img) => img.attributes("alt"));
+    expect(alts).toContain("In gallery");
+    expect(alts).not.toContain("Not uploaded yet");
+    expect(wrapper.text()).toContain("Open text");
+    expect(wrapper.text()).toContain("Closed text");
+  });
 });

@@ -6,6 +6,7 @@
  *
  * For every route it records, from inside <main>, the text of each heading,
  * paragraph, list item, caption and quote, and each image's src + alt.
+ * Case studies and project cards are left out: Tom edits them in Sanity, so they're meant to change.
  * The check passes when every recorded text appears in the new page's text and
  * every recorded image (same file name and alt) is still on the page. New content is allowed.
  */
@@ -14,6 +15,7 @@ import { join, relative, sep } from "node:path";
 import { Window } from "happy-dom";
 
 const DIST = "dist";
+const CASE_STUDIES = "src/content/case-studies";
 const BASELINE = "tests/content-baseline.json";
 const TEXT_SELECTOR = "h1, h2, h3, h4, h5, h6, p, li, figcaption, blockquote, dt, dd";
 
@@ -38,6 +40,8 @@ function routeOf(file) {
   return `/${dir}`;
 }
 
+const notInCard = (el) => !el.closest(".project-card");
+
 function extract(file) {
   const window = new Window();
   window.document.write(readFileSync(file, "utf8"));
@@ -46,15 +50,16 @@ function extract(file) {
   const texts = [
     ...new Set(
       [...main.querySelectorAll(TEXT_SELECTOR)]
+        .filter(notInCard)
         .map((el) => normalize(el.textContent))
         .filter(Boolean)
     ),
   ];
   const images = [
     ...new Set(
-      [...main.querySelectorAll("img")].map(
-        (img) => `${img.getAttribute("src")} | ${img.getAttribute("alt") ?? ""}`
-      )
+      [...main.querySelectorAll("img")]
+        .filter(notInCard)
+        .map((img) => `${img.getAttribute("src")} | ${img.getAttribute("alt") ?? ""}`)
     ),
   ];
   const fullText = normalize(main.textContent);
@@ -65,8 +70,11 @@ function extract(file) {
 function snapshot() {
   const baseline = {};
   for (const file of pages().sort()) {
-    const { texts, images } = extract(file);
-    baseline[routeOf(file)] = { texts, images };
+    const route = routeOf(file);
+    if (!existsSync(join(CASE_STUDIES, `${route}.json`))) {
+      const { texts, images } = extract(file);
+      baseline[route] = { texts, images };
+    }
   }
   writeFileSync(BASELINE, `${JSON.stringify(baseline, null, 2)}\n`);
   console.log(`[content] recorded ${Object.keys(baseline).length} routes in ${BASELINE}`);
