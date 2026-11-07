@@ -85,7 +85,7 @@ usePageMeta({
         <Prose>
           <h4>Competitor analysis</h4>
           <p>I completed a <strong>SWOT analysis</strong> of <em>Just
-            Answer</em> and <em>Clarity</em>. In highlighting In the strengths, weaknesses,
+            Answer</em> and <em>Clarity</em>. In highlighting the strengths, weaknesses,
             opportunities and threats of competitors I could better understand how to approach the
             problem. </p>
           <p>Existing websites all hosted experts from a specialism, mostly business or medicine.

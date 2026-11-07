@@ -16,7 +16,7 @@ const headline = computed(() => props.data[0]);
 <template>
   <figure class="share-meter">
     <p class="share-meter__hero">
-      <span class="share-meter__figure">{{ pct(headline.value) }}%</span>
+      <span class="share-meter__figure">{{ pct(headline.value) }}%</span>{{ " " }}
       <span class="share-meter__label">{{ headline.label.toLowerCase() }}</span>
     </p>
     <div
