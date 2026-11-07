@@ -47,4 +47,21 @@ describe("imageInfo", () => {
       srcset: undefined,
     });
   });
+
+  it("offers both CDN widths for a large Sanity image", () => {
+    const src = `${sanity}/abc-2000x1000.webp/big.webp`;
+
+    expect(imageInfo(src).srcset).toBe(
+      `${src}?w=750&auto=format 750w, ${src}?w=1500&auto=format 1500w, ${src}?auto=format 2000w`
+    );
+  });
+
+  it("reads the size from the asset, not a file name that looks like one", () => {
+    const src = `${sanity}/abc-2000x1000.webp/hero-1200x900.gif`;
+
+    const { width, height, srcset } = imageInfo(src);
+
+    expect([width, height]).toEqual([2000, 1000]);
+    expect(srcset).toContain("2000w");
+  });
 });

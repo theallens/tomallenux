@@ -13,7 +13,12 @@ export const quote = defineType({
       rows: 3,
       validation: (rule) => rule.required(),
     }),
-    defineField({ name: "attribution", title: "Who said it", type: "string" }),
+    defineField({
+      name: "attribution",
+      title: "Who said it",
+      description: "The dash in front is added for you.",
+      type: "string",
+    }),
   ],
   preview: {
     select: { title: "text", subtitle: "attribution" },

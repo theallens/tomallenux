@@ -21,7 +21,13 @@ export const gallery = defineType({
               type: "image",
               validation: (rule) => rule.required(),
             }),
-            defineField({ name: "alt", title: "Alt text", type: "string" }),
+            defineField({
+              name: "alt",
+              title: "Alt text",
+              type: "string",
+              validation: (rule) =>
+                rule.required().warning("Add alt text unless the image is purely decorative."),
+            }),
             defineField({ name: "caption", title: "Caption", type: "string" }),
           ],
           preview: { select: { title: "alt", subtitle: "caption", media: "image" } },

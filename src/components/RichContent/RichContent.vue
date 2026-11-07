@@ -136,7 +136,7 @@ const galleryItems = (block: GalleryBlock) =>
     </template>
 
     <Panel v-else-if="item._type === 'panel'" :tone="item.tone">
-      <RichContent :content="item.content" nested bare />
+      <RichContent :content="item.content" :sizes="sizes" nested bare />
     </Panel>
 
     <v-divider v-else-if="item._type === 'divider'" class="my-8" />

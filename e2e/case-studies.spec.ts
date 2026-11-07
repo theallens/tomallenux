@@ -55,6 +55,7 @@ test("the site never calls the Sanity API from the browser", async ({ page }) =>
 
   await page.goto("/mywork/");
   await page.locator("main a.project-card").first().click();
+  await expect(page).not.toHaveURL(/\/mywork/);
   await expect(page.locator("main h1")).toBeVisible();
 
   expect(apiCalls).toEqual([]);
@@ -63,5 +64,5 @@ test("the site never calls the Sanity API from the browser", async ({ page }) =>
 test("a removed case study shows the not found page", async ({ page }) => {
   await page.goto("/expert-ux-design/");
 
-  await expect(page.locator("main .eyebrow")).toHaveText("404");
+  await expect(page.getByRole("heading", { name: "Page not found" })).toBeVisible();
 });

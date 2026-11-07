@@ -1,6 +1,5 @@
 import { defineField, defineType } from "sanity";
-
-const SUPPORTED = /^https:\/\/((www\.)?(youtube\.com|youtu\.be|vimeo\.com|loom\.com|figma\.com))\//;
+import { embedSrc } from "../../../src/lib/embeds";
 
 export const embed = defineType({
   name: "embed",
@@ -16,7 +15,9 @@ export const embed = defineType({
         rule
           .required()
           .custom((url) =>
-            !url || SUPPORTED.test(url) ? true : "Use a YouTube, Vimeo, Loom or Figma link."
+            !url || embedSrc(url)
+              ? true
+              : "Use a video link from YouTube, Vimeo or Loom, or a Figma file link."
           ),
     }),
     defineField({

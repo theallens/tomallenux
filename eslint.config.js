@@ -140,7 +140,15 @@ export default [
     // Sanity's own field names
     files: ["**/*.{js,mjs,cjs,ts,tsx,vue}"],
     rules: {
-      "no-underscore-dangle": ["error", { allow: ["_type", "_key", "_ref", "_id"] }],
+      "no-underscore-dangle": [
+        "error",
+        {
+          allow: ["_type", "_key", "_ref", "_id"],
+          allowAfterThis: false,
+          allowAfterSuper: false,
+          enforceInMethodNames: true,
+        },
+      ],
     },
   },
   {

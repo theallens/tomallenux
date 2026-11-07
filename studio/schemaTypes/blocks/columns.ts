@@ -58,7 +58,8 @@ export const columns = defineType({
     defineField({
       name: "columns",
       title: "Columns",
-      description: "Widths in a row should add up to Full. They stack on small screens.",
+      description:
+        "Each row fits up to Full, and extra columns wrap onto a new row. They stack on small screens.",
       type: "array",
       validation: (rule) => rule.required().min(1),
       of: [

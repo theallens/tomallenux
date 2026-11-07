@@ -66,5 +66,6 @@ describe("CaseStudyPage", () => {
 
     expect(wrapper.find("h1").text()).toBe(study.title);
     expect(wrapper.find(".facts").exists()).toBe(false);
+    expect(wrapper.find("img[src='']").exists()).toBe(false);
   });
 });

@@ -12,8 +12,8 @@ on:
       target:
         description: Where to deploy
         type: choice
-        options: [production, preview]
-        default: production
+        options: [none, production, preview]
+        default: none
 
 # Cancel superseded runs on the same branch/PR. Previews queue separately, so one can't cancel a live deploy.
 concurrency:

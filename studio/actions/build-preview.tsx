@@ -13,6 +13,7 @@ export const BuildPreviewAction: DocumentActionComponent = ({ id, type }) => {
 
   return {
     label: "Build preview",
+    disabled: !!patch.disabled,
     onHandle: () => setConfirming(true),
     dialog: confirming && {
       type: "confirm",

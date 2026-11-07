@@ -45,7 +45,8 @@ describe("RichContent", () => {
     expect(wrapper.find("p.text-large").text()).toBe("Body");
     expect(wrapper.find("p.text-small").text()).toBe("Small");
     expect(wrapper.find("ul li p.text-large").text()).toBe("Item");
-    expect(wrapper.findAll("p").map((p) => p.attributes("class"))).toContain(undefined);
+    const plain = wrapper.findAll("p").find((p) => p.text() === "Plain");
+    expect(plain?.attributes("class")).toBeUndefined();
   });
 
   it("renders highlights and links that open in a new window", async () => {

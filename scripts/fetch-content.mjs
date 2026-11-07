@@ -114,6 +114,9 @@ export async function fetchContent() {
 export function writeContent({ pages, projects }, outDir = OUT_DIR) {
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(join(outDir, "case-studies"), { recursive: true });
+  const slugs = pages.map((page) => page.slug.current);
+  const duplicate = slugs.find((slug, index) => slugs.indexOf(slug) !== index);
+  if (duplicate) throw new Error(`[content] two case studies use the address /${duplicate}`);
   for (const page of pages) {
     const slug = page.slug.current;
     if (!/^[a-z0-9-]+$/.test(slug)) throw new Error(`[content] unsafe slug: ${slug}`);

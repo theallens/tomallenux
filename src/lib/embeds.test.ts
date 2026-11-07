@@ -9,6 +9,7 @@ describe("embedSrc", () => {
     ["https://www.youtube.com/shorts/abc123", "https://www.youtube-nocookie.com/embed/abc123"],
     ["https://vimeo.com/76979871", "https://player.vimeo.com/video/76979871"],
     ["https://vimeo.com/76979871/f00d", "https://player.vimeo.com/video/76979871?h=f00d"],
+    ["https://vimeo.com/76979871?h=f00d", "https://player.vimeo.com/video/76979871?h=f00d"],
     ["https://www.loom.com/share/abc123", "https://www.loom.com/embed/abc123"],
     [
       "https://www.figma.com/proto/abc/Pet?node-id=1",
@@ -23,6 +24,9 @@ describe("embedSrc", () => {
     "https://youtube.com.evil.example/watch?v=abc",
     "http://www.youtube.com/watch?v=abc",
     "https://www.youtube.com/",
+    "https://www.youtube.com/@channel",
+    "https://www.youtube.com/watch?v=abc%2Fother",
+    "https://www.loom.com/looms/videos",
     "https://vimeo.com/channels/staff",
     // eslint-disable-next-line no-script-url -- proving it's refused
     "javascript:alert(1)",
