@@ -320,7 +320,7 @@ usePageMeta({
         multiple remote usability tests.</p>
       <p>I wanted to discover how easy it was for my participants to navigate the prototype and
         complete tasks. I observed 6 participants as they completed the tasks and took note of any
-        errors, points of friction, frustrations or confusion. I then rated the errors using Jacob
+        errors, points of friction, frustrations or confusion. I then rated the errors using Jakob
         Nielsen’s error severity chart.</p>
       <p>Here are some of the main errors and what I did to fix the problem.</p>
     </Prose>
