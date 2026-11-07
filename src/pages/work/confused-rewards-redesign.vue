@@ -49,7 +49,7 @@ usePageMeta({
         <Prose>
           <h4>The problem:</h4>
           <p class="text-large">After buying car or home insurance, only 25% of our users return to buy with Confused.com the following year.&nbsp;</p>
-          <p class="text-large"><br />However, 34% of users that redeem a reward return to buy the following year.<strong> </strong></p>
+          <p class="text-large"><br />However, 34% of users that redeem a reward return to buy the following year.<strong /></p>
         </Prose>
       </v-col>
       <v-col cols="12" md="6">

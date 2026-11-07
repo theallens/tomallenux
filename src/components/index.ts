@@ -37,7 +37,7 @@ export const pageComponents = {
 };
 
 export function registerComponents(app: App) {
-  for (const [name, component] of Object.entries(pageComponents)) app.component(name, component);
+  Object.entries(pageComponents).forEach(([name, component]) => app.component(name, component));
 }
 
 type PageComponents = typeof pageComponents

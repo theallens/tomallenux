@@ -19,12 +19,12 @@ const withInfo = computed(() => props.items.map((item) => ({ ...item, ...imageIn
 
 function distribute(n: number) {
   const cols = Array.from({ length: n }, () => ({ height: 0, items: [] as typeof withInfo.value }));
-  for (const item of withInfo.value) {
+  withInfo.value.forEach((item) => {
     const ratio = item.width && item.height ? item.height / item.width : 1;
     const col = cols.reduce((a, b) => (b.height < a.height ? b : a));
     col.items.push(item);
     col.height += ratio + (item.caption ? 0.1 : 0);
-  }
+  });
   return cols.map((c) => c.items);
 }
 
