@@ -31,12 +31,14 @@ export function writeSitemap(outDir: string) {
     const urls = pages.map((p) => `  <url><loc>${siteUrl}${p}</loc></url>`).join("\n");
     fs.writeFileSync(
       path.join(outDir, "sitemap.xml"),
-      `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`,
+      `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
     );
   }
   fs.writeFileSync(
     path.join(outDir, "robots.txt"),
-    `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`,
+    `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`
   );
-  console.log(`[sitemap] ${pages.length} pages${siteUrl ? ` for ${siteUrl}` : " (no SITE_URL set, sitemap skipped)"}`);
+  console.log(
+    `[sitemap] ${pages.length} pages${siteUrl ? ` for ${siteUrl}` : " (no SITE_URL set, sitemap skipped)"}`
+  );
 }

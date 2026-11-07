@@ -12,5 +12,3 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    pull-requests:
-      draft: true

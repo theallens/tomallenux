@@ -5,6 +5,7 @@ import ts from "@typescript-eslint/eslint-plugin";
 import importXPlugin from "eslint-plugin-import-x";
 import vuejsAccessibility from "eslint-plugin-vuejs-accessibility";
 import globals from "globals";
+import eslintConfigPrettier from "eslint-config-prettier";
 // Generated rule file, loaded by Node ESM, which needs the explicit extension.
 // eslint-disable-next-line import-x/extensions
 import airbnb from "./eslint/airbnb-rules.js";
@@ -23,7 +24,12 @@ const projectStyle = {
     "error",
     "ignorePackages",
     {
-      js: "never", mjs: "never", jsx: "never", ts: "always", tsx: "always", vue: "always",
+      js: "never",
+      mjs: "never",
+      jsx: "never",
+      ts: "always",
+      tsx: "always",
+      vue: "always",
     },
   ],
   "import-x/no-extraneous-dependencies": ["error", { devDependencies: true }],
@@ -84,9 +90,7 @@ export default [
     files: ["**/*.{ts,tsx}"],
     rules: {
       ...airbnb.typescript.rules,
-      ...Object.fromEntries(
-        Object.entries(airbnb.typescript.overrides[0].rules),
-      ),
+      ...Object.fromEntries(Object.entries(airbnb.typescript.overrides[0].rules)),
     },
   },
   {
@@ -146,5 +150,10 @@ export default [
       "no-await-in-loop": "off",
       "class-methods-use-this": "off",
     },
+  },
+  {
+    // Prettier owns formatting (.prettierrc.json, enforced by format:check). Turn off the
+    // Airbnb style rules that conflict with it; everything else stays on.
+    ...eslintConfigPrettier,
   },
 ];

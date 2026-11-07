@@ -32,7 +32,7 @@
     background: #1f1f22;
   }
   .quote-card::before {
-    content: '“';
+    content: "“";
     position: absolute;
     top: 0.35rem;
     left: 1.6rem;

@@ -7,7 +7,12 @@ import { computed } from "vue";
 import { mdiArrowRight } from "@mdi/js";
 import type { Project } from "@/data/projects.ts";
 
-const props = defineProps<{ project: Project; featured?: boolean; eager?: boolean; headingLevel?: 2 | 3 }>();
+const props = defineProps<{
+  project: Project;
+  featured?: boolean;
+  eager?: boolean;
+  headingLevel?: 2 | 3;
+}>();
 const linked = computed(() => !!props.project.slug && !props.project.comingSoon);
 </script>
 
@@ -27,11 +32,13 @@ const linked = computed(() => !!props.project.slug && !props.project.comingSoon)
       />
     </div>
     <div class="project-card__body">
-      <v-chip v-if="project.comingSoon" size="small" color="secondary" variant="flat" class="mb-3">Coming soon</v-chip>
+      <v-chip v-if="project.comingSoon" size="small" color="secondary" variant="flat" class="mb-3"
+        >Coming soon</v-chip
+      >
       <component :is="`h${headingLevel ?? 2}`" class="project-card__title" v-html="project.title" />
       <p class="project-card__summary" v-html="project.summary" />
       <span v-if="linked" class="project-card__cta">
-        {{ project.buttonLabel ?? 'View project' }}
+        {{ project.buttonLabel ?? "View project" }}
         <v-icon :icon="mdiArrowRight" size="20" />
       </span>
     </div>
@@ -48,7 +55,9 @@ const linked = computed(() => !!props.project.slug && !props.project.comingSoon)
     border: 1px solid rgb(0 0 0 / 0.08);
     background: var(--white);
     color: var(--black);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
   .project-card.is-linked:hover {
     transform: translateY(-4px);

@@ -1,6 +1,4 @@
-import {
-  afterEach, describe, expect, it, vi,
-} from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { flushPromises } from "@vue/test-utils";
 import { renderWithApp } from "@/test/mount.ts";
 import ContactPage from "./ContactPage.vue";
@@ -12,7 +10,10 @@ import ContactPage from "./ContactPage.vue";
  */
 
 const message = {
-  firstName: "Ada", lastName: "Lovelace", email: "ada@example.com", message: "Hello Tom",
+  firstName: "Ada",
+  lastName: "Lovelace",
+  email: "ada@example.com",
+  message: "Hello Tom",
 };
 
 async function renderPage() {
@@ -22,7 +23,8 @@ async function renderPage() {
 }
 
 async function fillAndSend(form: Awaited<ReturnType<typeof renderPage>>["form"]) {
-  for (const [name, value] of Object.entries(message)) await form.find(`[name="${name}"]`).setValue(value);
+  for (const [name, value] of Object.entries(message))
+    await form.find(`[name="${name}"]`).setValue(value);
   await form.trigger("submit");
   await flushPromises();
   await vi.waitFor(() => expect(fetch).toHaveBeenCalled());
@@ -30,7 +32,8 @@ async function fillAndSend(form: Awaited<ReturnType<typeof renderPage>>["form"])
 }
 
 /** Text of every live alert region (screen readers announce these). */
-const alerts = (wrapper: Awaited<ReturnType<typeof renderPage>>["wrapper"]) => wrapper.findAll("[role=\"alert\"]").map((a) => a.text());
+const alerts = (wrapper: Awaited<ReturnType<typeof renderPage>>["wrapper"]) =>
+  wrapper.findAll('[role="alert"]').map((a) => a.text());
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -42,12 +45,18 @@ describe("Contact page form", () => {
     const { form } = await renderPage();
 
     expect(form.attributes()).toMatchObject({
-      name: "contact", method: "POST", "data-netlify": "true", "netlify-honeypot": "bot-field",
+      name: "contact",
+      method: "POST",
+      "data-netlify": "true",
+      "netlify-honeypot": "bot-field",
     });
-    expect(form.find("input[type=\"hidden\"][name=\"form-name\"]").element.getAttribute("value")).toBe("contact");
-    expect(form.find("input[name=\"bot-field\"]").exists()).toBe(true);
-    for (const name of ["firstName", "lastName", "email"]) expect(form.find(`input[name="${name}"]`).exists(), name).toBe(true);
-    expect(form.find("textarea[name=\"message\"]").exists()).toBe(true);
+    expect(form.find('input[type="hidden"][name="form-name"]').element.getAttribute("value")).toBe(
+      "contact"
+    );
+    expect(form.find('input[name="bot-field"]').exists()).toBe(true);
+    for (const name of ["firstName", "lastName", "email"])
+      expect(form.find(`input[name="${name}"]`).exists(), name).toBe(true);
+    expect(form.find('textarea[name="message"]').exists()).toBe(true);
   });
 
   it("sends the message to Netlify and thanks the visitor", async () => {
@@ -58,7 +67,10 @@ describe("Contact page form", () => {
 
     const [url, init] = vi.mocked(fetch).mock.calls[0];
     expect(url).toBe("/");
-    expect(init).toMatchObject({ method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" } });
+    expect(init).toMatchObject({
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    });
     expect(Object.fromEntries(new URLSearchParams(init!.body as string))).toEqual({
       "form-name": "contact",
       ...message,
@@ -74,7 +86,9 @@ describe("Contact page form", () => {
 
     await fillAndSend(form);
 
-    expect(alerts(wrapper)).toContainEqual(expect.stringContaining("Sorry, something went wrong sending your message"));
+    expect(alerts(wrapper)).toContainEqual(
+      expect.stringContaining("Sorry, something went wrong sending your message")
+    );
     expect(wrapper.find("form").exists()).toBe(true);
   });
 
@@ -84,6 +98,8 @@ describe("Contact page form", () => {
 
     await fillAndSend(form);
 
-    expect(alerts(wrapper)).toContainEqual(expect.stringContaining("Sorry, something went wrong sending your message"));
+    expect(alerts(wrapper)).toContainEqual(
+      expect.stringContaining("Sorry, something went wrong sending your message")
+    );
   });
 });

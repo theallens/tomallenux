@@ -5,9 +5,12 @@
  */
 import { ref } from "vue";
 
-const props = withDefaults(defineProps<{ items: { title: string; body: string }[]; firstOpen?: boolean }>(), {
-  firstOpen: true,
-});
+const props = withDefaults(
+  defineProps<{ items: { title: string; body: string }[]; firstOpen?: boolean }>(),
+  {
+    firstOpen: true,
+  }
+);
 
 const open = ref<number | undefined>(props.firstOpen ? 0 : undefined);
 </script>

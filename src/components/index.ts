@@ -40,7 +40,7 @@ export function registerComponents(app: App) {
   Object.entries(pageComponents).forEach(([name, component]) => app.component(name, component));
 }
 
-type PageComponents = typeof pageComponents
+type PageComponents = typeof pageComponents;
 
 declare module "vue" {
   export interface GlobalComponents extends PageComponents {}

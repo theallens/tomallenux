@@ -45,7 +45,12 @@ for (const file of walk(SRC)) {
   const url = `/images/${base}.webp`.split(path.sep).join("/");
   seen.add(url);
   const dest = path.join(OUT, `${base}.webp`);
-  if (manifest[url] && fs.existsSync(dest) && fs.statSync(dest).mtimeMs >= fs.statSync(file).mtimeMs) continue;
+  if (
+    manifest[url] &&
+    fs.existsSync(dest) &&
+    fs.statSync(dest).mtimeMs >= fs.statSync(file).mtimeMs
+  )
+    continue;
 
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   const animated = ext === ".gif";
@@ -53,8 +58,11 @@ for (const file of walk(SRC)) {
   const width = Math.min(meta.width, MAX_WIDTH);
   const height = Math.round((meta.pageHeight ?? meta.height) * (width / meta.width));
 
-  const encode = (w) => sharp(file, { animated }).rotate().resize({ width: w, withoutEnlargement: true })
-    .webp({ quality: animated ? 75 : 82, effort: 5 });
+  const encode = (w) =>
+    sharp(file, { animated })
+      .rotate()
+      .resize({ width: w, withoutEnlargement: true })
+      .webp({ quality: animated ? 75 : 82, effort: 5 });
   await encode(width).toFile(dest);
   const variants = [];
   for (const v of VARIANTS) {

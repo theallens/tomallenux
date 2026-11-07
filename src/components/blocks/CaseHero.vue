@@ -7,15 +7,15 @@ import type { SectionTone } from "../layout/Section.vue";
 
 withDefaults(
   defineProps<{
-    eyebrow?: string
-    title: string
-    image: string
-    imageAlt?: string
+    eyebrow?: string;
+    title: string;
+    image: string;
+    imageAlt?: string;
     /** Square corners on the image (e.g. phone mockups with their own shape) */
-    imageSquare?: boolean
-    tone?: SectionTone
+    imageSquare?: boolean;
+    tone?: SectionTone;
   }>(),
-  { eyebrow: "Product design project", imageAlt: "", tone: "default" },
+  { eyebrow: "Product design project", imageAlt: "", tone: "default" }
 );
 </script>
 

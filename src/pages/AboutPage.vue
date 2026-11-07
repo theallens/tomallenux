@@ -14,10 +14,16 @@ usePageMeta({
         <Prose>
           <p class="text-large eyebrow"><em>About</em></p>
           <h3 class="about__title"><em>Hi, I’m Tom</em></h3>
-          <p class="text-large">A product designer from Bristol with a background in content design and UX writing.</p>
-          <p class="text-large">In 2019, I made the decision to swap my career in digital marketing for a role in UX. After completing a year training in UX design I started as a content designer at Confused.com and my role quickly changed to product designer – and I haven’t looked back since. </p>
-          <p class="text-large">I’m a process-driven designer that will advocate for the user and make data-led decisions. </p>
-          <p class="text-large">But it’s not all work, I am also an amateur artist, photographer and footballer.</p>
+          <p class="text-large">A product designer from Bristol with a background in content design
+            and UX writing.</p>
+          <p class="text-large">In 2019, I made the decision to swap my career in digital marketing
+            for a role in UX. After completing a year training in UX design I started as a content
+              designer at Confused.com and my role quickly changed to product designer – and I
+                haven’t looked back since. </p>
+          <p class="text-large">I’m a process-driven designer that will advocate for the user and
+            make data-led decisions. </p>
+          <p class="text-large">But it’s not all work, I am also an amateur artist, photographer and
+            footballer.</p>
         </Prose>
         <div class="mt-8">
           <CtaButton to="/pagecv">See my CV</CtaButton>

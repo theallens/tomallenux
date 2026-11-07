@@ -71,7 +71,7 @@
     text-transform: uppercase;
   }
   .eyebrow::before {
-    content: '';
+    content: "";
     width: 1.75rem;
     height: 3px;
     border-radius: 2px;

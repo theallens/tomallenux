@@ -2,7 +2,9 @@ import { describe, expect, it } from "vitest";
 import { projects, unlistedCaseStudies } from "./projects.ts";
 import images from "./images.json";
 
-const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) => file.split("/").pop()!.replace(".vue", ""));
+const workPages = Object.keys(import.meta.glob("../pages/work/*.vue")).map((file) =>
+  file.split("/").pop()!.replace(".vue", "")
+);
 const slugs = projects.flatMap((p) => (p.slug ? [p.slug] : []));
 
 describe("projects on the My work page", () => {
@@ -12,7 +14,9 @@ describe("projects on the My work page", () => {
   });
 
   it("list every case study page unless it is deliberately unlisted", () => {
-    expect(workPages.filter((page) => !slugs.includes(page) && !unlistedCaseStudies.includes(page))).toEqual([]);
+    expect(
+      workPages.filter((page) => !slugs.includes(page) && !unlistedCaseStudies.includes(page))
+    ).toEqual([]);
   });
 
   it("use thumbnails that have been optimised", () => {

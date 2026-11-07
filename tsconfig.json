@@ -9,27 +9,13 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "noEmit": true,
-    "types": [
-      "vite/client",
-      "vite-ssg"
-    ],
+    "types": ["vite/client", "vite-ssg"],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue",
-    "vite.config.ts",
-    "vitest.config.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.vue", "vite.config.ts", "vitest.config.ts"]
 }

@@ -14,7 +14,8 @@ usePageMeta({
         <Prose>
           <p class="eyebrow">Contact</p>
           <h3>Get in touch! ✌️</h3>
-          <p class="text-large">Whether it’s a role, a project or just a chat about design, I’d love to hear from you.</p>
+          <p class="text-large">Whether it’s a role, a project or just a chat about design, I’d love
+            to hear from you.</p>
           <p>Bristol, UK</p>
         </Prose>
       </v-col>

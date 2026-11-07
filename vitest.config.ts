@@ -10,5 +10,5 @@ export default mergeConfig(
       setupFiles: ["src/test/setup.ts"],
       server: { deps: { inline: ["vuetify"] } },
     },
-  }),
+  })
 );
