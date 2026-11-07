@@ -81,7 +81,7 @@ jobs:
       - id: netlify
         uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
         with:
-          args: deploy --prod --dir=dist
+          args: deploy --prod --no-build --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -122,7 +122,7 @@ jobs:
       - id: netlify
         uses: netlify/actions/cli@3185065f4ab2f6df6f2ef41ee013626e1c02a426 # pinned: review and bump manually
         with:
-          args: deploy --alias=preview --dir=dist
+          args: deploy --alias=preview --no-build --dir=dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
