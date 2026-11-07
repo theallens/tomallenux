@@ -17,7 +17,9 @@ function isActive(to: string) {
   return route.path === to || route.path.startsWith(`${to}/`);
 }
 
-watch(() => route.fullPath, () => (drawer.value = false));
+watch(() => route.fullPath, () => {
+  drawer.value = false;
+});
 </script>
 
 <template>

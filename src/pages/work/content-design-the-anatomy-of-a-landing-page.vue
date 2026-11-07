@@ -150,7 +150,7 @@ usePageMeta({
               <p class="text-large"><strong>Split long content into a separate module</strong>.</p>
             </li>
             <li>
-              <p class="text-large"><strong>Kept content to</strong> <strong>less than</strong> <strong>350 words. </strong>Any longer and it can<strong> </strong>look cluttered.</p>
+              <p class="text-large"><strong>Kept content to</strong> <strong>less than</strong> <strong>350 words. </strong>Any longer and it can<strong />look cluttered.</p>
             </li>
             <li>
               <p class="text-large"><strong>Used two columns for content with a clear break</strong>.</p>

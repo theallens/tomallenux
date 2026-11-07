@@ -27,7 +27,13 @@ const props = withDefaults(
     eager?: boolean
     sizes?: string
   }>(),
-  { alt: "", sizes: "(max-width: 959px) 100vw, 50vw" },
+  {
+    alt: "",
+    maxWidth: undefined,
+    aspect: undefined,
+    to: undefined,
+    sizes: "(max-width: 959px) 100vw, 50vw",
+  },
 );
 
 const info = computed(() => imageInfo(props.src));

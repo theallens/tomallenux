@@ -71,5 +71,5 @@ for (const file of walk(SRC)) {
 for (const url of Object.keys(manifest)) if (!seen.has(url)) delete manifest[url];
 
 const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
-fs.writeFileSync(MANIFEST, JSON.stringify(sorted, null, 2) + "\n");
+fs.writeFileSync(MANIFEST, `${JSON.stringify(sorted, null, 2)}\n`);
 console.log(`Done: ${processed} image(s) processed, ${Object.keys(sorted).length} in manifest.`);

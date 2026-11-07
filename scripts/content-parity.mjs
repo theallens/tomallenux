@@ -9,7 +9,9 @@
  * The check passes when every recorded text appears in the new page's text and
  * every recorded image (same src and alt) is still on the page. New content is allowed.
  */
-import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import {
+  existsSync, readdirSync, readFileSync, statSync, writeFileSync,
+} from "node:fs";
 import { join, relative, sep } from "node:path";
 import { Window } from "happy-dom";
 

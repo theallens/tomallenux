@@ -357,7 +357,7 @@ usePageMeta({
           <p class="text-large"><span class="text-white">63% of respondents said Rewards+ had a major impact on their decision to buy their insurance.</span></p>
           <p class="text-large"><span class="text-white">78% of respondents would be much more likely to compare insurance with Confused.com in future because of Rewards+.</span></p>
           <p class="text-large"><span class="text-white">We also learned that 40% of respondents noticed the offer while comparing quotes.</span></p>
-          <p class="text-large"></p>
+          <p class="text-large" />
         </Panel>
       </v-col>
       <v-col cols="12" md="4">
@@ -365,7 +365,7 @@ usePageMeta({
           <h4><span class="text-white">Product Density and Sales Frequency:</span></h4>
           <p class="text-large"><span class="text-white">Rewards+ customers are buying more products, more frequently, with a +1.5% increase across both metrics during the test period.</span></p>
           <p class="text-large"><span class="text-white">The retention trend suggests that the "more you buy, more you get" element of Rewards+ is actively encouraging subsequent purchases sooner.<br /></span></p>
-          <p></p>
+          <p />
         </Panel>
       </v-col>
     </v-row>
