@@ -35,7 +35,7 @@ test("every project on My work opens a working page that hydrates cleanly", asyn
   }
 });
 
-test("a case study is in the prerendered HTML, not added by JavaScript", async ({
+test("a case study and its title and share tags are in the prerendered HTML", async ({
   page,
   request,
 }) => {
@@ -45,6 +45,10 @@ test("a case study is in the prerendered HTML, not added by JavaScript", async (
 
   expect(html).toMatch(/<h1[^>]*>[^<]+<\/h1>/);
   expect(html).toContain("cdn.sanity.io");
+  // Link previews (LinkedIn, Slack) read these from the HTML and don't run JavaScript
+  expect(html).toMatch(/<title>[^<]+ — Tom Allen<\/title>/);
+  expect(html).toMatch(/<meta[^>]+property="og:title"/);
+  expect(html).toMatch(/<meta[^>]+name="description"/);
 });
 
 test("the site never calls the Sanity API from the browser", async ({ page }) => {
