@@ -29,6 +29,9 @@ const featured = linkedProjects.slice(0, 3);
           <div class="home-hero__logos">
             <Figure src="/images/home/logos/confused-com.webp" alt="Confused.com" :max-width="64" />
             <Figure src="/images/home/logos/just-eat.webp" alt="Just Eat" :max-width="64" />
+            <div class="home-hero__logo-card">
+              <Figure src="/images/home/logos/uswitch.webp" alt="Uswitch" :max-width="44" />
+            </div>
           </div>
         </div>
       </v-col>
@@ -103,6 +106,19 @@ const featured = linkedProjects.slice(0, 3);
   .home-hero__logos .figure {
     width: 64px;
     opacity: 0.85;
+  }
+  .home-hero__logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: calc(var(--radius) * 0.5);
+    background: var(--mist);
+  }
+  .home-hero__logo-card .figure {
+    width: auto;
+    opacity: 1;
   }
   .home-statement__text {
     margin: 0;
