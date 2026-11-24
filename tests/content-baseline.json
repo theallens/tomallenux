@@ -36,12 +36,19 @@
   "/": {
     "texts": [
       "Hi, I’m Tom 👋",
-      "I’m a Senior Product Designer from Bristol, UK.",
-      "I’m a user focused designer with experience in UX, UI and content design.",
+      "I’m a Senior Product Designer specialising in big, complex and strategic problems.",
+      "I’m just as comfortable leading ideation sessions or presenting to stakeholders as I am wireframing.",
+      "I’ve built my career at major household brands",
+      "How I work",
+      "Good interfaces are the easy part. The hard part is untangling the strategic problem underneath, aligning a room of stakeholders on the right one, and backing that decision with research instead of opinion.",
       "Selected work",
       "Case studies"
     ],
-    "images": ["/images/home/ta-headshot-2-copy.webp | Tom Allen"]
+    "images": [
+      "/images/home/logos/confused-com.webp | Confused.com",
+      "/images/home/logos/just-eat.webp | Just Eat",
+      "/images/home/ta-headshot-2-copy.webp | Tom Allen"
+    ]
   },
   "/mywork": {
     "texts": ["My work", "Product Design Case Studies"],
