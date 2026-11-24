@@ -23,6 +23,10 @@ concurrency:
 permissions:
   contents: read
 
+# The live address, for canonical links, share previews and the sitemap (see scripts/sitemap.ts)
+env:
+  SITE_URL: https://tomallenux.com
+
 jobs:
   build:
     name: Typecheck, lint, test & build
